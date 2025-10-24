@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giro Gnorante 2025 - Glignoranti Ladomenica</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-text">
+                    GNORA<br>
+                    <span style="font-size: 14px;">Since2007</span><br>
+                    ADOMENICA
+                </div>
+            </div>
+            <h1>🏍️ Giro Gnorante 2025</h1>
+            <div class="subtitle">Glignoranti Ladomenica</div>
+            <div class="date">27 Giugno - 4 Luglio</div>
+            <div class="flags">
+                <span class="flag">🇮🇹</span>
+                <span class="flag">🇭🇷</span>
+                <span class="flag">🇧🇦</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <button class="nav-btn active" onclick="showSection('overview')">📊 Panoramica</button>
+            <button class="nav-btn" onclick="showSection('tappe')">🗺️ Tappe</button>
+            <button class="nav-btn" onclick="showSection('mappa')">🌍 Mappa Completa</button>
+            <button class="nav-btn" onclick="showSection('partecipanti')">👥 Partecipanti</button>
+            <button class="nav-btn" onclick="showSection('info')">ℹ️ Info</button>
+        </div>
+    </nav>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title">Il Viaggio in Numeri</h2>
+            <div class="stats-grid">
+                <div class="stat-box fade-in">
+                    <div class="number">~2.000</div>
+                    <div class="label">Chilometri Totali</div>
+                </div>
+                <div class="stat-box fade-in">
+                    <div class="number">8</div>
+                    <div class="label">Giorni di Viaggio</div>
+                </div>
+                <div class="stat-box fade-in">
+                    <div class="number">3</div>
+                    <div class="label">Nazioni</div>
+                </div>
+                <div class="stat-box fade-in">
+                    <div class="number">1</div>
+                    <div class="label">Traghetto</div>
+                </div>
+            </div>
+            
+            <div class="quote-section">
+                <blockquote class="main-quote">
+                    "Dal 2007 sulla strada, tra curve, chilometri e risate.<br>
+                    Non è una vacanza, è una missione… a due ruote."
+                </blockquote>
+            </div>
+
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏰</div>
+                    <h3>Mostar</h3>
+                    <p>Il Ponte Stari Most, simbolo di rinascita</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">✨</div>
+                    <h3>Dubrovnik</h3>
+                    <p>La Perla dell'Adriatico</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏛️</div>
+                    <h3>Spalato</h3>
+                    <p>Palazzo di Diocleziano</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">⛴️</div>
+                    <h3>Traghetto</h3>
+                    <p>Notturno Spalato-Ancona</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tappe Section -->
+    <section id="tappe" class="section" style="display: none; background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Le Tappe del Viaggio</h2>
+            <div class="tappe-container">
+                
+                <!-- Giorno 1 -->
+                <div class="tappa fade-in">
+                    <div class="tappa-header andata">
+                        <div class="tappa-title">Giorno 1 – Torino → Portogruaro</div>
+                        <div class="tappa-distance">460 km</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>Partenza presto, casco in testa e motori caldi.</strong> Tappa di trasferimento per lasciare alle spalle la città e puntare verso l'Adriatico.</p>
+                            <p>Un pieno di chilometri, qualche sosta per sgranchirsi, e poi dritti a Portogruaro per la prima birra del tour. 🍺</p>
+                            <div id="mappa-tappa-1" class="mappa-mini"></div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Torino/Portogruaro" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🚀 ANDATA</h4>
+                            <p><strong>Via Autostrada</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Partenza:</span>
+                                    <span class="info-value">Torino</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arrivo:</span>
+                                    <span class="info-value">Portogruaro</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Tipo:</span>
+                                    <span class="info-value">Trasferimento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giorno 2 -->
+                <div class="tappa fade-in">
+                    <div class="tappa-header andata">
+                        <div class="tappa-title">Giorno 2 – Portogruaro → Prizna</div>
+                        <div class="tappa-distance">274 km</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>Il gruppo lascia l'Italia e varca il confine croato.</strong> Paesaggi verdi, tratti costieri e il profumo di mare nell'aria.</p>
+                            <p>Una tappa da godersi curva dopo curva, tra borghi e panorami che cominciano a cambiare faccia. Serata tranquilla a Prizna, dove l'avventura inizia davvero. 🌅</p>
+                            <div id="mappa-tappa-2" class="mappa-mini"></div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Portogruaro/Prizna,+Croazia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🚀 ANDATA</h4>
+                            <p><strong>Verso la Costa Croata 🇭🇷</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Partenza:</span>
+                                    <span class="info-value">Portogruaro</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arrivo:</span>
+                                    <span class="info-value">Prizna</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Confine:</span>
+                                    <span class="info-value">Italia → Croazia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giorno 3 -->
+                <div class="tappa fade-in">
+                    <div class="tappa-header andata">
+                        <div class="tappa-title">Giorno 3 – Prizna → Marulovo</div>
+                        <div class="tappa-distance">233 km</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>Strade interne, silenziose e piene di carattere.</strong> Tra salite, montagne e rettilinei che invitano a dare gas, il viaggio entra nel suo ritmo.</p>
+                            <p>Qui non conta dove arrivi, ma come ci arrivi: con la moto che canta e il sorriso sotto il casco. 😎</p>
+                            <div id="mappa-tappa-3" class="mappa-mini"></div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Prizna,+Croazia/Marulovo,+Croazia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🚀 ANDATA</h4>
+                            <p><strong>Lungo l'Adriatico</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Partenza:</span>
+                                    <span class="info-value">Prizna</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arrivo:</span>
+                                    <span class="info-value">Marulovo</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Paesaggio:</span>
+                                    <span class="info-value">Costa Dalmata</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giorno 4 -->
+                <div class="tappa fade-in">
+                    <div class="tappa-header andata">
+                        <div class="tappa-title">Giorno 4 – Marulovo → Mostar</div>
+                        <div class="tappa-distance">200 km</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>Si entra in Bosnia-Erzegovina, terra di storia e contrasti.</strong> Mostar accoglie con il suo famoso Ponte Stari Most, simbolo di rinascita dopo anni difficili.</p>
+                            <p>La città è viva, colorata, un mix di culture e profumi che restano addosso. Qui ogni biker capisce che viaggiare è anche attraversare storie. 🌉</p>
+                            <div id="mappa-tappa-4" class="mappa-mini"></div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Marulovo,+Croazia/Mostar,+Bosnia+and+Herzegovina" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🚀 ANDATA</h4>
+                            <p><strong>Il Ponte di Mostar 🇧🇦</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Partenza:</span>
+                                    <span class="info-value">Marulovo</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arrivo:</span>
+                                    <span class="info-value">Mostar</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Confine:</span>
+                                    <span class="info-value">Croazia → Bosnia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giorno 5 -->
+                <div class="tappa fade-in">
+                    <div class="tappa-header andata">
+                        <div class="tappa-title">Giorno 5 – Mostar → Dubrovnik</div>
+                        <div class="tappa-distance">200 km</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>Si torna verso il mare.</strong> Dubrovnik, la Perla dell'Adriatico, si mostra con tutta la sua eleganza e le mura che guardano il mare.</p>
+                            <p>Tra vicoli antichi e birre ghiacciate, il gruppo si gode la tappa più scenografica del tour. Ogni foto qui diventa un poster. 📸</p>
+                            <div id="mappa-tappa-5" class="mappa-mini"></div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Mostar,+Bosnia+and+Herzegovina/Dubrovnik,+Croatia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🚀 ANDATA</h4>
+                            <p><strong>La Perla dell'Adriatico ✨</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Partenza:</span>
+                                    <span class="info-value">Mostar</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arrivo:</span>
+                                    <span class="info-value">Dubrovnik</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Patrimonio:</span>
+                                    <span class="info-value">UNESCO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giorno 6 -->
+                <div class="tappa fade-in">
+                    <div class="tappa-header ritorno">
+                        <div class="tappa-title">Giorno 6 – Dubrovnik → Spalato</div>
+                        <div class="tappa-distance">220 km</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>La costa dalmata regala una delle strade più belle d'Europa:</strong> curve, mare e sole a picco.</p>
+                            <p>Spalato chiude la parte croata del viaggio, con il Palazzo di Diocleziano a fare da cornice. Un tuffo nel mare, una cena vista porto, e poi pronti al rientro. 🌊</p>
+                            <div id="mappa-tappa-6" class="mappa-mini"></div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Dubrovnik,+Croatia/Split,+Croatia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🏠 RITORNO</h4>
+                            <p><strong>Verso il Porto</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Partenza:</span>
+                                    <span class="info-value">Dubrovnik</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Arrivo:</span>
+                                    <span class="info-value">Spalato</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Preparazione:</span>
+                                    <span class="info-value">Imbarco traghetto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Giorno 7-8 -->
+                <div class="tappa fade-in">
+                    <div class="tappa-header ritorno">
+                        <div class="tappa-title">Giorno 7-8 – Spalato ⛴️ Ancona → Torino</div>
+                        <div class="tappa-distance">600 km + 11h traghetto</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>Il traghetto notturno è il momento per rilassarsi.</strong> Le moto parcheggiate nella stiva, il gruppo sul ponte a guardare il mare nero e le stelle.</p>
+                            <p>Si brinda, si ride, si parla già del prossimo viaggio. L'odore di salsedine e benzina si mescola all'aria di libertà. 🌌</p>
+                            <p><strong>Ultima tirata verso casa.</strong> Il corpo è stanco, ma la testa è piena di paesaggi, strade e risate. Ogni chilometro è un pezzo di storia condivisa con gli amici di sempre.</p>
+                            <div id="mappa-tappa-7" class="mappa-mini"></div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Ancona/Torino" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                                <a href="https://www.port-authority-split.hr/" target="_blank" class="map-link">ℹ️ Info Porto Spalato</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🏠 RITORNO</h4>
+                            <p><strong>Traghetto Notturno e Ritorno</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Giorno 7:</span>
+                                    <span class="info-value">Traghetto notturno</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Giorno 8:</span>
+                                    <span class="info-value">Ancona → Torino</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Durata:</span>
+                                    <span class="info-value">11 ore nave</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mappa Section -->
+    <section id="mappa" class="section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Mappa Completa del Percorso</h2>
+            <p class="section-subtitle">Visualizza l'intero itinerario del Giro Gnorante 2025 attraverso 3 nazioni</p>
+            <div id="mappa-completa" class="mappa-full"></div>
+            <div class="legenda">
+                <div class="legenda-item">
+                    <div class="legenda-color andata"></div>
+                    <span>Andata</span>
+                </div>
+                <div class="legenda-item">
+                    <div class="legenda-color ritorno"></div>
+                    <span>Ritorno</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partecipanti Section -->
+    <section id="partecipanti" class="section" style="display: none; background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">La Squadra</h2>
+            <div class="partecipanti-grid">
+                <div class="partecipante-card">
+                    <div class="partecipante-avatar">🏍️</div>
+                    <h3>Nome Partecipante</h3>
+                    <p>Moto: [Modello]</p>
+                    <p>Esperienze: [Numero] viaggi</p>
+                </div>
+                <!-- Aggiungi altri partecipanti qui -->
+                <div class="partecipante-card placeholder">
+                    <div class="partecipante-avatar">👤</div>
+                    <h3>Altro partecipante?</h3>
+                    <p>Moto: [Da definire]</p>
+                    <p>In attesa di conferma...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Informazioni Utili</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📝</div>
+                    <h3>Documenti</h3>
+                    <ul>
+                        <li>Carta d'identità valida</li>
+                        <li>Patente di guida</li>
+                        <li>Carta verde assicurativa</li>
+                        <li>Tessera sanitaria europea</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">💰</div>
+                    <h3>Valute</h3>
+                    <ul>
+                        <li>Italia: Euro (€)</li>
+                        <li>Croazia: Kuna (kn)</li>
+                        <li>Bosnia: Marco (BAM)</li>
+                        <li>Carte di credito accettate</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🆘</div>
+                    <h3>Emergenze</h3>
+                    <ul>
+                        <li>Numero unico UE: 112</li>
+                        <li>Assistenza stradale</li>
+                        <li>Ambasciata italiana</li>
+                        <li>Farmacie: croce verde</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🌡️</div>
+                    <h3>Clima</h3>
+                    <ul>
+                        <li>Giugno-Luglio: 25-30°C</li>
+                        <li>Serate miti</li>
+                        <li>Possibili acquazzoni</li>
+                        <li>Protezione solare</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-section">
+                <h3 style="text-align: center; margin: 40px 0 20px 0; color: var(--primary);">📋 Checklist Pre-Partenza</h3>
+                <div class="checklist-grid">
+                    <div class="checklist-category">
+                        <h4>🛵 Moto</h4>
+                        <label><input type="checkbox"> Revisione completa</label>
+                        <label><input type="checkbox"> Pneumatici</label>
+                        <label><input type="checkbox"> Freni</label>
+                        <label><input type="checkbox"> Catena</label>
+                    </div>
+                    <div class="checklist-category">
+                        <h4>🎒 Equipaggiamento</h4>
+                        <label><input type="checkbox"> Casco integrale</label>
+                        <label><input type="checkbox"> Giacca tecnica</label>
+                        <label><input type="checkbox"> Guanti</label>
+                        <label><input type="checkbox"> Stivali</label>
+                    </div>
+                    <div class="checklist-category">
+                        <h4>📄 Documenti</h4>
+                        <label><input type="checkbox"> Carta identità</label>
+                        <label><input type="checkbox"> Patente</label>
+                        <label><input type="checkbox"> Assicurazione</label>
+                        <label><input type="checkbox"> Tessera sanitaria</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-text">
+                        GNORA<br>
+                        <span style="font-size: 12px;">Since2007</span><br>
+                        ADOMENICA
+                    </div>
+                </div>
+                <div class="footer-quote">
+                    "Ride hard. Laugh louder. Live free."
+                </div>
+                <div class="footer-social">
+                    <span class="social-hashtag">#GiroGnorante2025</span>
+                    <span class="social-hashtag">#GlignorantiLadomenica</span>
+                </div>
+                <div class="footer-signature">
+                    Glignoranti Ladomenica - Since 2007<br>
+                    <em>Ogni viaggio lascia un segno, ma quelli fatti insieme diventano leggenda.</em>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
