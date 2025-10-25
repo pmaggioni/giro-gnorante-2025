@@ -13,7 +13,7 @@
     <header class="header">
         <div class="container">
             <div class="logo-container">
-               <img src="assets/images/logo.png" alt="Glignoranti Ladomenica" class="footer-logo-image">
+                <img src="assets/images/logo.png" alt="Glignoranti Ladomenica" class="logo-image">
             </div>
             <h1>🏍️ Giro Gnorante 2025</h1>
             <div class="subtitle">Glignoranti Ladomenica</div>
@@ -29,32 +29,32 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
-            <button class="nav-btn active" onclick="showSection('overview')">📊 Panoramica</button>
-            <button class="nav-btn" onclick="showSection('tappe')">🗺️ Tappe</button>
-            <button class="nav-btn" onclick="showSection('mappa')">🌍 Mappa Completa</button>
-            <button class="nav-btn" onclick="showSection('partecipanti')">👥 Partecipanti</button>
-            <button class="nav-btn" onclick="showSection('info')">ℹ️ Info</button>
+            <button class="nav-btn active" data-target="overview">📊 Panoramica</button>
+            <button class="nav-btn" data-target="tappe">🗺️ Tappe</button>
+            <button class="nav-btn" data-target="mappa">🌍 Mappa Completa</button>
+            <button class="nav-btn" data-target="partecipanti">👥 Partecipanti</button>
+            <button class="nav-btn" data-target="info">ℹ️ Info</button>
         </div>
     </nav>
 
     <!-- Overview Section -->
-    <section id="overview" class="section">
+    <section id="overview" class="section active">
         <div class="container">
             <h2 class="section-title">Il Viaggio in Numeri</h2>
             <div class="stats-grid">
-                <div class="stat-box fade-in">
+                <div class="stat-box">
                     <div class="number">~2.000</div>
                     <div class="label">Chilometri Totali</div>
                 </div>
-                <div class="stat-box fade-in">
+                <div class="stat-box">
                     <div class="number">8</div>
                     <div class="label">Giorni di Viaggio</div>
                 </div>
-                <div class="stat-box fade-in">
+                <div class="stat-box">
                     <div class="number">3</div>
                     <div class="label">Nazioni</div>
                 </div>
-                <div class="stat-box fade-in">
+                <div class="stat-box">
                     <div class="number">1</div>
                     <div class="label">Traghetto</div>
                 </div>
@@ -93,13 +93,13 @@
     </section>
 
     <!-- Tappe Section -->
-    <section id="tappe" class="section" style="display: none; background: #f8f9fa;">
+    <section id="tappe" class="section">
         <div class="container">
             <h2 class="section-title">Le Tappe del Viaggio</h2>
             <div class="tappe-container">
                 
                 <!-- Giorno 1 -->
-                <div class="tappa fade-in">
+                <div class="tappa">
                     <div class="tappa-header andata">
                         <div class="tappa-title">Giorno 1 – Torino → Portogruaro</div>
                         <div class="tappa-distance">460 km</div>
@@ -108,7 +108,7 @@
                         <div class="tappa-desc">
                             <p><strong>Partenza presto, casco in testa e motori caldi.</strong> Tappa di trasferimento per lasciare alle spalle la città e puntare verso l'Adriatico.</p>
                             <p>Un pieno di chilometri, qualche sosta per sgranchirsi, e poi dritti a Portogruaro per la prima birra del tour. 🍺</p>
-                            <div id="mappa-tappa-1" class="mappa-mini"></div>
+                            <div id="mappa-tappa-1" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Torino/Portogruaro" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
                             </div>
@@ -135,7 +135,7 @@
                 </div>
 
                 <!-- Giorno 2 -->
-                <div class="tappa fade-in">
+                <div class="tappa">
                     <div class="tappa-header andata">
                         <div class="tappa-title">Giorno 2 – Portogruaro → Prizna</div>
                         <div class="tappa-distance">274 km</div>
@@ -144,7 +144,7 @@
                         <div class="tappa-desc">
                             <p><strong>Il gruppo lascia l'Italia e varca il confine croato.</strong> Paesaggi verdi, tratti costieri e il profumo di mare nell'aria.</p>
                             <p>Una tappa da godersi curva dopo curva, tra borghi e panorami che cominciano a cambiare faccia. Serata tranquilla a Prizna, dove l'avventura inizia davvero. 🌅</p>
-                            <div id="mappa-tappa-2" class="mappa-mini"></div>
+                            <div id="mappa-tappa-2" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Portogruaro/Prizna,+Croazia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
                             </div>
@@ -171,7 +171,7 @@
                 </div>
 
                 <!-- Giorno 3 -->
-                <div class="tappa fade-in">
+                <div class="tappa">
                     <div class="tappa-header andata">
                         <div class="tappa-title">Giorno 3 – Prizna → Marulovo</div>
                         <div class="tappa-distance">233 km</div>
@@ -180,7 +180,7 @@
                         <div class="tappa-desc">
                             <p><strong>Strade interne, silenziose e piene di carattere.</strong> Tra salite, montagne e rettilinei che invitano a dare gas, il viaggio entra nel suo ritmo.</p>
                             <p>Qui non conta dove arrivi, ma come ci arrivi: con la moto che canta e il sorriso sotto il casco. 😎</p>
-                            <div id="mappa-tappa-3" class="mappa-mini"></div>
+                            <div id="mappa-tappa-3" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Prizna,+Croazia/Marulovo,+Croazia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
                             </div>
@@ -207,7 +207,7 @@
                 </div>
 
                 <!-- Giorno 4 -->
-                <div class="tappa fade-in">
+                <div class="tappa">
                     <div class="tappa-header andata">
                         <div class="tappa-title">Giorno 4 – Marulovo → Mostar</div>
                         <div class="tappa-distance">200 km</div>
@@ -216,7 +216,7 @@
                         <div class="tappa-desc">
                             <p><strong>Si entra in Bosnia-Erzegovina, terra di storia e contrasti.</strong> Mostar accoglie con il suo famoso Ponte Stari Most, simbolo di rinascita dopo anni difficili.</p>
                             <p>La città è viva, colorata, un mix di culture e profumi che restano addosso. Qui ogni biker capisce che viaggiare è anche attraversare storie. 🌉</p>
-                            <div id="mappa-tappa-4" class="mappa-mini"></div>
+                            <div id="mappa-tappa-4" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Marulovo,+Croazia/Mostar,+Bosnia+and+Herzegovina" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
                             </div>
@@ -243,7 +243,7 @@
                 </div>
 
                 <!-- Giorno 5 -->
-                <div class="tappa fade-in">
+                <div class="tappa">
                     <div class="tappa-header andata">
                         <div class="tappa-title">Giorno 5 – Mostar → Dubrovnik</div>
                         <div class="tappa-distance">200 km</div>
@@ -252,7 +252,7 @@
                         <div class="tappa-desc">
                             <p><strong>Si torna verso il mare.</strong> Dubrovnik, la Perla dell'Adriatico, si mostra con tutta la sua eleganza e le mura che guardano il mare.</p>
                             <p>Tra vicoli antichi e birre ghiacciate, il gruppo si gode la tappa più scenografica del tour. Ogni foto qui diventa un poster. 📸</p>
-                            <div id="mappa-tappa-5" class="mappa-mini"></div>
+                            <div id="mappa-tappa-5" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Mostar,+Bosnia+and+Herzegovina/Dubrovnik,+Croatia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
                             </div>
@@ -279,7 +279,7 @@
                 </div>
 
                 <!-- Giorno 6 -->
-                <div class="tappa fade-in">
+                <div class="tappa">
                     <div class="tappa-header ritorno">
                         <div class="tappa-title">Giorno 6 – Dubrovnik → Spalato</div>
                         <div class="tappa-distance">220 km</div>
@@ -288,7 +288,7 @@
                         <div class="tappa-desc">
                             <p><strong>La costa dalmata regala una delle strade più belle d'Europa:</strong> curve, mare e sole a picco.</p>
                             <p>Spalato chiude la parte croata del viaggio, con il Palazzo di Diocleziano a fare da cornice. Un tuffo nel mare, una cena vista porto, e poi pronti al rientro. 🌊</p>
-                            <div id="mappa-tappa-6" class="mappa-mini"></div>
+                            <div id="mappa-tappa-6" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Dubrovnik,+Croatia/Split,+Croatia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
                             </div>
@@ -315,7 +315,7 @@
                 </div>
 
                 <!-- Giorno 7-8 -->
-                <div class="tappa fade-in">
+                <div class="tappa">
                     <div class="tappa-header ritorno">
                         <div class="tappa-title">Giorno 7-8 – Spalato ⛴️ Ancona → Torino</div>
                         <div class="tappa-distance">600 km + 11h traghetto</div>
@@ -325,7 +325,7 @@
                             <p><strong>Il traghetto notturno è il momento per rilassarsi.</strong> Le moto parcheggiate nella stiva, il gruppo sul ponte a guardare il mare nero e le stelle.</p>
                             <p>Si brinda, si ride, si parla già del prossimo viaggio. L'odore di salsedine e benzina si mescola all'aria di libertà. 🌌</p>
                             <p><strong>Ultima tirata verso casa.</strong> Il corpo è stanco, ma la testa è piena di paesaggi, strade e risate. Ogni chilometro è un pezzo di storia condivisa con gli amici di sempre.</p>
-                            <div id="mappa-tappa-7" class="mappa-mini"></div>
+                            <div id="mappa-tappa-7" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Ancona/Torino" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
                                 <a href="https://www.port-authority-split.hr/" target="_blank" class="map-link">ℹ️ Info Porto Spalato</a>
@@ -357,11 +357,11 @@
     </section>
 
     <!-- Mappa Section -->
-    <section id="mappa" class="section" style="display: none;">
+    <section id="mappa" class="section">
         <div class="container">
             <h2 class="section-title">Mappa Completa del Percorso</h2>
             <p class="section-subtitle">Visualizza l'intero itinerario del Giro Gnorante 2025 attraverso 3 nazioni</p>
-            <div id="mappa-completa" class="mappa-full"></div>
+            <div id="mappa-completa" class="mappa-full">Caricamento mappa completa...</div>
             <div class="legenda">
                 <div class="legenda-item">
                     <div class="legenda-color andata"></div>
@@ -376,29 +376,44 @@
     </section>
 
     <!-- Partecipanti Section -->
-    <section id="partecipanti" class="section" style="display: none; background: #f8f9fa;">
+    <section id="partecipanti" class="section">
         <div class="container">
             <h2 class="section-title">La Squadra</h2>
             <div class="partecipanti-grid">
                 <div class="partecipante-card">
-                    <div class="partecipante-avatar">🏍️</div>
-                    <h3>Nome Partecipante</h3>
-                    <p>Moto: [Modello]</p>
-                    <p>Esperienze: [Numero] viaggi</p>
+                    <div class="partecipante-avatar">👑</div>
+                    <h3>Capo Gnorante</h3>
+                    <p>Moto: Honda Africa Twin</p>
+                    <p>Esperienze: 15+ viaggi</p>
+                    <p>Ruolo: Navigatore ufficiale</p>
                 </div>
-                <!-- Aggiungi altri partecipanti qui -->
+                <div class="partecipante-card">
+                    <div class="partecipante-avatar">⚡</div>
+                    <h3>Motociclista 2</h3>
+                    <p>Moto: Yamaha Tracer 9</p>
+                    <p>Esperienze: 8 viaggi</p>
+                    <p>Ruolo: Fotografo di gruppo</p>
+                </div>
+                <div class="partecipante-card">
+                    <div class="partecipante-avatar">🛡️</div>
+                    <h3>Motociclista 3</h3>
+                    <p>Moto: BMW R1250GS</p>
+                    <p>Esperienze: 12 viaggi</p>
+                    <p>Ruolo: Meccanico improvvisato</p>
+                </div>
                 <div class="partecipante-card placeholder">
-                    <div class="partecipante-avatar">👤</div>
+                    <div class="partecipante-avatar">🤔</div>
                     <h3>Altro partecipante?</h3>
                     <p>Moto: [Da definire]</p>
-                    <p>In attesa di conferma...</p>
+                    <p>Esperienze: [In attesa]</p>
+                    <p>Posti disponibili: 1</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Info Section -->
-    <section id="info" class="section" style="display: none;">
+    <section id="info" class="section">
         <div class="container">
             <h2 class="section-title">Informazioni Utili</h2>
             <div class="info-grid">
@@ -406,67 +421,67 @@
                     <div class="info-icon">📝</div>
                     <h3>Documenti</h3>
                     <ul>
-                        <li>Carta d'identità valida</li>
-                        <li>Patente di guida</li>
-                        <li>Carta verde assicurativa</li>
-                        <li>Tessera sanitaria europea</li>
+                        <li value="ci">Carta d'identità valida</li>
+                        <li value="patente">Patente di guida</li>
+                        <li value="assicurazione">Carta verde assicurativa</li>
+                        <li value="tessera">Tessera sanitaria europea</li>
                     </ul>
                 </div>
                 <div class="info-card">
                     <div class="info-icon">💰</div>
                     <h3>Valute</h3>
                     <ul>
-                        <li>Italia: Euro (€)</li>
-                        <li>Croazia: Kuna (kn)</li>
-                        <li>Bosnia: Marco (BAM)</li>
-                        <li>Carte di credito accettate</li>
+                        <li value="euro">Italia: Euro (€)</li>
+                        <li value="kuna">Croazia: Kuna (kn)</li>
+                        <li value="marco">Bosnia: Marco (BAM)</li>
+                        <li value="carte">Carte di credito accettate</li>
                     </ul>
                 </div>
                 <div class="info-card">
                     <div class="info-icon">🆘</div>
                     <h3>Emergenze</h3>
                     <ul>
-                        <li>Numero unico UE: 112</li>
-                        <li>Assistenza stradale</li>
-                        <li>Ambasciata italiana</li>
-                        <li>Farmacie: croce verde</li>
+                        <li value="112">Numero unico UE: 112</li>
+                        <li value="assistenza">Assistenza stradale</li>
+                        <li value="ambasciata">Ambasciata italiana</li>
+                        <li value="farmacie">Farmacie: croce verde</li>
                     </ul>
                 </div>
                 <div class="info-card">
                     <div class="info-icon">🌡️</div>
                     <h3>Clima</h3>
                     <ul>
-                        <li>Giugno-Luglio: 25-30°C</li>
-                        <li>Serate miti</li>
-                        <li>Possibili acquazzoni</li>
-                        <li>Protezione solare</li>
+                        <li value="temperatura">Giugno-Luglio: 25-30°C</li>
+                        <li value="serate">Serate miti</li>
+                        <li value="pioggia">Possibili acquazzoni</li>
+                        <li value="sole">Protezione solare</li>
                     </ul>
                 </div>
             </div>
 
             <div class="checklist-section">
-                <h3 style="text-align: center; margin: 40px 0 20px 0; color: var(--primary);">📋 Checklist Pre-Partenza</h3>
+                <h3 class="section-subtitle">📋 Checklist Pre-Partenza</h3>
                 <div class="checklist-grid">
-                    <div class="checklist-category">
+                    <div class="checklist-category" id="checklist-moto">
                         <h4>🛵 Moto</h4>
-                        <label><input type="checkbox"> Revisione completa</label>
-                        <label><input type="checkbox"> Pneumatici</label>
-                        <label><input type="checkbox"> Freni</label>
-                        <label><input type="checkbox"> Catena</label>
+                        <label><input type="checkbox" value="revisione"> Revisione completa</label>
+                        <label><input type="checkbox" value="pneumatici"> Pneumatici</label>
+                        <label><input type="checkbox" value="freni"> Freni</label>
+                        <label><input type="checkbox" value="catena"> Catena</label>
                     </div>
-                    <div class="checklist-category">
+                    <div class="checklist-category" id="checklist-equipaggiamento">
                         <h4>🎒 Equipaggiamento</h4>
-                        <label><input type="checkbox"> Casco integrale</label>
-                        <label><input type="checkbox"> Giacca tecnica</label>
-                        <label><input type="checkbox"> Guanti</label>
-                        <label><input type="checkbox"> Stivali</label>
+                        <label><input type="checkbox" value="casco"> Casco integrale</label>
+                        <label><input type="checkbox" value="giacca"> Giacca tecnica</label>
+                        <label><input type="checkbox" value="guanti"> Guanti</label>
+                        <label><input type="checkbox" value="stivali"> Stivali</label>
                     </div>
-                    <div class="checklist-category">
+                    <div class="checklist-category" id="checklist-documenti">
                         <h4>📄 Documenti</h4>
-                        <label><input type="checkbox"> Carta identità</label>
-                        <label><input type="checkbox"> Patente</label>
-                        <label><input type="checkbox"> Assicurazione</label>
-                        <label><input type="checkbox"> Tessera sanitaria</label>
+                        <label><input type="checkbox" value="carta-identita"> Carta identità</label>
+                        <label><input type="checkbox" value="patente"> Patente</label>
+                        <label><input type="checkbox" value="assicurazione"> Assicurazione</label>
+                        <label><input type="checkbox" value="tessera-sanitaria"> Tessera sanitaria</label>
                     </div>
                 </div>
             </div>
@@ -478,11 +493,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <div class="logo-text">
-                        GNORA<br>
-                        <span style="font-size: 12px;">Since2007</span><br>
-                        ADOMENICA
-                    </div>
+                    <img src="assets/images/logo.png" alt="Glignoranti Ladomenica" class="footer-logo-image">
                 </div>
                 <div class="footer-quote">
                     "Ride hard. Laugh louder. Live free."
