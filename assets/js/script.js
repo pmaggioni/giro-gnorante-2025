@@ -1,5 +1,7 @@
 // Gestione navigazione
 function showSection(sectionId, element) {
+    console.log('Mostrando sezione:', sectionId);
+    
     // Nascondi tutte le sezioni
     document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
@@ -9,6 +11,10 @@ function showSection(sectionId, element) {
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
         targetSection.classList.add('active');
+        console.log('Sezione trovata e attivata');
+    } else {
+        console.error('Sezione non trovata:', sectionId);
+        return;
     }
     
     // Aggiorna bottoni attivi
@@ -209,55 +215,50 @@ function initMaps() {
         tappe.forEach((tappa, index) => {
             const mappaDiv = document.getElementById(`mappa-tappa-${index + 1}`);
             if (mappaDiv) {
-                // Aspetta che il container sia visibile
-                setTimeout(() => {
-                    if (mappaDiv.offsetWidth > 0) {
-                        const centro = [
-                            (tappa.partenza[0] + tappa.arrivo[0]) / 2,
-                            (tappa.partenza[1] + tappa.arrivo[1]) / 2
-                        ];
-                        
-                        const miniMap = L.map(`mappa-tappa-${index + 1}`, {
-                            zoomControl: false,
-                            attributionControl: false,
-                            dragging: false,
-                            scrollWheelZoom: false,
-                            doubleClickZoom: false,
-                            boxZoom: false
-                        }).setView(centro, 8);
-                        
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            maxZoom: 13
-                        }).addTo(miniMap);
-                        
-                        // Crea percorso con waypoints
-                        const percorsoMini = [tappa.partenza];
-                        if (tappa.waypoints) {
-                            percorsoMini.push(...tappa.waypoints);
-                        }
-                        percorsoMini.push(tappa.arrivo);
-                        
-                        const coloreMini = tappa.tipo === 'andata' ? '#667eea' : '#fc4a1a';
-                        
-                        L.polyline(percorsoMini, {
-                            color: coloreMini,
-                            weight: 3,
-                            opacity: 0.9
-                        }).addTo(miniMap);
-                        
-                        // Aggiungi marker
-                        L.marker(tappa.partenza).addTo(miniMap)
-                            .bindPopup('<b>Partenza</b>');
-                        L.marker(tappa.arrivo).addTo(miniMap)
-                            .bindPopup('<b>Arrivo</b>');
-                        
-                        // Fit bounds per la tappa specifica
-                        const tappaBounds = L.latLngBounds(percorsoMini);
-                        miniMap.fitBounds(tappaBounds, { padding: [10, 10] });
-                        
-                        miniMaps.push(miniMap);
-                    }
-                }, 100);
+                const centro = [
+                    (tappa.partenza[0] + tappa.arrivo[0]) / 2,
+                    (tappa.partenza[1] + tappa.arrivo[1]) / 2
+                ];
+                
+                const miniMap = L.map(`mappa-tappa-${index + 1}`, {
+                    zoomControl: false,
+                    attributionControl: false,
+                    dragging: false,
+                    scrollWheelZoom: false,
+                    doubleClickZoom: false,
+                    boxZoom: false
+                }).setView(centro, 8);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 13
+                }).addTo(miniMap);
+                
+                // Crea percorso con waypoints
+                const percorsoMini = [tappa.partenza];
+                if (tappa.waypoints) {
+                    percorsoMini.push(...tappa.waypoints);
+                }
+                percorsoMini.push(tappa.arrivo);
+                
+                const coloreMini = tappa.tipo === 'andata' ? '#667eea' : '#fc4a1a';
+                
+                L.polyline(percorsoMini, {
+                    color: coloreMini,
+                    weight: 3,
+                    opacity: 0.9
+                }).addTo(miniMap);
+                
+                // Aggiungi marker
+                L.marker(tappa.partenza).addTo(miniMap)
+                    .bindPopup('<b>Partenza</b>');
+                L.marker(tappa.arrivo).addTo(miniMap)
+                    .bindPopup('<b>Arrivo</b>');
+                
+                // Fit bounds per la tappa specifica
+                const tappaBounds = L.latLngBounds(percorsoMini);
+                miniMap.fitBounds(tappaBounds, { padding: [10, 10] });
+                
+                miniMaps.push(miniMap);
             }
         });
     } catch (error) {
@@ -265,146 +266,17 @@ function initMaps() {
     }
 }
 
-// Funzione helper per nomi tappe
-function getTappaNome(index) {
-    const nomi = [
-        'Torino → Portogruaro',
-        'Portogruaro → Prizna',
-        'Prizna → Marulovo',
-        'Marulovo → Mostar',
-        'Mostar → Dubrovnik',
-        'Dubrovnik → Spalato',
-        'Spalato → Ancona → Torino'
-    ];
-    return nomi[index] || `Tappa ${index + 1}`;
-}
-
 // Animazioni al scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fade-in');
-            // Opzionale: smetti di osservare dopo l'animazione
-            // observer.unobserve(entry.target);
         }
     });
-}, observerOptions);
-
-// Scroll to top button
-function initScrollToTop() {
-    const scrollBtn = document.createElement('button');
-    scrollBtn.innerHTML = '↑';
-    scrollBtn.className = 'scroll-to-top';
-    scrollBtn.setAttribute('aria-label', 'Torna su');
-    scrollBtn.style.display = 'none';
-    
-    scrollBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    
-    document.body.appendChild(scrollBtn);
-    
-    // Mostra/nascondi il bottone
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            scrollBtn.style.display = 'block';
-        } else {
-            scrollBtn.style.display = 'none';
-        }
-    });
-}
-
-// Gestione checklist interattiva
-function initChecklist() {
-    document.querySelectorAll('.checklist-category input[type="checkbox"]').forEach(checkbox => {
-        // Imposta stato iniziale
-        updateChecklistCategory(checkbox.closest('.checklist-category'));
-        
-        checkbox.addEventListener('change', function() {
-            updateChecklistCategory(this.closest('.checklist-category'));
-            
-            // Salva stato nel localStorage
-            const categoryId = this.closest('.checklist-category').id;
-            if (categoryId) {
-                saveChecklistState(categoryId, this.checked, this.value);
-            }
-        });
-    });
-    
-    // Carica stati salvati
-    loadChecklistState();
-}
-
-function updateChecklistCategory(category) {
-    if (!category) return;
-    
-    const checkedCount = category.querySelectorAll('input[type="checkbox"]:checked').length;
-    const totalCount = category.querySelectorAll('input[type="checkbox"]').length;
-    const progress = (checkedCount / totalCount) * 100;
-    
-    // Aggiorna stile in base al progresso
-    if (checkedCount === totalCount) {
-        category.style.borderLeft = '4px solid #4ecdc4';
-        category.style.background = 'linear-gradient(90deg, rgba(78, 205, 196, 0.1) 0%, transparent 100%)';
-    } else if (checkedCount > 0) {
-        category.style.borderLeft = '4px solid #ffd93d';
-        category.style.background = 'linear-gradient(90deg, rgba(255, 217, 61, 0.1) 0%, transparent 100%)';
-    } else {
-        category.style.borderLeft = '4px solid #ff6b6b';
-        category.style.background = 'none';
-    }
-    
-    // Aggiorna contatore visivo (se presente)
-    let counter = category.querySelector('.checklist-counter');
-    if (!counter) {
-        counter = document.createElement('div');
-        counter.className = 'checklist-counter';
-        counter.style.cssText = `
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #f8f9fa;
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 0.8em;
-            font-weight: bold;
-        `;
-        category.style.position = 'relative';
-        category.appendChild(counter);
-    }
-    counter.textContent = `${checkedCount}/${totalCount}`;
-    counter.style.color = checkedCount === totalCount ? '#4ecdc4' : 
-                         checkedCount > 0 ? '#ffd93d' : '#ff6b6b';
-}
-
-function saveChecklistState(categoryId, isChecked, itemId) {
-    const state = JSON.parse(localStorage.getItem('checklistState') || '{}');
-    if (!state[categoryId]) state[categoryId] = {};
-    state[categoryId][itemId] = isChecked;
-    localStorage.setItem('checklistState', JSON.stringify(state));
-}
-
-function loadChecklistState() {
-    const state = JSON.parse(localStorage.getItem('checklistState') || '{}');
-    
-    Object.keys(state).forEach(categoryId => {
-        const category = document.getElementById(categoryId);
-        if (category) {
-            Object.keys(state[categoryId]).forEach(itemId => {
-                const checkbox = category.querySelector(`input[value="${itemId}"]`);
-                if (checkbox) {
-                    checkbox.checked = state[categoryId][itemId];
-                    updateChecklistCategory(category);
-                }
-            });
-        }
-    });
-}
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+});
 
 // Inizializza tutto quando il DOM è pronto
 document.addEventListener('DOMContentLoaded', function() {
@@ -414,26 +286,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const primaSezione = document.querySelector('.section');
     if (primaSezione) {
         primaSezione.classList.add('active');
+        console.log('Sezione iniziale attivata:', primaSezione.id);
     }
     
-    // Inizializza bottoni navigazione
-    document.querySelectorAll('.nav-btn').forEach((btn, index) => {
+    // Inizializza bottoni navigazione - VERSIONE SEMPLIFICATA
+    document.querySelectorAll('.nav-btn').forEach((btn) => {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
-            const targetSection = this.getAttribute('data-target') || 
-                                this.getAttribute('onclick')?.match(/showSection\('([^']+)'/)?.[1];
+            const targetSection = this.getAttribute('data-target');
+            console.log('Bottone cliccato, target:', targetSection);
+            
             if (targetSection) {
                 showSection(targetSection, this);
             }
         });
-        
-        // Imposta primo bottone come attivo
-        if (index === 0) {
-            btn.classList.add('active');
-        }
     });
     
-    // Inizializza mappe con ritardo per garantire il rendering
+    // Imposta primo bottone come attivo
+    const primoBottone = document.querySelector('.nav-btn');
+    if (primoBottone) {
+        primoBottone.classList.add('active');
+    }
+    
+    // Inizializza mappe
     setTimeout(initMaps, 1000);
     
     // Osserva elementi per animazioni
@@ -441,18 +316,10 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
     
-    // Inizializza funzionalità aggiuntive
-    initScrollToTop();
-    initChecklist();
-    
     // Gestione responsive per mappe
-    let resizeTimeout;
     window.addEventListener('resize', function() {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
-            if (mappaCompleta) {
-                mappaCompleta.invalidateSize();
-            }
+        setTimeout(() => {
+            if (mappaCompleta) mappaCompleta.invalidateSize();
             if (miniMaps) {
                 miniMaps.forEach(mappa => {
                     if (mappa) mappa.invalidateSize();
@@ -461,27 +328,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 250);
     });
     
-    // Smooth scroll per anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const target = document.getElementById(targetId);
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-    
     console.log('Inizializzazione completata!');
 });
-
-// Utility function per il debug
-function debugMaps() {
-    console.log('Mappa completa:', mappaCompleta);
-    console.log('Mini mappe:', miniMaps);
-    console.log('Tappe:', tappe);
-}
