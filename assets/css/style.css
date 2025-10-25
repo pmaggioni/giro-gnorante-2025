@@ -64,8 +64,8 @@ body {
 }
 
 .logo-image {
-    max-width: 70%;         /* 👈 IMMAGINE più PICCOLA (era 80%) */
-    max-height: 70%;        /* 👈 IMMAGINE più PICCOLA (era 80%) */
+    max-width: 80%;         /* 👈 IMMAGINE più PICCOLA (era 80%) */
+    max-height: 80%;        /* 👈 IMMAGINE più PICCOLA (era 80%) */
     object-fit: contain;
 }
 
