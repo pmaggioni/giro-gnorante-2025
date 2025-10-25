@@ -1,10 +1,10 @@
-# 🏍️ Giro Gnorante 2025
+# Giro Gnorante 2025
 
-**Sito ufficiale del viaggio in moto dei Glignoranti ladomenica**
-*27 Giugno - 4 Luglio 2025 | Italia 🇮🇹 Croazia 🇭🇷 Bosnia 🇧🇦*
+Il sito ufficiale del nostro viaggio in moto attraverso 4 nazioni.
 
-## 🌐 Live Website
+[Viaggio Gnorante 2025](http://bit.ly/47qMhdo)
 
-Il sito è disponibile su: **https://[tuo-username].github.io/giro-gnorante-2025**
-
-## 📁 Struttura del Progetto
+## Il Viaggio
+- 8 giorni di avventura
+- 4 nazioni: Italia, Slovenia, Croazia, Bosnia
+- ~2.200 km di emozioni
