@@ -49,8 +49,8 @@ body {
 }
 
 .logo-container {
-    width: 200px;           /* Aumentato da 150px a 200px */
-    height: 200px;          /* Aumentato da 150px a 200px */
+    width: 250px;           /* Aumentato da 150px a 200px */
+    height: 250px;          /* Aumentato da 150px a 200px */
     background: white;
     border-radius: 50%;
     margin: 0 auto 30px;
