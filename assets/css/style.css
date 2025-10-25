@@ -49,8 +49,8 @@ body {
 }
 
 .logo-container {
-    width: 500px;           /* Aumentato da 150px a 200px */
-    height: 500px;          /* Aumentato da 150px a 200px */
+    width: 300px;           /* Aumentato da 150px a 200px */
+    height: 300px;          /* Aumentato da 150px a 200px */
     background: white;
     border-radius: 50%;
     margin: 0 auto 30px;
@@ -64,8 +64,8 @@ body {
 }
 
 .logo-image {
-    max-width: 80%;         /* Aumentato da 80% a 85% */
-    max-height: 80%;        /* Aumentato da 80% a 85% */
+    max-width: 90%;         /* Aumentato da 80% a 85% */
+    max-height: 90%;        /* Aumentato da 80% a 85% */
     object-fit: contain;
 }
 
