@@ -1,6 +1,6 @@
 # 🏍️ Giro Gnorante 2025
 
-**Sito ufficiale del viaggio in moto dei Glignoranti Ladomenica**
+**Sito ufficiale del viaggio in moto dei Glignoranti ladomenica**
 *27 Giugno - 4 Luglio 2025 | Italia 🇮🇹 Croazia 🇭🇷 Bosnia 🇧🇦*
 
 ## 🌐 Live Website
