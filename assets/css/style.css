@@ -665,3 +665,25 @@ body {
         font-size: 1.4em;
     }
 }
+/* Logo Styles */
+.logo-image {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1); /* Per logo bianco */
+}
+
+.footer-logo-image {
+    height: 60px;
+    width: auto;
+    opacity: 0.8;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .logo-image {
+        height: 60px;
+    }
+    .footer-logo-image {
+        height: 50px;
+    }
+}
