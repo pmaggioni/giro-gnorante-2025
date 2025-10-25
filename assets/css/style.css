@@ -49,23 +49,23 @@ body {
 }
 
 .logo-container {
-    width: 300px;           /* Aumentato da 150px a 200px */
-    height: 300px;          /* Aumentato da 150px a 200px */
-    background: red !important;  /* 👈 TEMPORANEO per test */
+    width: 300px;           /* 👈 CERCHIO più grande */
+    height: 300px;          /* 👈 CERCHIO più grande */
+    background: white;
     border-radius: 50%;
     margin: 0 auto 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    border: 5px solid var(--accent);
+    border: 8px solid var(--accent);  /* 👈 BORDO più spesso */
     position: relative;
     z-index: 2;
 }
 
 .logo-image {
-    max-width: 70%;         /* Aumentato da 80% a 85% */
-    max-height: 70%;        /* Aumentato da 80% a 85% */
+    max-width: 50%;         /* 👈 IMMAGINE più PICCOLA (era 80%) */
+    max-height: 50%;        /* 👈 IMMAGINE più PICCOLA (era 80%) */
     object-fit: contain;
 }
 
