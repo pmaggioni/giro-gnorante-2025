@@ -64,8 +64,8 @@ body {
 }
 
 .logo-image {
-    max-width: 90%;         /* Aumentato da 80% a 85% */
-    max-height: 90%;        /* Aumentato da 80% a 85% */
+    max-width: 70%;         /* Aumentato da 80% a 85% */
+    max-height: 70%;        /* Aumentato da 80% a 85% */
     object-fit: contain;
 }
 
