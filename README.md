@@ -1,4 +1,4 @@
-# Giro Gnorante 2025
+# Giro Gnorante 2026
 
 Il sito ufficiale del nostro viaggio in moto attraverso 4 nazioni.
 
