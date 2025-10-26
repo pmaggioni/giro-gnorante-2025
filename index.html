@@ -33,7 +33,7 @@
             <button class="nav-btn active" data-target="overview">📊 Panoramica</button>
             <button class="nav-btn" data-target="tappe">🗺️ Tappe</button>
             <button class="nav-btn" data-target="mappa">🌍 Mappa</button>
-            <button class="nav-btn" data-target="downloads">📥 Download</button>
+            <button class="nav-btn" data-target="downloads">📥 Download</button> <!-- QUI! -->
             <button class="nav-btn" data-target="partecipanti">👥 Partecipanti</button>
             <button class="nav-btn" data-target="info">ℹ️ Info</button>
         </div>
@@ -145,7 +145,7 @@
                     <div class="tappa-content">
                         <div class="tappa-desc">
                             <p><strong>Il gruppo lascia l'Italia e varca il confine sloveno.</strong> Attraverso le verdi vallate delle Alpi Giulie, si prosegue verso la Croazia.</p>
-                            <p>Una tappa da godersi curva dopo curva, tra panorami montani che lasciano il posto al profumo di mare. Serata tranquilla a Prizna, onde l'avventura balcanica inizia davvero. 🌄➡️🌅</p>
+                            <p>Una tappa da godersi curva dopo curva, tra panorami montani che lasciano il posto al profumo di mare. Serata tranquilla a Prizna, dove l'avventura balcanica inizia davvero. 🌄➡️🌅</p>
                             <div id="mappa-tappa-2" class="mappa-mini">Caricamento mappa...</div>
                             <div class="tappa-links">
                                 <a href="https://www.google.com/maps/dir/Portogruaro/Prizna,+Croazia" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
@@ -492,10 +492,10 @@
         </div>
     </section>
 
-    <!-- Downloads Section -->
+      <!-- Downloads Section -->
     <section id="downloads" class="section">
         <div class="container">
-            <h2 class="section-title">📥 Download</h2>
+            <h2 class="section-title">📥 Download Tracce</h2>
             
             <!-- File GPX -->
             <div class="downloads-category">
@@ -630,62 +630,34 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- CHECKLIST COMPLETA -->
-            <div class="downloads-category">
-                <h3>📋 Checklist Completa</h3>
-                <div class="downloads-grid">
-                    <div class="download-card">
-                        <div class="download-icon">📊</div>
-                        <h4>Checklist Excel</h4>
-                        <p>Lista completa per il viaggio</p>
-                        <a href="assets/downloads/checklist/Checklist_Completa_Giro_Gnorante.xlsx" download class="download-btn">
-                            📥 Scarica Excel
-                        </a>
-                    </div>
-                    <div class="download-card">
-                        <div class="download-icon">📝</div>
-                        <h4>Checklist PDF</h4>
-                        <p>Versione stampabile</p>
-                        <a href="assets/downloads/checklist/Checklist_Completa_Giro_Gnorante.pdf" download class="download-btn">
-                            📥 Scarica PDF
-                        </a>
-                    </div>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Glignorantiladomenica" class="footer-logo-image">
                 </div>
-                
-                <!-- Anteprima Checklist -->
-                <div class="checklist-preview">
-                    <h4>📝 Anteprima Checklist Completa</h4>
-                    <div class="checklist-preview-grid">
-                        <div class="preview-category">
-                            <h5>🏍️ Abbigliamento Moto</h5>
-                            <ul>
-                                <li>☐ Casco</li>
-                                <li>☐ Giacca moto</li>
-                                <li>☐ Pantaloni moto</li>
-                                <li>☐ Stivali</li>
-                                <li>☐ Guanti</li>
-                                <li>☐ Antipioggia</li>
-                                <li>☐ Paraschiena</li>
-                            </ul>
-                        </div>
-                        <div class="preview-category">
-                            <h5>👕 Abbigliamento Personale</h5>
-                            <ul>
-                                <li>☐ Pantaloni lunghi/corti</li>
-                                <li>☐ Magliette</li>
-                                <li>☐ Costume da bagno</li>
-                                <li>☐ Scarpe ginnastica</li>
-                                <li>☐ Felpa</li>
-                            </ul>
-                        </div>
-                        <div class="preview-category">
-                            <h5>🧴 Cura Personale</h5>
-                            <ul>
-                                <li>☐ Dentifricio & Spazzolino</li>
-                                <li>☐ Shampoo & Bagnoschiuma</li>
-                                <li>☐ Crema solare</li>
-                                <li>☐ Kit barba</li>
-                            </ul>
-                        </div>
-                        <div class="pre
+                <div class="footer-quote">
+                    "Ride hard. Laugh louder. Live free."
+                </div>
+                <div class="footer-social">
+                    <span class="social-hashtag">#GiroGnorante2025</span>
+                    <span class="social-hashtag">#Glignorantiladomenica</span>
+                    <span class="social-hashtag">#4NazioniInMoto</span>
+                </div>
+                <div class="footer-signature">
+                    Glignorantiladomenica - Since 2007<br>
+                    <em>Ogni viaggio lascia un segno, ma quelli fatti insieme diventano leggenda.</em>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AGGIUNGI QUESTE DUE RIGHE -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
