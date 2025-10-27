@@ -94,7 +94,7 @@ function initMappaCompleta() {
         }).addTo(mappaCompleta);
 
         // Carica tutte le tappe GPX in sequenza
-        for (let i = 1; i <= 6; i++) {
+        for (let i = 1; i <= 7; i++) {
             let gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
             if (filesGpx[i]) {
                 new L.GPX(gpxUrl, {
