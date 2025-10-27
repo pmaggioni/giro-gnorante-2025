@@ -16,7 +16,7 @@ let mappeInizializzate = {
 const filesGpx = [
     "", // Indice 0 vuoto
     "01_TORINO_PORTOGRUARO.gpx",
-    "02_PORTOGURARO_PRIZNA.gpx",
+    "02_PORTOGRUARO_PRIZNA.gpx",
     "03_PRIZNA_MARULOVO.gpx", 
     "04_MARULOVO_MOSTAR.gpx",
     "05_MOSTAR_DUBROVNIK.gpx",
