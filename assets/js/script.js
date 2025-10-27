@@ -64,9 +64,6 @@ function aggiornaMappeSezione(sectionId) {
     }
 }
 
-
-
-
 // -------- INTEGRAZIONE GPX --------
 
 // Lista dei file GPX per tappe (indice parte da 1)
@@ -156,8 +153,8 @@ function initMiniMappa(numeroTappa) {
             maxZoom: 16
         }).addTo(miniMap);
        // TEST: usa questa riga per provare un GPX online funzionante
-       const gpxUrl = "https://raw.githubusercontent.com/gps-touring/sample-gpx/main/track-good.gpx";
-        // Originale :const gpxUrl = "assets/downloads/gpx/" + filesGpx[numeroTappa];
+      //  const gpxUrl = "https://raw.githubusercontent.com/gps-touring/sample-gpx/main/track-good.gpx";
+       const gpxUrl = "assets/downloads/gpx/" + filesGpx[numeroTappa];
         if (filesGpx[numeroTappa]) {
             new L.GPX(gpxUrl, {
                 async: true,
