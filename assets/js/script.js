@@ -12,7 +12,7 @@ let mappeInizializzate = {
     info: false
 };
 
-// Configurazione GPX - COLORI CORRETTI
+// Configurazione GPX - 8 FILE AGGIORNATI
 const filesGpx = [
     "", // Indice 0 vuoto
     "01_TORINO_PORTOGRUARO.gpx",
@@ -21,20 +21,26 @@ const filesGpx = [
     "04_MARULOVO_MOSTAR.gpx",
     "05_MOSTAR_DUBROVNIK.gpx",
     "06_DUBROVNIK_SPALATO.gpx",
-    "07_Percorso_Completo.gpx"
+    "07_SPALATO_ANCONA_TORINO.gpx",
+    "08_PERCORSO_COMPLETO.gpx"
 ];
 
-// COLORI CORRETTI: 
-// - Tappe 1-6: Andata e Ritorno normale (blu/arancione)
-// - Solo Tappa 7: Dubrovnik → Torino via Spalato e Ancona (GIALLO)
+// COLORI DIVERSI PER OGNI TRACCIA + GIALLO PER COMPLETO
 const coloriTappe = [
-    '#667eea', // Tappa 1 - ANDATA
-    '#667eea', // Tappa 2 - ANDATA  
-    '#667eea', // Tappa 3 - ANDATA
-    '#667eea', // Tappa 4 - ANDATA
-    '#667eea', // Tappa 5 - ANDATA
-    '#fc4a1a', // Tappa 6 - RITORNO (Dubrovnik → Spalato)
-    '#ffd93d'  // Tappa 7 - PERCORSO COMPLETO GIALLO (Dubrovnik → Torino via Spalato e Ancona)
+    '#667eea', // Tappa 1 - BLU (Torino → Portogruaro)
+    '#4ecdc4', // Tappa 2 - TURCHESE (Portogruaro → Prizna)
+    '#45b7d1', // Tappa 3 - AZZURRO (Prizna → Marulovo)
+    '#96ceb4', // Tappa 4 - VERDE CHIARO (Marulovo → Mostar)
+    '#feca57', // Tappa 5 - ARANCIONE CHIARO (Mostar → Dubrovnik)
+    '#ff9ff3', // Tappa 6 - ROSA (Dubrovnik → Spalato)
+    '#ff6b6b', // Tappa 7 - ROSSO (Spalato → Ancona → Torino)
+    '#ffd93d'  // Tappa 8 - GIALLO (PERCORSO COMPLETO)
+];
+
+// Nomi colori per debug
+const nomiColori = [
+    "BLU", "TURCHESE", "AZZURRO", "VERDE CHIARO", 
+    "ARANCIONE CHIARO", "ROSA", "ROSSO", "GIALLO"
 ];
 
 // Gestione Navigazione
@@ -91,7 +97,7 @@ function aggiornaMappeSezione(sectionId) {
     }
 }
 
-// MAPPA COMPLETA - Versione Migliorata
+// MAPPA COMPLETA - Versione con COLORI DIVERSI
 function initMappaCompleta() {
     if (mappaCompleta || typeof L === 'undefined') return;
 
@@ -125,36 +131,36 @@ function initMappaCompleta() {
         let bounds = null;
         let tracceCaricate = 0;
 
-        // Carica tutte le tracce GPX con COLORI CORRETTI
-        for (let i = 1; i <= 7; i++) {
+        // Carica tutte le 8 tracce GPX con COLORI DIVERSI
+        for (let i = 1; i <= 8; i++) {
             const gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
             
             if (!filesGpx[i]) continue;
 
-            console.log(`📁 Caricamento traccia ${i}: ${filesGpx[i]} - Colore: ${coloriTappe[i-1]}`);
+            console.log(`📁 Caricamento traccia ${i}: ${filesGpx[i]} - Colore: ${nomiColori[i-1]}`);
 
             try {
                 const gpxLayer = new L.GPX(gpxUrl, {
                     async: true,
                     polyline_options: {
                         color: coloriTappe[i-1],
-                        weight: i === 7 ? 6 : 4, // Più spessa per il percorso giallo
-                        opacity: i === 7 ? 0.9 : 0.85,
+                        weight: i === 8 ? 8 : 5, // Più spessa per il percorso GIALLO (8)
+                        opacity: i === 8 ? 0.9 : 0.8,
                         lineCap: 'round'
                     },
                     marker_options: { 
                         startIconUrl: null, 
                         endIconUrl: null, 
                         shadowUrl: null,
-                        wptIconUrls: null // DISABILITA COMPLETAMENTE le icone waypoint
+                        wptIconUrls: null
                     }
                 }).on('loaded', function(e) {
                     tracceCaricate++;
-                    const descrizione = i === 7 ? 
-                        "PERCORSO GIALLO: Dubrovnik → Torino via Spalato e Ancona" :
+                    const descrizione = i === 8 ? 
+                        "🎯 PERCORSO COMPLETO GIALLO" :
                         `Tappa ${i}: ${(e.target.getDistance() / 1000).toFixed(1)} km`;
                     
-                    console.log(`✅ ${descrizione} - Colore: ${coloriTappe[i-1]}`);
+                    console.log(`✅ ${descrizione} - ${nomiColori[i-1]}`);
                     
                     // Aggiorna bounds per fit
                     if (!bounds) {
@@ -164,9 +170,9 @@ function initMappaCompleta() {
                     }
                     
                     // Fit bounds quando tutte le tracce sono caricate
-                    if (tracceCaricate >= 7 && bounds.isValid()) {
+                    if (tracceCaricate >= 8 && bounds.isValid()) {
                         mappaCompleta.fitBounds(bounds, { padding: [30, 30] });
-                        console.log('🎯 Mappa adattata a tutte le tracce');
+                        console.log('🎯 Mappa adattata a tutte le 8 tracce');
                     }
                 }).on('error', function(e) {
                     console.error(`❌ Errore traccia ${i}:`, e);
@@ -194,11 +200,11 @@ function initMappaCompleta() {
     }
 }
 
-// MINI-MAPPE TAPPE - COLORI CORRETTI per tappe singole
+// MINI-MAPPE TAPPE - COLORI DIVERSI per ogni tappa
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
     
-    for (let i = 1; i <= 6; i++) { // Solo tappe 1-6, non il percorso completo giallo
+    for (let i = 1; i <= 7; i++) { // Solo tappe 1-7, non il percorso completo giallo (8)
         const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
         if (mappaDiv && mappaDiv.offsetParent !== null) {
             initMiniMappa(i);
@@ -236,19 +242,18 @@ function initMiniMappa(numeroTappa) {
                     startIconUrl: null,
                     endIconUrl: null,
                     shadowUrl: null,
-                    wptIconUrls: null // DISABILITA COMPLETAMENTE le icone waypoint
+                    wptIconUrls: null
                 },
                 polyline_options: {
-                    // COLORI CORRETTI: Tappe 1-5 blu, Tappa 6 arancione
-                    color: numeroTappa <= 5 ? "#667eea" : "#fc4a1a",
-                    weight: 4,
+                    // COLORI DIVERSI per ogni tappa
+                    color: coloriTappe[numeroTappa-1],
+                    weight: 5,
                     opacity: 0.9,
                     lineCap: 'round'
                 }
             }).on('loaded', function(e) {
                 miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
-                const tipo = numeroTappa <= 5 ? 'ANDATA (blu)' : 'RITORNO (arancione)';
-                console.log(`✅ Mini-mappa ${numeroTappa} - ${tipo}`);
+                console.log(`✅ Mini-mappa ${numeroTappa} - ${nomiColori[numeroTappa-1]}`);
             }).on('error', function(e) {
                 console.error(`❌ Errore mini-mappa ${numeroTappa}:`, e);
             }).addTo(miniMap);
