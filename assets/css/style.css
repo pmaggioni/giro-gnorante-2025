@@ -1047,3 +1047,56 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- HAMBURGER MENU MOBILE RESPONSIVE --- */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 2.2em;
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    z-index: 1500;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0 10px 20px 10px;
+        background: var(--primary);
+        border-radius: 0 0 20px 20px;
+        width: 100vw;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+    }
+
+    .nav-container.show {
+        display: flex;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: left;
+        padding: 12px 40px 12px 20px;
+        border-radius: 6px;
+        margin: 0;
+    }
+}
+
