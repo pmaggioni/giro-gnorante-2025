@@ -12,7 +12,7 @@ let mappeInizializzate = {
     info: false
 };
 
-// Configurazione GPX
+// Configurazione GPX - COLORI CORRETTI
 const filesGpx = [
     "", // Indice 0 vuoto
     "01_TORINO_PORTOGRUARO.gpx",
@@ -24,7 +24,16 @@ const filesGpx = [
     "07_Percorso_Completo.gpx"
 ];
 
-const coloriTappe = ['#667eea', '#667eea', '#667eea', '#667eea', '#667eea', '#fc4a1a', '#ffd93d'];
+// COLORI CORRETTI: Andata blu, Ritorno arancione, Percorso Completo giallo
+const coloriTappe = [
+    '#667eea', // Tappa 1 - ANDATA
+    '#667eea', // Tappa 2 - ANDATA  
+    '#667eea', // Tappa 3 - ANDATA
+    '#667eea', // Tappa 4 - ANDATA
+    '#667eea', // Tappa 5 - ANDATA
+    '#fc4a1a', // Tappa 6 - RITORNO
+    '#ffd93d'  // Tappa 7 - PERCORSO COMPLETO
+];
 
 // Gestione Navigazione
 function showSection(sectionId, element) {
@@ -114,21 +123,21 @@ function initMappaCompleta() {
         let bounds = null;
         let tracceCaricate = 0;
 
-        // Carica tutte le tracce GPX
+        // Carica tutte le tracce GPX con COLORI CORRETTI
         for (let i = 1; i <= 7; i++) {
             const gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
             
             if (!filesGpx[i]) continue;
 
-            console.log(`📁 Caricamento traccia ${i}: ${filesGpx[i]}`);
+            console.log(`📁 Caricamento traccia ${i}: ${filesGpx[i]} - Colore: ${coloriTappe[i-1]}`);
 
             try {
                 const gpxLayer = new L.GPX(gpxUrl, {
                     async: true,
                     polyline_options: {
                         color: coloriTappe[i-1] || '#000000',
-                        weight: i === 7 ? 6 : 4, // Più spessa per il percorso completo
-                        opacity: i === 7 ? 0.7 : 0.85,
+                        weight: i === 7 ? 5 : 4, // Più spessa per il percorso completo
+                        opacity: i === 7 ? 0.8 : 0.85,
                         lineCap: 'round'
                     },
                     marker_options: { 
@@ -138,7 +147,7 @@ function initMappaCompleta() {
                     }
                 }).on('loaded', function(e) {
                     tracceCaricate++;
-                    console.log(`✅ Tracce ${i} caricata: ${(e.target.getDistance() / 1000).toFixed(1)} km`);
+                    console.log(`✅ Traccia ${i} caricata: ${(e.target.getDistance() / 1000).toFixed(1)} km - Colore: ${coloriTappe[i-1]}`);
                     
                     // Aggiorna bounds per fit
                     if (!bounds) {
@@ -178,7 +187,7 @@ function initMappaCompleta() {
     }
 }
 
-// MINI-MAPPE TAPPE
+// MINI-MAPPE TAPPE - COLORI CORRETTI per tappe singole
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
     
@@ -222,6 +231,7 @@ function initMiniMappa(numeroTappa) {
                     shadowUrl: null
                 },
                 polyline_options: {
+                    // COLORI CORRETTI: Tappe 1-5 blu, Tappa 6 arancione
                     color: numeroTappa <= 5 ? "#667eea" : "#fc4a1a",
                     weight: 4,
                     opacity: 0.9,
@@ -229,7 +239,7 @@ function initMiniMappa(numeroTappa) {
                 }
             }).on('loaded', function(e) {
                 miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
-                console.log(`✅ Mini-mappa ${numeroTappa} caricata`);
+                console.log(`✅ Mini-mappa ${numeroTappa} caricata - Colore: ${numeroTappa <= 5 ? 'blu' : 'arancione'}`);
             }).on('error', function(e) {
                 console.error(`❌ Errore mini-mappa ${numeroTappa}:`, e);
             }).addTo(miniMap);
@@ -289,13 +299,3 @@ window.addEventListener('resize', function() {
         setTimeout(() => mappaCompleta.invalidateSize(), 250);
     }
 });
-
-// Utility functions
-function mostraErroreMappa(elementId, messaggio) {
-    const element = document.getElementById(elementId);
-    if (element) {
-        element.innerHTML = `<div style="color: #dc3545; text-align: center; padding: 20px;">
-            <strong>❌ ${messaggio}</strong>
-        </div>`;
-    }
-}
