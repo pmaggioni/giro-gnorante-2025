@@ -1,4 +1,3 @@
-
 :root {
     --primary: #1a1a1a;
     --secondary: #ff6b6b;
@@ -9,8 +8,6 @@
     --ritorno: #fc4a1a;
     --success: #4ecdc4;
 }
-
-
 
 /* Base Styles */
 .nav {
@@ -51,39 +48,38 @@
 }
 
 /* Responsive menu for mobile devices with right aligned hamburger */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 2.2em;
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    z-index: 1500;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .nav-container {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
         padding: 0 10px;
-    }
-
-    .nav-btn {
-        width: 100%;
-        text-align: left;
-        padding: 12px 40px 12px 20px; /* left padding for text, right padding for hamburger */
-        border-radius: 6px;
-    }
-
-    .nav-btn::after {
-        content: "";
+        background: var(--primary);
+        border-radius: 0 0 20px 20px;
+        width: 94vw;
         position: absolute;
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
-        width: 20px;
-        height: 14px;
-        border-top: 2px solid var(--accent);
-        border-bottom: 2px solid var(--accent);
-        box-shadow:
-            0 6px 0 var(--accent);
-        pointer-events: none;
+        top: 64px; /* o quanto è alto il tuo header */
+        right: 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.09);
     }
-
-    .nav-btn.active {
-        background: var(--accent);
-        color: var(--primary);
-        box-shadow: none;
+    .nav-container.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
     }
 }
