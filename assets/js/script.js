@@ -12,11 +12,11 @@ let mappeInizializzate = {
     info: false
 };
 
-// Configurazione GPX - 8 FILE AGGIORNATI
+// Configurazione GPX - NOMI CORRETTI
 const filesGpx = [
     "", // Indice 0 vuoto
     "01_TORINO_PORTOGRUARO.gpx",
-    "02_PORTOGRUARO_PRIZNA.gpx",
+    "02_PORTOGURARO_PRIZNA.gpx",
     "03_PRIZNA_MARULOVO.gpx", 
     "04_MARULOVO_MOSTAR.gpx",
     "05_MOSTAR_DUBROVNIK.gpx",
@@ -27,13 +27,13 @@ const filesGpx = [
 
 // COLORI DIVERSI PER OGNI TRACCIA + GIALLO PER COMPLETO
 const coloriTappe = [
-    '#667eea', // Tappa 1 - BLU (Torino → Portogruaro)
-    '#4ecdc4', // Tappa 2 - TURCHESE (Portogruaro → Prizna)
-    '#45b7d1', // Tappa 3 - AZZURRO (Prizna → Marulovo)
-    '#96ceb4', // Tappa 4 - VERDE CHIARO (Marulovo → Mostar)
-    '#feca57', // Tappa 5 - ARANCIONE CHIARO (Mostar → Dubrovnik)
-    '#ff9ff3', // Tappa 6 - ROSA (Dubrovnik → Spalato)
-    '#ff6b6b', // Tappa 7 - ROSSO (Spalato → Ancona → Torino)
+    '#667eea', // Tappa 1 - BLU
+    '#4ecdc4', // Tappa 2 - TURCHESE
+    '#45b7d1', // Tappa 3 - AZZURRO
+    '#96ceb4', // Tappa 4 - VERDE CHIARO
+    '#feca57', // Tappa 5 - ARANCIONE CHIARO
+    '#ff9ff3', // Tappa 6 - ROSA
+    '#ff6b6b', // Tappa 7 - ROSSO
     '#ffd93d'  // Tappa 8 - GIALLO (PERCORSO COMPLETO)
 ];
 
@@ -97,7 +97,7 @@ function aggiornaMappeSezione(sectionId) {
     }
 }
 
-// MAPPA COMPLETA - Versione con COLORI DIVERSI
+// MAPPA COMPLETA - Versione SICURA
 function initMappaCompleta() {
     if (mappaCompleta || typeof L === 'undefined') return;
 
@@ -130,21 +130,22 @@ function initMappaCompleta() {
 
         let bounds = null;
         let tracceCaricate = 0;
+        const tracceTotali = filesGpx.length - 1; // -1 per l'indice 0 vuoto
 
-        // Carica tutte le 8 tracce GPX con COLORI DIVERSI
+        // Carica tutte le tracce GPX con GESTIONE ERRORI COMPLETA
         for (let i = 1; i <= 8; i++) {
             const gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
             
             if (!filesGpx[i]) continue;
 
-            console.log(`📁 Caricamento traccia ${i}: ${filesGpx[i]} - Colore: ${nomiColori[i-1]}`);
+            console.log(`📁 Tentativo caricamento traccia ${i}: ${filesGpx[i]}`);
 
             try {
                 const gpxLayer = new L.GPX(gpxUrl, {
                     async: true,
                     polyline_options: {
                         color: coloriTappe[i-1],
-                        weight: i === 8 ? 8 : 5, // Più spessa per il percorso GIALLO (8)
+                        weight: i === 8 ? 8 : 5,
                         opacity: i === 8 ? 0.9 : 0.8,
                         lineCap: 'round'
                     },
@@ -154,42 +155,75 @@ function initMappaCompleta() {
                         shadowUrl: null,
                         wptIconUrls: null
                     }
-                }).on('loaded', function(e) {
+                });
+
+                // Gestione evento loaded con CONTROLLO SICURO
+                gpxLayer.on('loaded', function(e) {
                     tracceCaricate++;
-                    const descrizione = i === 8 ? 
-                        "🎯 PERCORSO COMPLETO GIALLO" :
-                        `Tappa ${i}: ${(e.target.getDistance() / 1000).toFixed(1)} km`;
                     
-                    console.log(`✅ ${descrizione} - ${nomiColori[i-1]}`);
-                    
-                    // Aggiorna bounds per fit
-                    if (!bounds) {
-                        bounds = e.target.getBounds();
-                    } else {
-                        bounds.extend(e.target.getBounds());
+                    // CONTROLLO SICURO per evitare l'errore getDistance
+                    let messaggio = '';
+                    try {
+                        if (e.target && e.target.getDistance && typeof e.target.getDistance === 'function') {
+                            const distanza = (e.target.getDistance() / 1000).toFixed(1);
+                            messaggio = i === 8 ? 
+                                `🎯 PERCORSO COMPLETO GIALLO - ${distanza} km` :
+                                `Tappa ${i}: ${distanza} km`;
+                        } else {
+                            messaggio = i === 8 ? 
+                                "🎯 PERCORSO COMPLETO GIALLO" :
+                                `Tappa ${i} caricata`;
+                        }
+                    } catch (error) {
+                        messaggio = i === 8 ? 
+                            "🎯 PERCORSO COMPLETO GIALLO (distanza non disponibile)" :
+                            `Tappa ${i} caricata (distanza non disponibile)`;
                     }
                     
-                    // Fit bounds quando tutte le tracce sono caricate
-                    if (tracceCaricate >= 8 && bounds.isValid()) {
-                        mappaCompleta.fitBounds(bounds, { padding: [30, 30] });
-                        console.log('🎯 Mappa adattata a tutte le 8 tracce');
+                    console.log(`✅ ${messaggio} - ${nomiColori[i-1]}`);
+                    
+                    // Aggiorna bounds per fit (con controllo sicurezza)
+                    try {
+                        if (e.target && e.target.getBounds && typeof e.target.getBounds === 'function') {
+                            const layerBounds = e.target.getBounds();
+                            if (layerBounds && layerBounds.isValid && layerBounds.isValid()) {
+                                if (!bounds) {
+                                    bounds = layerBounds;
+                                } else {
+                                    bounds.extend(layerBounds);
+                                }
+                            }
+                        }
+                    } catch (boundsError) {
+                        console.warn(`⚠️ Impossibile ottenere bounds traccia ${i}`);
                     }
-                }).on('error', function(e) {
-                    console.error(`❌ Errore traccia ${i}:`, e);
-                }).addTo(mappaCompleta);
+                });
+
+                // Gestione errore
+                gpxLayer.on('error', function(e) {
+                    tracceCaricate++;
+                    console.warn(`⚠️ Traccia ${i} non caricata: ${filesGpx[i]}`);
+                });
+
+                // Aggiungi alla mappa
+                gpxLayer.addTo(mappaCompleta);
                 
             } catch (error) {
-                console.error(`💥 Errore creazione layer ${i}:`, error);
+                tracceCaricate++;
+                console.warn(`⚠️ Errore creazione layer ${i}:`, error);
             }
         }
 
-        // Fallback per vista iniziale
+        // Fit bounds dopo caricamento (con timeout per sicurezza)
         setTimeout(() => {
-            if (!bounds || !bounds.isValid()) {
+            if (bounds && bounds.isValid && bounds.isValid()) {
+                mappaCompleta.fitBounds(bounds, { padding: [30, 30] });
+                console.log(`🎯 Mappa adattata a ${tracceCaricate}/${tracceTotali} tracce`);
+            } else {
                 mappaCompleta.setView([44.5, 14.5], 7);
                 console.log('📍 Usando vista default');
             }
-        }, 5000);
+        }, 3000);
 
     } catch (error) {
         console.error('💥 Errore critico mappa completa:', error);
@@ -204,7 +238,7 @@ function initMappaCompleta() {
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
     
-    for (let i = 1; i <= 7; i++) { // Solo tappe 1-7, non il percorso completo giallo (8)
+    for (let i = 1; i <= 7; i++) { // Solo tappe 1-7
         const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
         if (mappaDiv && mappaDiv.offsetParent !== null) {
             initMiniMappa(i);
@@ -245,17 +279,20 @@ function initMiniMappa(numeroTappa) {
                     wptIconUrls: null
                 },
                 polyline_options: {
-                    // COLORI DIVERSI per ogni tappa
                     color: coloriTappe[numeroTappa-1],
                     weight: 5,
                     opacity: 0.9,
                     lineCap: 'round'
                 }
             }).on('loaded', function(e) {
-                miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
-                console.log(`✅ Mini-mappa ${numeroTappa} - ${nomiColori[numeroTappa-1]}`);
+                try {
+                    miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
+                    console.log(`✅ Mini-mappa ${numeroTappa} - ${nomiColori[numeroTappa-1]}`);
+                } catch (boundsError) {
+                    console.warn(`⚠️ Impossibile adattare mini-mappa ${numeroTappa}`);
+                }
             }).on('error', function(e) {
-                console.error(`❌ Errore mini-mappa ${numeroTappa}:`, e);
+                console.warn(`⚠️ Errore mini-mappa ${numeroTappa}`);
             }).addTo(miniMap);
         }
 
