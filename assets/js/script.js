@@ -64,6 +64,9 @@ function aggiornaMappeSezione(sectionId) {
     }
 }
 
+
+
+
 // -------- INTEGRAZIONE GPX --------
 
 // Lista dei file GPX per tappe (indice parte da 1)
@@ -93,14 +96,17 @@ function initMappaCompleta() {
             maxZoom: 18
         }).addTo(mappaCompleta);
 
-        // Carica tutte le tappe GPX in sequenza
+        // Colori per le tracce: personalizza l'ultimo colore per la traccia completa
+        const coloriTappe = ['#667eea', '#667eea', '#667eea', '#667eea', '#667eea', '#fc4a1a', '#ffd93d'];
+
+        // Carica tutte le tappe GPX inclusa la n.7
         for (let i = 1; i <= 7; i++) {
             let gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
             if (filesGpx[i]) {
                 new L.GPX(gpxUrl, {
                     async: true,
                     polyline_options: {
-                        color: i <= 5 ? '#667eea' : '#fc4a1a',
+                        color: coloriTappe[i-1] || '#000', // default nero se qualcosa va storto
                         weight: 4,
                         opacity: 0.85
                     },
@@ -111,12 +117,14 @@ function initMappaCompleta() {
             }
         }
 
-        console.log('✓ Mappa completa inizializzata con tracce GPX');
+        console.log('✓ Mappa completa inizializzata con tutte le tracce GPX');
 
     } catch (error) {
         console.error('Errore mappa completa:', error);
     }
 }
+
+
 
 // MAPPE TAPPE - Solo quando serve
 function initMappeTappe() {
