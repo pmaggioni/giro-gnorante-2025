@@ -1,5 +1,5 @@
-// VERSIONE OTTIMIZZATA - Mappe caricate solo quando servono
-console.log('Script JavaScript caricato!');
+// GIRO GNORANTE 2025 - Script Mappe Ottimizzato
+console.log('🏍️ Giro Gnorante 2025 - Script caricato!');
 
 // Variabili globali
 let mappaCompleta = null;
@@ -12,17 +12,33 @@ let mappeInizializzate = {
     info: false
 };
 
+// Configurazione GPX
+const filesGpx = [
+    "", // Indice 0 vuoto
+    "01_TORINO_PORTOGRUARO.gpx",
+    "02_PORTOGRUARO_PRIZNA.gpx",
+    "03_PRIZNA_MARULOVO.gpx", 
+    "04_MARULOVO_MOSTAR.gpx",
+    "05_MOSTAR_DUBROVNIK.gpx",
+    "06_DUBROVNIK_SPALATO.gpx",
+    "07_Percorso_Completo.gpx"
+];
+
+const coloriTappe = ['#667eea', '#667eea', '#667eea', '#667eea', '#667eea', '#fc4a1a', '#ffd93d'];
+
+// Gestione Navigazione
 function showSection(sectionId, element) {
     // Nascondi tutte le sezioni
     document.querySelectorAll('.section').forEach(section => {
         section.style.display = 'none';
     });
 
-    // Mostra la sezione cliccata
+    // Mostra sezione cliccata
     const target = document.getElementById(sectionId);
     if (target) {
         target.style.display = 'block';
-        // Inizializza le mappe SOLO quando la sezione diventa visibile
+        
+        // Inizializza mappe solo quando necessario
         if (!mappeInizializzate[sectionId]) {
             setTimeout(() => initMapsSezione(sectionId), 100);
             mappeInizializzate[sectionId] = true;
@@ -31,7 +47,7 @@ function showSection(sectionId, element) {
         }
     }
 
-    // Aggiorna bottoni attivi
+    // Aggiorna stati bottoni
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.classList.remove('active');
     });
@@ -59,103 +75,145 @@ function aggiornaMappeSezione(sectionId) {
             }
             break;
         case 'tappe':
-            // Le mini-mappe si aggiornano automaticamente
+            // Le mini-mappe si auto-aggiornano
             break;
     }
 }
 
-// -------- INTEGRAZIONE GPX --------
-
-// Lista dei file GPX per tappe (indice parte da 1)
-const filesGpx = [
-  "", // dummy per 0
-  "01_TORINO_PORTOGRUARO.gpx",
-  "02_PORTOGRUARO_PRIZNA.gpx",
-  "03_PRIZNA_MARULOVO.gpx",
-  "04_MARULOVO_MOSTAR.gpx",
-  "05_MOSTAR_DUBROVNIK.gpx",
-  "06_DUBROVNIK_SPALATO.gpx",
-  "07_Percorso_Completo.gpx"
-];
-
-// MAPPA COMPLETA - ognuna delle tappe caricata via GPX
+// MAPPA COMPLETA - Versione Migliorata
 function initMappaCompleta() {
     if (mappaCompleta || typeof L === 'undefined') return;
 
     try {
+        console.log('🗺️ Inizializzazione mappa completa...');
+        
         const mappaDiv = document.getElementById('mappa-completa');
-        if (!mappaDiv) return;
+        if (!mappaDiv) {
+            console.error('❌ Elemento mappa-completa non trovato');
+            return;
+        }
 
+        // Crea mappa
         mappaCompleta = L.map('mappa-completa').setView([44.5, 14.5], 7);
 
+        // Aggiungi layer mappa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors',
             maxZoom: 18
         }).addTo(mappaCompleta);
 
-        // Colori per le tracce: personalizza l'ultimo colore per la traccia completa
-        const coloriTappe = ['#667eea', '#667eea', '#667eea', '#667eea', '#667eea', '#fc4a1a', '#ffd93d'];
+        console.log('✅ Mappa base creata');
 
-        // Carica tutte le tappe GPX inclusa la n.7
+        // Verifica libreria GPX
+        if (typeof L.GPX === 'undefined') {
+            console.error('❌ Libreria L.GPX non disponibile');
+            mappaDiv.innerHTML = '❌ Errore caricamento mappe';
+            return;
+        }
+
+        let bounds = null;
+        let tracceCaricate = 0;
+
+        // Carica tutte le tracce GPX
         for (let i = 1; i <= 7; i++) {
-            let gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
-            if (filesGpx[i]) {
-                new L.GPX(gpxUrl, {
+            const gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
+            
+            if (!filesGpx[i]) continue;
+
+            console.log(`📁 Caricamento traccia ${i}: ${filesGpx[i]}`);
+
+            try {
+                const gpxLayer = new L.GPX(gpxUrl, {
                     async: true,
                     polyline_options: {
-                        color: coloriTappe[i-1] || '#000', // default nero se qualcosa va storto
-                        weight: 4,
-                        opacity: 0.85
+                        color: coloriTappe[i-1] || '#000000',
+                        weight: i === 7 ? 6 : 4, // Più spessa per il percorso completo
+                        opacity: i === 7 ? 0.7 : 0.85,
+                        lineCap: 'round'
                     },
-                    marker_options: { startIconUrl: null, endIconUrl: null, shadowUrl: null }
+                    marker_options: { 
+                        startIconUrl: null, 
+                        endIconUrl: null, 
+                        shadowUrl: null 
+                    }
                 }).on('loaded', function(e) {
-                    mappaCompleta.fitBounds(e.target.getBounds());
+                    tracceCaricate++;
+                    console.log(`✅ Tracce ${i} caricata: ${(e.target.getDistance() / 1000).toFixed(1)} km`);
+                    
+                    // Aggiorna bounds per fit
+                    if (!bounds) {
+                        bounds = e.target.getBounds();
+                    } else {
+                        bounds.extend(e.target.getBounds());
+                    }
+                    
+                    // Fit bounds quando tutte le tracce sono caricate
+                    if (tracceCaricate >= 6 && bounds.isValid()) {
+                        mappaCompleta.fitBounds(bounds, { padding: [30, 30] });
+                        console.log('🎯 Mappa adattata a tutte le tracce');
+                    }
+                }).on('error', function(e) {
+                    console.error(`❌ Errore traccia ${i}:`, e);
                 }).addTo(mappaCompleta);
+                
+            } catch (error) {
+                console.error(`💥 Errore creazione layer ${i}:`, error);
             }
         }
 
-        console.log('✓ Mappa completa inizializzata con tutte le tracce GPX');
+        // Fallback per vista iniziale
+        setTimeout(() => {
+            if (!bounds || !bounds.isValid()) {
+                mappaCompleta.setView([44.5, 14.5], 7);
+                console.log('📍 Usando vista default');
+            }
+        }, 5000);
 
     } catch (error) {
-        console.error('Errore mappa completa:', error);
+        console.error('💥 Errore critico mappa completa:', error);
+        const mappaDiv = document.getElementById('mappa-completa');
+        if (mappaDiv) {
+            mappaDiv.innerHTML = '❌ Errore nel caricamento della mappa';
+        }
     }
 }
 
-
-
-// MAPPE TAPPE - Solo quando serve
+// MINI-MAPPE TAPPE
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
-    for (let i = 1; i <= 7; i++) {
+    
+    for (let i = 1; i <= 6; i++) { // Solo tappe 1-6, non il percorso completo
         const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
-        if (mappaDiv && mappaDiv.offsetParent !== null) { // Controlla se è visibile
+        if (mappaDiv && mappaDiv.offsetParent !== null) {
             initMiniMappa(i);
         }
     }
 }
 
-// Mini mappa singola: carica la GPX di riferimento
 function initMiniMappa(numeroTappa) {
     const mappaDiv = document.getElementById(`mappa-tappa-${numeroTappa}`);
     if (!mappaDiv || mappaDiv._leaflet_map) return;
 
     try {
+        console.log(`🔄 Inizializzazione mini-mappa ${numeroTappa}`);
+        
         const miniMap = L.map(`mappa-tappa-${numeroTappa}`, {
             zoomControl: false,
             attributionControl: false,
             dragging: false,
             scrollWheelZoom: false,
             doubleClickZoom: false,
-            boxZoom: false
+            boxZoom: false,
+            touchZoom: false
         }).setView([45.0, 12.0], 7);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 16
         }).addTo(miniMap);
-       // TEST: usa questa riga per provare un GPX online funzionante
-      //  const gpxUrl = "https://raw.githubusercontent.com/gps-touring/sample-gpx/main/track-good.gpx";
+
         const gpxUrl = "assets/downloads/gpx/" + filesGpx[numeroTappa];
-        if (filesGpx[numeroTappa]) {
+        
+        if (filesGpx[numeroTappa] && typeof L.GPX !== 'undefined') {
             new L.GPX(gpxUrl, {
                 async: true,
                 marker_options: {
@@ -165,23 +223,27 @@ function initMiniMappa(numeroTappa) {
                 },
                 polyline_options: {
                     color: numeroTappa <= 5 ? "#667eea" : "#fc4a1a",
-                    weight: 3,
-                    opacity: 0.9
+                    weight: 4,
+                    opacity: 0.9,
+                    lineCap: 'round'
                 }
             }).on('loaded', function(e) {
-                miniMap.fitBounds(e.target.getBounds());
+                miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
+                console.log(`✅ Mini-mappa ${numeroTappa} caricata`);
+            }).on('error', function(e) {
+                console.error(`❌ Errore mini-mappa ${numeroTappa}:`, e);
             }).addTo(miniMap);
         }
 
-        console.log(`✓ Mini-mappa ${numeroTappa} caricata con GPX`);
-
     } catch (error) {
-        console.error(`Errore mini-mappa ${numeroTappa}:`, error);
+        console.error(`💥 Errore critico mini-mappa ${numeroTappa}:`, error);
     }
 }
 
-// Setup iniziale
+// INIZIALIZZAZIONE
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Setup iniziale...');
+    
     // Nascondi tutte le sezioni tranne Overview
     document.querySelectorAll('.section').forEach((section, index) => {
         if (index === 0) {
@@ -200,19 +262,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Hamburger menu mobile
+    // Gestione menu mobile (se presente)
     const hamburger = document.getElementById('menuToggle');
-    const nav = document.querySelector('.nav-container');
-    hamburger.addEventListener('click', function() {
-        nav.classList.toggle('show');
-    });
-
-    // Chiudi menu su click voce (opzionale)
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            if (window.innerWidth <= 768) nav.classList.remove('show');
+    if (hamburger) {
+        const nav = document.querySelector('.nav-container');
+        hamburger.addEventListener('click', function() {
+            nav.classList.toggle('show');
         });
-    });
+
+        // Chiudi menu su click voce (mobile)
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (window.innerWidth <= 768 && nav) {
+                    nav.classList.remove('show');
+                }
+            });
+        });
+    }
+
+    console.log('✅ Setup completato');
 });
 
 // Gestione resize finestra
@@ -221,3 +289,13 @@ window.addEventListener('resize', function() {
         setTimeout(() => mappaCompleta.invalidateSize(), 250);
     }
 });
+
+// Utility functions
+function mostraErroreMappa(elementId, messaggio) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.innerHTML = `<div style="color: #dc3545; text-align: center; padding: 20px;">
+            <strong>❌ ${messaggio}</strong>
+        </div>`;
+    }
+}
