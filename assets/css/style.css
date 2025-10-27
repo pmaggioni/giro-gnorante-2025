@@ -47,7 +47,7 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Responsive menu for mobile devices with right aligned hamburger */
+/* Hamburger button - hidden on desktop */
 .hamburger {
     display: none;
     background: none;
@@ -61,25 +61,41 @@
     cursor: pointer;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
+    .nav {
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .nav-container {
         display: none;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-        padding: 0 10px;
+        padding: 0 10px 20px 10px;
         background: var(--primary);
         border-radius: 0 0 20px 20px;
-        width: 94vw;
+        width: 100vw;
         position: absolute;
-        top: 64px; /* o quanto è alto il tuo header */
+        top: 60px; /* Adatta a quanto è alto il nav */
         right: 0;
+        left: 0;
         box-shadow: 0 2px 10px rgba(0,0,0,0.09);
     }
+
     .nav-container.show {
         display: flex;
     }
-    .hamburger {
-        display: block;
+
+    .nav-btn {
+        width: 100%;
+        text-align: left;
+        padding: 12px 40px 12px 20px;
+        border-radius: 6px;
+        margin: 0;
     }
 }
