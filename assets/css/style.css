@@ -1,3 +1,17 @@
+
+:root {
+    --primary: #1a1a1a;
+    --secondary: #ff6b6b;
+    --accent: #ffd93d;
+    --text: #333;
+    --light: #f8f9fa;
+    --andata: #667eea;
+    --ritorno: #fc4a1a;
+    --success: #4ecdc4;
+}
+
+
+
 /* Base Styles */
 .nav {
     background: var(--primary);
