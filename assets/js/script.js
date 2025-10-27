@@ -192,6 +192,20 @@ document.addEventListener('DOMContentLoaded', function() {
             showSection(target, this);
         });
     });
+
+    // Hamburger menu mobile
+    const hamburger = document.getElementById('menuToggle');
+    const nav = document.querySelector('.nav-container');
+    hamburger.addEventListener('click', function() {
+        nav.classList.toggle('show');
+    });
+
+    // Chiudi menu su click voce (opzionale)
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            if (window.innerWidth <= 768) nav.classList.remove('show');
+        });
+    });
 });
 
 // Gestione resize finestra
