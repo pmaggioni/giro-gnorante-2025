@@ -13,29 +13,24 @@ let mappeInizializzate = {
 };
 
 function showSection(sectionId, element) {
-    console.log('Cliccato! Mostrare sezione:', sectionId);
-    
     // Nascondi tutte le sezioni
     document.querySelectorAll('.section').forEach(section => {
         section.style.display = 'none';
     });
-    
+
     // Mostra la sezione cliccata
     const target = document.getElementById(sectionId);
     if (target) {
         target.style.display = 'block';
-        console.log('✓ Sezione mostrata:', sectionId);
-        
         // Inizializza le mappe SOLO quando la sezione diventa visibile
         if (!mappeInizializzate[sectionId]) {
             setTimeout(() => initMapsSezione(sectionId), 100);
             mappeInizializzate[sectionId] = true;
         } else {
-            // Se le mappe sono già inizializzate, aggiorna le dimensioni
             setTimeout(() => aggiornaMappeSezione(sectionId), 100);
         }
     }
-    
+
     // Aggiorna bottoni attivi
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.classList.remove('active');
@@ -45,10 +40,7 @@ function showSection(sectionId, element) {
     }
 }
 
-// Inizializza mappe SOLO per la sezione specifica
 function initMapsSezione(sectionId) {
-    console.log('Inizializzo mappe per:', sectionId);
-    
     switch(sectionId) {
         case 'mappa':
             initMappaCompleta();
@@ -56,11 +48,9 @@ function initMapsSezione(sectionId) {
         case 'tappe':
             initMappeTappe();
             break;
-        // Aggiungi altri casi se necessario
     }
 }
 
-// Aggiorna dimensioni mappe per la sezione
 function aggiornaMappeSezione(sectionId) {
     switch(sectionId) {
         case 'mappa':
@@ -74,90 +64,54 @@ function aggiornaMappeSezione(sectionId) {
     }
 }
 
-// MAPPA COMPLETA - Solo quando serve
+// -------- INTEGRAZIONE GPX --------
+
+// Lista dei file GPX per tappe (indice parte da 1)
+const filesGpx = [
+  "", // dummy per 0
+  "01_TORINO_PORTOGRUARO.gpx",
+  "02_PORTOGURARO_PRIZNA.gpx",
+  "03_PRIZNA_MARULOVO.gpx",
+  "04_MARLUOVO_MOSTAR.gpx",
+  "05_MOSTAR_DUBROVNIK.gpx",
+  "06_DUBROVNIK_SPALATO.gpx"
+];
+
+// MAPPA COMPLETA - ognuna delle tappe caricata via GPX
 function initMappaCompleta() {
     if (mappaCompleta || typeof L === 'undefined') return;
-    
+
     try {
         const mappaDiv = document.getElementById('mappa-completa');
         if (!mappaDiv) return;
-        
+
         mappaCompleta = L.map('mappa-completa').setView([44.5, 14.5], 7);
-        
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors',
             maxZoom: 18
         }).addTo(mappaCompleta);
 
-        // Dati semplificati per le tappe
-        const tappe = [
-            {
-                partenza: [45.0703, 7.6869],
-                arrivo: [45.7750, 12.8383],
-                nome: 'Torino → Portogruaro',
-                tipo: 'andata'
-            },
-            {
-                partenza: [45.7750, 12.8383],
-                arrivo: [44.6333, 14.8833],
-                nome: 'Portogruaro → Prizna', 
-                tipo: 'andata'
-            },
-            {
-                partenza: [44.6333, 14.8833],
-                arrivo: [44.2311, 15.5614],
-                nome: 'Prizna → Marulovo',
-                tipo: 'andata'
-            },
-            {
-                partenza: [44.2311, 15.5614],
-                arrivo: [43.3436, 17.8081],
-                nome: 'Marulovo → Mostar',
-                tipo: 'andata'
-            },
-            {
-                partenza: [43.3436, 17.8081],
-                arrivo: [42.6403, 18.1083],
-                nome: 'Mostar → Dubrovnik',
-                tipo: 'andata'
-            },
-            {
-                partenza: [42.6403, 18.1083],
-                arrivo: [43.5089, 16.4392],
-                nome: 'Dubrovnik → Spalato',
-                tipo: 'ritorno'
-            },
-            {
-                partenza: [43.5089, 16.4392],
-                arrivo: [45.0703, 7.6869],
-                nome: 'Spalato → Torino',
-                tipo: 'ritorno'
+        // Carica tutte le tappe GPX in sequenza
+        for (let i = 1; i <= 6; i++) {
+            let gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
+            if (filesGpx[i]) {
+                new L.GPX(gpxUrl, {
+                    async: true,
+                    polyline_options: {
+                        color: i <= 5 ? '#667eea' : '#fc4a1a',
+                        weight: 4,
+                        opacity: 0.85
+                    },
+                    marker_options: { startIconUrl: null, endIconUrl: null, shadowUrl: null }
+                }).on('loaded', function(e) {
+                    mappaCompleta.fitBounds(e.target.getBounds());
+                }).addTo(mappaCompleta);
             }
-        ];
+        }
 
-        // Aggiungi percorsi semplificati
-        tappe.forEach((tappa, index) => {
-            const colore = tappa.tipo === 'andata' ? '#667eea' : '#fc4a1a';
-            
-            L.polyline([tappa.partenza, tappa.arrivo], {
-                color: colore,
-                weight: 4,
-                opacity: 0.8
-            }).addTo(mappaCompleta).bindPopup(`
-                <div style="text-align: center;">
-                    <b>Tappa ${index + 1}</b><br>
-                    <small>${tappa.nome}</small>
-                </div>
-            `);
-        });
+        console.log('✓ Mappa completa inizializzata con tracce GPX');
 
-        // Fit bounds
-        const tuttiPunti = tappe.flatMap(tappa => [tappa.partenza, tappa.arrivo]);
-        const bounds = L.latLngBounds(tuttiPunti);
-        mappaCompleta.fitBounds(bounds, { padding: [20, 20] });
-        
-        console.log('✓ Mappa completa inizializzata');
-        
     } catch (error) {
         console.error('Errore mappa completa:', error);
     }
@@ -166,9 +120,7 @@ function initMappaCompleta() {
 // MAPPE TAPPE - Solo quando serve
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
-    
-    // Inizializza solo le mini-mappe visibili
-    for (let i = 1; i <= 7; i++) {
+    for (let i = 1; i <= 6; i++) {
         const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
         if (mappaDiv && mappaDiv.offsetParent !== null) { // Controlla se è visibile
             initMiniMappa(i);
@@ -176,26 +128,12 @@ function initMappeTappe() {
     }
 }
 
-// Mini mappa singola
+// Mini mappa singola: carica la GPX di riferimento
 function initMiniMappa(numeroTappa) {
     const mappaDiv = document.getElementById(`mappa-tappa-${numeroTappa}`);
-    if (!mappaDiv || mappaDiv._leaflet_map) return; // Evita doppia inizializzazione
-    
+    if (!mappaDiv || mappaDiv._leaflet_map) return;
+
     try {
-        // Coordinate semplificate per ogni tappa
-        const coordinateTappe = {
-            1: { centro: [45.4, 10.3], partenza: [45.07, 7.68], arrivo: [45.77, 12.83] },
-            2: { centro: [45.7, 13.8], partenza: [45.77, 12.83], arrivo: [44.63, 14.88] },
-            3: { centro: [44.4, 14.7], partenza: [44.63, 14.88], arrivo: [44.23, 15.56] },
-            4: { centro: [43.8, 16.7], partenza: [44.23, 15.56], arrivo: [43.34, 17.80] },
-            5: { centro: [43.0, 17.9], partenza: [43.34, 17.80], arrivo: [42.64, 18.10] },
-            6: { centro: [42.8, 17.2], partenza: [42.64, 18.10], arrivo: [43.50, 16.43] },
-            7: { centro: [44.0, 12.5], partenza: [43.50, 16.43], arrivo: [45.07, 7.68] }
-        };
-        
-        const tappa = coordinateTappe[numeroTappa];
-        if (!tappa) return;
-        
         const miniMap = L.map(`mappa-tappa-${numeroTappa}`, {
             zoomControl: false,
             attributionControl: false,
@@ -203,26 +141,33 @@ function initMiniMappa(numeroTappa) {
             scrollWheelZoom: false,
             doubleClickZoom: false,
             boxZoom: false
-        }).setView(tappa.centro, 7);
-        
+        }).setView([45.0, 12.0], 7);
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 10
+            maxZoom: 16
         }).addTo(miniMap);
-        
-        const colore = numeroTappa <= 5 ? '#667eea' : '#fc4a1a';
-        
-        L.polyline([tappa.partenza, tappa.arrivo], {
-            color: colore,
-            weight: 3,
-            opacity: 0.9
-        }).addTo(miniMap);
-        
-        // Fit bounds
-        const bounds = L.latLngBounds([tappa.partenza, tappa.arrivo]);
-        miniMap.fitBounds(bounds, { padding: [15, 15] });
-        
-        console.log(`✓ Mini-mappa ${numeroTappa} inizializzata`);
-        
+
+        const gpxUrl = "assets/downloads/gpx/" + filesGpx[numeroTappa];
+        if (filesGpx[numeroTappa]) {
+            new L.GPX(gpxUrl, {
+                async: true,
+                marker_options: {
+                    startIconUrl: null,
+                    endIconUrl: null,
+                    shadowUrl: null
+                },
+                polyline_options: {
+                    color: numeroTappa <= 5 ? "#667eea" : "#fc4a1a",
+                    weight: 3,
+                    opacity: 0.9
+                }
+            }).on('loaded', function(e) {
+                miniMap.fitBounds(e.target.getBounds());
+            }).addTo(miniMap);
+        }
+
+        console.log(`✓ Mini-mappa ${numeroTappa} caricata con GPX`);
+
     } catch (error) {
         console.error(`Errore mini-mappa ${numeroTappa}:`, error);
     }
@@ -230,8 +175,6 @@ function initMiniMappa(numeroTappa) {
 
 // Setup iniziale
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM pronto! Inizializzazione...');
-    
     // Nascondi tutte le sezioni tranne Overview
     document.querySelectorAll('.section').forEach((section, index) => {
         if (index === 0) {
@@ -241,17 +184,14 @@ document.addEventListener('DOMContentLoaded', function() {
             section.style.display = 'none';
         }
     });
-    
+
     // Collegamento bottoni navigazione
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.addEventListener('click', function() {
             const target = this.getAttribute('data-target');
-            console.log('Bottone cliccato:', target);
             showSection(target, this);
         });
     });
-    
-    console.log('Navigazione inizializzata! Le mappe caricheranno on-demand.');
 });
 
 // Gestione resize finestra
