@@ -129,7 +129,7 @@ function initMappaCompleta() {
 // MAPPE TAPPE - Solo quando serve
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 7; i++) {
         const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
         if (mappaDiv && mappaDiv.offsetParent !== null) { // Controlla se è visibile
             initMiniMappa(i);
