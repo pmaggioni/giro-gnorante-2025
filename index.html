@@ -1,3 +1,5 @@
+se ti passo index di gitgb cosa mi dici?
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -28,19 +30,16 @@
     </header>
 
     <!-- Navigation -->
-   <nav class="nav">
-    <!-- Bottone hamburger visibile solo su mobile -->
-    <button class="hamburger" id="menuToggle">☰</button>
-    <div class="container nav-container">
-        <button class="nav-btn active" data-target="overview">📊 Panoramica</button>
-        <button class="nav-btn" data-target="tappe">🗺️ Tappe</button>
-        <button class="nav-btn" data-target="mappa">🌍 Mappa</button>
-        <button class="nav-btn" data-target="downloads">📥 Download</button>
-        <button class="nav-btn" data-target="partecipanti">👥 Partecipanti</button>
-        <button class="nav-btn" data-target="info">ℹ️ Info</button>
-    </div>
-</nav>
-
+    <nav class="nav">
+        <div class="container nav-container">
+            <button class="nav-btn active" data-target="overview">📊 Panoramica</button>
+            <button class="nav-btn" data-target="tappe">🗺️ Tappe</button>
+            <button class="nav-btn" data-target="mappa">🌍 Mappa</button>
+            <button class="nav-btn" data-target="downloads">📥 Download</button>
+            <button class="nav-btn" data-target="partecipanti">👥 Partecipanti</button>
+            <button class="nav-btn" data-target="info">ℹ️ Info</button>
+        </div>
+    </nav>
 
     <!-- Overview Section -->
     <section id="overview" class="section active">
@@ -64,12 +63,14 @@
                     <div class="label">Traghetto</div>
                 </div>
             </div>
+            
             <div class="quote-section">
                 <blockquote class="main-quote">
                     "Insieme dal 2007 sulla strada, tra curve, chilometri e risate.<br>
                     Non è una vacanza, è una missione..… a due ruote."
                 </blockquote>
             </div>
+
             <div class="highlights-grid">
                 <div class="highlight-card">
                     <div class="highlight-icon">🏔️</div>
@@ -100,6 +101,7 @@
         <div class="container">
             <h2 class="section-title">Le Tappe del Viaggio</h2>
             <div class="tappe-container">
+                
                 <!-- Giorno 1 -->
                 <div class="tappa">
                     <div class="tappa-header andata">
@@ -135,6 +137,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Giorno 2 -->
                 <div class="tappa">
                     <div class="tappa-header andata">
@@ -170,6 +173,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Giorno 3 -->
                 <div class="tappa">
                     <div class="tappa-header andata">
@@ -205,6 +209,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Giorno 4 -->
                 <div class="tappa">
                     <div class="tappa-header andata">
@@ -240,6 +245,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Giorno 5 -->
                 <div class="tappa">
                     <div class="tappa-header andata">
@@ -275,6 +281,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Giorno 6 -->
                 <div class="tappa">
                     <div class="tappa-header ritorno">
@@ -310,11 +317,50 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Giorno 7-8 -->
+                <div class="tappa">
+                    <div class="tappa-header ritorno">
+                        <div class="tappa-title">Giorno 7-8 – Spalato ⛴️ Ancona → Torino</div>
+                        <div class="tappa-distance">600 km + 11h traghetto</div>
+                    </div>
+                    <div class="tappa-content">
+                        <div class="tappa-desc">
+                            <p><strong>Il traghetto notturno è il momento per rilassarsi.</strong> Le moto parcheggiate nella stiva, il gruppo sul ponte a guardare il mare nero e le stelle.</p>
+                            <p>Si brinda, si ride, si parla già del prossimo viaggio. L'odore di salsedine e benzina si mescola all'aria di libertà. 🌌</p>
+                            <p><strong>Ultima tirata verso casa.</strong> Il corpo è stanco, ma la testa è piena di paesaggi, strade e risate. Ogni chilometro è un pezzo di storia condivisa con gli amici di sempre.</p>
+                            <div id="mappa-tappa-7" class="mappa-mini">Caricamento mappa...</div>
+                            <div class="tappa-links">
+                                <a href="https://www.google.com/maps/dir/Ancona/Torino" target="_blank" class="map-link">🗺️ Vedi su Google Maps</a>
+                                <a href="https://www.port-authority-split.hr/" target="_blank" class="map-link">ℹ️ Info Porto Spalato</a>
+                            </div>
+                        </div>
+                        <div class="tappa-highlight">
+                            <h4>🏠 RITORNO</h4>
+                            <p><strong>Traghetto Notturno e Ritorno</strong></p>
+                            <div class="tappa-info">
+                                <div class="info-item">
+                                    <span class="info-label">Giorno 7:</span>
+                                    <span class="info-value">Traghetto notturno</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Giorno 8:</span>
+                                    <span class="info-value">Ancona → Torino</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Durata:</span>
+                                    <span class="info-value">11 ore nave</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Mappa Completa -->
+    <!-- Mappa Section -->
     <section id="mappa" class="section">
         <div class="container">
             <h2 class="section-title">Mappa Completa del Percorso</h2>
@@ -333,12 +379,356 @@
         </div>
     </section>
 
-    <!-- Partecipanti, Info, Download, Footer (nessuna modifica necessaria) -->
-    <!-- ... resto del codice come già fornito ... -->
+    <!-- Partecipanti Section -->
+    <section id="partecipanti" class="section">
+        <div class="container">
+            <h2 class="section-title">La Squadra</h2>
+            <div class="partecipanti-grid">
+                <div class="partecipante-card">
+                    <div class="partecipante-avatar">👑</div>
+                    <h3>" Chef "</h3>
+                    <h3>Capo Gnorante</h3>
+                    <p>Moto: BMW R1250 GS</p>
+                    <p>Esperienze: quella che serve</p>
+                    <p>Ruolo: Navigatore ufficiale</p>
+                </div>
+                <div class="partecipante-card">
+                    <div class="partecipante-avatar">⚡</div>
+                    <h3>"Barbaraüs"</h3>
+                    <h3>Hotel Manager</h3>
+                    <p>Moto: BMW R1200 GS</p>
+                    <p>Esperienze: polso inchiodato</p>
+                    <p>Ruolo: Responsabile accoglienza</p>
+                </div>
+                <div class="partecipante-card">
+                    <div class="partecipante-avatar">🛡️</div>
+                    <h3>Motociclista 3</h3>
+                    <p>Moto: BMW R1250GS</p>
+                    <p>Esperienze: 12 viaggi</p>
+                    <p>Ruolo: Meccanico improvvisato</p>
+                </div>
+                <div class="partecipante-card placeholder">
+                    <div class="partecipante-avatar">🤔</div>
+                    <h3>Altro partecipante?</h3>
+                    <p>Moto: [Da definire]</p>
+                    <p>Esperienze: [In attesa]</p>
+                    <p>Posti disponibili: 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Script Leaflet, Leaflet-GPX e il tuo JS -->
+    <!-- Info Section -->
+    <section id="info" class="section">
+        <div class="container">
+            <h2 class="section-title">Informazioni Utili</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📝</div>
+                    <h3>Documenti</h3>
+                    <ul>
+                        <li value="ci">Carta d'identità valida</li>
+                        <li value="patente">Patente di guida</li>
+                        <li value="assicurazione">Carta verde assicurativa</li>
+                        <li value="tessera">Tessera sanitaria europea</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">💰</div>
+                    <h3>Valute</h3>
+                    <ul>
+                        <li value="euro">Italia: Euro (€)</li>
+                        <li value="euro-slovenia">Slovenia: Euro (€)</li>
+                        <li value="kuna">Croazia: Kuna (kn)</li>
+                        <li value="marco">Bosnia: Marco (BAM)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🆘</div>
+                    <h3>Emergenze</h3>
+                    <ul>
+                        <li value="112">Numero unico UE: 112</li>
+                        <li value="assistenza">Assistenza stradale</li>
+                        <li value="ambasciata">Ambasciata italiana</li>
+                        <li value="farmacie">Farmacie: croce verde</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🌡️</div>
+                    <h3>Clima</h3>
+                    <ul>
+                        <li value="temperatura">Giugno-Luglio: 25-30°C</li>
+                        <li value="serate">Serate miti</li>
+                        <li value="pioggia">Possibili acquazzoni</li>
+                        <li value="sole">Protezione solare</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-section">
+                <h3 class="section-subtitle">📋 Checklist Pre-Partenza</h3>
+                <div class="checklist-grid">
+                    <div class="checklist-category" id="checklist-moto">
+                        <h4>🛵 Moto</h4>
+                        <label><input type="checkbox" value="revisione"> Revisione completa</label>
+                        <label><input type="checkbox" value="pneumatici"> Pneumatici</label>
+                        <label><input type="checkbox" value="freni"> Freni</label>
+                        <label><input type="checkbox" value="catena"> Catena</label>
+                    </div>
+                    <div class="checklist-category" id="checklist-equipaggiamento">
+                        <h4>🎒 Equipaggiamento</h4>
+                        <label><input type="checkbox" value="casco"> Casco integrale</label>
+                        <label><input type="checkbox" value="giacca"> Giacca tecnica</label>
+                        <label><input type="checkbox" value="guanti"> Guanti</label>
+                        <label><input type="checkbox" value="stivali"> Stivali</label>
+                    </div>
+                    <div class="checklist-category" id="checklist-documenti">
+                        <h4>📄 Documenti</h4>
+                        <label><input type="checkbox" value="carta-identita"> Carta identità</label>
+                        <label><input type="checkbox" value="patente"> Patente</label>
+                        <label><input type="checkbox" value="assicurazione"> Assicurazione</label>
+                        <label><input type="checkbox" value="tessera-sanitaria"> Tessera sanitaria</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="section">
+        <div class="container">
+            <h2 class="section-title">📥 Download</h2>
+            
+            <!-- File GPX -->
+            <div class="downloads-category">
+                <h3>🗺️ Tracce GPS (GPX)</h3>
+                <div class="downloads-grid">
+                    <div class="download-card">
+                        <div class="download-icon">📍</div>
+                        <h4>Percorso Completo</h4>
+                        <p>Tutto il viaggio in un file</p>
+                        <a href="assets/downloads/gpx/Percorso Completo.gpx" download class="download-btn">
+                            📥 Scarica GPX
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">1️⃣</div>
+                        <h4>Tappa 1</h4>
+                        <p>Torino → Portogruaro</p>
+                        <a href="assets/downloads/gpx/01_TORINO_PORTOGRUARO.gpx" download class="download-btn">
+                            📥 Scarica GPX
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">2️⃣</div>
+                        <h4>Tappa 2</h4>
+                        <p>Portogruaro → Prizna</p>
+                        <a href="assets/downloads/gpx/02_PORTOGURARO_PRIZNA.gpx" download class="download-btn">
+                            📥 Scarica GPX
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">3️⃣</div>
+                        <h4>Tappa 3</h4>
+                        <p>Prizna → Marulovo</p>
+                        <a href="assets/downloads/gpx/03_PRIZNA_MARUIOVO.gpx" download class="download-btn">
+                            📥 Scarica GPX
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">4️⃣</div>
+                        <h4>Tappa 4</h4>
+                        <p>Marulovo → Mostar</p>
+                        <a href="assets/downloads/gpx/04_MARLUOVO_MOSTAR.gpx" download class="download-btn">
+                            📥 Scarica GPX
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">5️⃣</div>
+                        <h4>Tappa 5</h4>
+                        <p>Mostar → Dubrovnik</p>
+                        <a href="assets/downloads/gpx/05_MOSTAR_DUBROVNIK.gpx" download class="download-btn">
+                            📥 Scarica GPX
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">6️⃣</div>
+                        <h4>Tappa 6</h4>
+                        <p>Dubrovnik → Spalato</p>
+                        <a href="assets/downloads/gpx/06_DUBROVNIK_SPALATO.gpx" download class="download-btn">
+                            📥 Scarica GPX
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File PDF -->
+            <div class="downloads-category">
+                <h3>📄 Documenti di Viaggio</h3>
+                <div class="downloads-grid">
+                    <div class="download-card">
+                        <div class="download-icon">📍</div>
+                        <h4>Percorso Completo</h4>
+                        <p>Mappa generale del viaggio</p>
+                        <a href="assets/downloads/pdf/00_Percorso Completo.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">1️⃣</div>
+                        <h4>Tappa 1</h4>
+                        <p>Torino → Portogruaro</p>
+                        <a href="assets/downloads/pdf/01_TORINO_PORTOGRUARO.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">2️⃣</div>
+                        <h4>Tappa 2</h4>
+                        <p>Portogruaro → Prizna</p>
+                        <a href="assets/downloads/pdf/02_PORTOGURARO_PRIZNA.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">3️⃣</div>
+                        <h4>Tappa 3</h4>
+                        <p>Prizna → Marulovo</p>
+                        <a href="assets/downloads/pdf/03_PRIZNA_MARLUOVO.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">4️⃣</div>
+                        <h4>Tappa 4</h4>
+                        <p>Marulovo → Mostar</p>
+                        <a href="assets/downloads/pdf/04_MARLUOVO_MOSTAR.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">5️⃣</div>
+                        <h4>Tappa 5</h4>
+                        <p>Mostar → Dubrovnik</p>
+                        <a href="assets/downloads/pdf/05_MOSTAR_DUBROVNIK.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">6️⃣</div>
+                        <h4>Tappa 6</h4>
+                        <p>Dubrovnik → Spalato</p>
+                        <a href="assets/downloads/pdf/06_DUBROVNIK_SPALATO.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">⛴️</div>
+                        <h4>Traghetto + Ritorno</h4>
+                        <p>Ancona → Torino</p>
+                        <a href="assets/downloads/pdf/07_ANCONA_TORINO.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHECKLIST COMPLETA -->
+            <div class="downloads-category">
+                <h3>📋 Checklist Completa</h3>
+                <div class="downloads-grid">
+                    <div class="download-card">
+                        <div class="download-icon">📊</div>
+                        <h4>Checklist Excel</h4>
+                        <p>Lista completa per il viaggio</p>
+                        <a href="assets/downloads/checklist/Checklist_Completa_Giro_Gnorante.xlsx" download class="download-btn">
+                            📥 Scarica Excel
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">📝</div>
+                        <h4>Checklist PDF</h4>
+                        <p>Versione stampabile</p>
+                        <a href="assets/downloads/checklist/Checklist_Completa_Giro_Gnorante.pdf" download class="download-btn">
+                            📥 Scarica PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Anteprima Checklist -->
+                <div class="checklist-preview">
+                    <h4>📝 Anteprima Checklist Completa</h4>
+                    <div class="checklist-preview-grid">
+                        <div class="preview-category">
+                            <h5>🏍️ Abbigliamento Moto</h5>
+                            <ul>
+                                <li>☐ Casco</li>
+                                <li>☐ Giacca moto</li>
+                                <li>☐ Pantaloni moto</li>
+                                <li>☐ Stivali</li>
+                                <li>☐ Guanti</li>
+                                <li>☐ Antipioggia</li>
+                                <li>☐ Paraschiena</li>
+                            </ul>
+                        </div>
+                        <div class="preview-category">
+                            <h5>👕 Abbigliamento Personale</h5>
+                            <ul>
+                                <li>☐ Pantaloni lunghi/corti</li>
+                                <li>☐ Magliette</li>
+                                <li>☐ Costume da bagno</li>
+                                <li>☐ Scarpe ginnastica</li>
+                                <li>☐ Felpa</li>
+                            </ul>
+                        </div>
+                        <div class="preview-category">
+                            <h5>🧴 Cura Personale</h5>
+                            <ul>
+                                <li>☐ Dentifricio & Spazzolino</li>
+                                <li>☐ Shampoo & Bagnoschiuma</li>
+                                <li>☐ Crema solare</li>
+                                <li>☐ Kit barba</li>
+                            </ul>
+                        </div>
+                        <div class="preview-category">
+                            <h5>💊 Medicinali & Sicurezza</h5>
+                            <ul>
+                                <li>☐ Kit pronto soccorso</li>
+                                <li>☐ Medicinali personali</li>
+                                <li>☐ Documenti assicurativi</li>
+                                <li>☐ Copia documenti</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Glignorantiladomenica" class="footer-logo-image">
+                </div>
+                <div class="footer-quote">
+                    "Ride hard. Laugh louder. Live free."
+                </div>
+                <div class="footer-social">
+                    <span class="social-hashtag">#GiroGnorante2025</span>
+                    <span class="social-hashtag">#Glignorantiladomenica</span>
+                    <span class="social-hashtag">#4NazioniInMoto</span>
+                </div>
+                <div class="footer-signature">
+                    Glignorantiladomenica - Since 2007<br>
+                    <em>Ogni viaggio lascia un segno, ma quelli fatti insieme diventano leggenda.</em>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.6.0/gpx.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
