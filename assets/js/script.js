@@ -74,7 +74,8 @@ const filesGpx = [
   "03_PRIZNA_MARULOVO.gpx",
   "04_MARULOVO_MOSTAR.gpx",
   "05_MOSTAR_DUBROVNIK.gpx",
-  "06_DUBROVNIK_SPALATO.gpx"
+  "06_DUBROVNIK_SPALATO.gpx",
+  "07_Percorso_Completo.gpx"
 ];
 
 // MAPPA COMPLETA - ognuna delle tappe caricata via GPX
@@ -146,8 +147,10 @@ function initMiniMappa(numeroTappa) {
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 16
         }).addTo(miniMap);
+       // TEST: usa questa riga per provare un GPX online funzionante
+        const gpxUrl = "https://raw.githubusercontent.com/mpetazzoni/leaflet-gpx/master/examples/route.gpx";
 
-        const gpxUrl = "assets/downloads/gpx/" + filesGpx[numeroTappa];
+        // Originale :const gpxUrl = "assets/downloads/gpx/" + filesGpx[numeroTappa];
         if (filesGpx[numeroTappa]) {
             new L.GPX(gpxUrl, {
                 async: true,
