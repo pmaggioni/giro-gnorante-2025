@@ -140,13 +140,13 @@ function initMappaCompleta() {
                         color: coloriTappe[i-1],
                         weight: i === 7 ? 6 : 4, // Più spessa per il percorso giallo
                         opacity: i === 7 ? 0.9 : 0.85,
-                        lineCap: 'round',
-                        dashArray: i === 7 ? '5, 10' : null // Tratteggiato solo per il giallo
+                        lineCap: 'round'
                     },
                     marker_options: { 
                         startIconUrl: null, 
                         endIconUrl: null, 
-                        shadowUrl: null 
+                        shadowUrl: null,
+                        wptIconUrls: null // DISABILITA COMPLETAMENTE le icone waypoint
                     }
                 }).on('loaded', function(e) {
                     tracceCaricate++;
@@ -235,7 +235,8 @@ function initMiniMappa(numeroTappa) {
                 marker_options: {
                     startIconUrl: null,
                     endIconUrl: null,
-                    shadowUrl: null
+                    shadowUrl: null,
+                    wptIconUrls: null // DISABILITA COMPLETAMENTE le icone waypoint
                 },
                 polyline_options: {
                     // COLORI CORRETTI: Tappe 1-5 blu, Tappa 6 arancione
