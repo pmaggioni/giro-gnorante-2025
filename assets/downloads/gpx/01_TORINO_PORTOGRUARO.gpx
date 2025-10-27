@@ -1,0 +1,4406 @@
+﻿<?xml version="1.0" encoding="utf-8"?><gpx creator="Garmin Desktop App" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v1 http://www8.garmin.com/xmlschemas/ActivityExtensionv1.xsd http://www.garmin.com/xmlschemas/AdventuresExtensions/v1 http://www8.garmin.com/xmlschemas/AdventuresExtensionv1.xsd http://www.garmin.com/xmlschemas/PressureExtension/v1 http://www.garmin.com/xmlschemas/PressureExtensionv1.xsd http://www.garmin.com/xmlschemas/TripExtensions/v1 http://www.garmin.com/xmlschemas/TripExtensionsv1.xsd http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1 http://www.garmin.com/xmlschemas/TripMetaDataExtensionsv1.xsd http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1 http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensionsv1.xsd http://www.garmin.com/xmlschemas/CreationTimeExtension/v1 http://www.garmin.com/xmlschemas/CreationTimeExtensionsv1.xsd http://www.garmin.com/xmlschemas/AccelerationExtension/v1 http://www.garmin.com/xmlschemas/AccelerationExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.garmin.com/xmlschemas/VideoExtension/v1 http://www.garmin.com/xmlschemas/VideoExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtrx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" xmlns:adv="http://www.garmin.com/xmlschemas/AdventuresExtensions/v1" xmlns:prs="http://www.garmin.com/xmlschemas/PressureExtension/v1" xmlns:tmd="http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1" xmlns:vptm="http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1" xmlns:ctx="http://www.garmin.com/xmlschemas/CreationTimeExtension/v1" xmlns:gpxacc="http://www.garmin.com/xmlschemas/AccelerationExtension/v1" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:vidx1="http://www.garmin.com/xmlschemas/VideoExtension/v1">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2025-10-27T17:44:23Z</time>
+    <bounds maxlat="45.790914874523878" maxlon="12.821075515821576" minlat="45.070328777655959" minlon="7.686866372823715" />
+  </metadata>
+
+  <rte>
+    <name>01_TORINO_PORTOGRUARO</name>
+    <extensions>
+      <gpxx:RouteExtension>
+        <gpxx:IsAutoNamed>false</gpxx:IsAutoNamed>
+        <gpxx:DisplayColor>Magenta</gpxx:DisplayColor>
+      </gpxx:RouteExtension>
+    </extensions>
+    <rtept lat="45.070328777655959" lon="7.686866372823715">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ViaPoint>
+          <trp:CalculationMode>Direct</trp:CalculationMode>
+        </trp:ViaPoint>
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.071360003203154" lon="7.687700036913157">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-1</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-1</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-1</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.071529988199472" lon="7.689050026237965">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-2</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-2</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-2</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.072649978101254" lon="7.691759979352355">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-3</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-3</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-3</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.074467258527875" lon="7.6899219956249">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-4</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-4</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-4</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.074809994548559" lon="7.690030038356781">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-5</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-5</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-5</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.077820019796491" lon="7.696760036051273">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-6</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-6</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-6</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.077829994261265" lon="7.697169994935393">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-7</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-7</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-7</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.078090000897646" lon="7.697390019893646">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-8</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-8</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-8</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.079769985750318" lon="7.700989963486791">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-9</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-9</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-9</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.084247011691332" lon="7.711022095754743">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-10</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-10</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-10</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.088629992678761" lon="7.714769979938865">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-11</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-11</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-11</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.093470038846135" lon="7.715180022642016">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-12</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-12</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-12</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.099209966138005" lon="7.722749970853329">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-13</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-13</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-13</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.100010018795729" lon="7.721629980951548">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-14</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-14</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-14</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.102430041879416" lon="7.720690034329891">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-15</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-15</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-15</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.105279972776771" lon="7.718869987875223">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-16</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-16</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-16</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.107969976961613" lon="7.715159989893436">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-17</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-17</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-17</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.11226000264287" lon="7.707287706434727">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-18</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-18</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-18</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.112580023705959" lon="7.707170024514198">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-19</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-19</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-19</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.118179973214865" lon="7.710850015282631">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-20</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-20</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-20</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.118829486891627" lon="7.711308840662241">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-21</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-21</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-21</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.119029982015491" lon="7.711719973012805">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-22</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-22</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-22</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.119619984179735" lon="7.711719973012805">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-23</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-23</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-23</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.123599963262677" lon="7.714320039376617">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-24</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-24</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-24</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.124649964272976" lon="7.715229978784919">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-25</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-25</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-25</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.125919990241528" lon="7.716760011389852">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-26</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-26</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-26</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.188589971512556" lon="7.84248998388648">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-27</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-27</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-27</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.194959966465831" lon="7.85613002255559">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-28</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-28</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-28</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.213109971955419" lon="7.897990001365542">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-29</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-29</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-29</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.233259983360767" lon="7.947199987247586">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-30</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-30</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-30</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.236799996346235" lon="7.956670029088855">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-31</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-31</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-31</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.239719999954104" lon="7.966009983792901">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-32</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-32</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-32</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.245550032705069" lon="7.98257002606988">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-33</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-33</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-33</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.248889969661832" lon="7.989860018715262">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-34</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-34</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-34</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.252889981493354" lon="7.996780034154654">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-35</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-35</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-35</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.256390012800694" lon="8.001940017566085">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-36</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-36</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-36</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.26138998568058" lon="8.007799973711371">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-37</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-37</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-37</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.384849971160293" lon="8.141700038686395">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-38</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-38</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-38</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.407510027289391" lon="8.166339984163642">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-39</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-39</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-39</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.411650016903877" lon="8.171029994264245">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-40</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-40</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-40</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.415379963815212" lon="8.175810026004911">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-41</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-41</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-41</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419809967279434" lon="8.182250009849668">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-42</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-42</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-42</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.422450015321374" lon="8.186369966715574">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-43</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-43</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-43</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.424899961799383" lon="8.190840035676956">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-44</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-44</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-44</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.427099959924817" lon="8.195419991388917">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-45</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-45</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-45</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.42908001691103" lon="8.200200023129582">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-46</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-46</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-46</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.433649998158216" lon="8.213439993560314">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-47</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-47</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-47</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.435780007392168" lon="8.221259973943234">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-48</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-48</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-48</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.437699966132641" lon="8.230449976399541">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-49</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-49</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-49</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.442349994555116" lon="8.258560029789805">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-50</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-50</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-50</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.444500036537647" lon="8.270380022004247">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-51</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-51</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-51</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.446059992536902" lon="8.280950020998716">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-52</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-52</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-52</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.459510013461113" lon="8.362209973856807">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-53</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-53</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-53</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.460430011153221" lon="8.368899989873171">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-54</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-54</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-54</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.461199972778559" lon="8.377009984105825">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-55</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-55</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-55</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.462590027600527" lon="8.399380026385188">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-56</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-56</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-56</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.463069975376129" lon="8.411850035190582">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-57</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-57</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-57</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.464620040729642" lon="8.439920023083687">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-58</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-58</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-58</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.473019964993" lon="8.554499968886375">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-59</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-59</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-59</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.474549997597933" lon="8.573169987648726">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-60</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-60</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-60</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.47491000033915" lon="8.582599963992834">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-61</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-61</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-61</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.474619986489415" lon="8.589979978278279">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-62</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-62</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-62</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.473780035972595" lon="8.596930000931025">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-63</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-63</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-63</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.469899969175458" lon="8.622460020706058">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-64</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-64</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-64</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.469250036403537" lon="8.629729980602861">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-65</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-65</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-65</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.46900000423193" lon="8.63714000210166">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-66</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-66</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-66</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.467220023274422" lon="8.750459980219603">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-67</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-67</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-67</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.467729978263378" lon="8.765180027112365">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-68</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-68</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-68</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.46940996311605" lon="8.786299992352724">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-69</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-69</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-69</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.470189983025193" lon="8.807769985869527">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-70</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-70</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-70</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.47119002789259" lon="8.814209969714284">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-71</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-71</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-71</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.472719976678491" lon="8.819889966398478">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-72</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-72</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-72</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.474069966003299" lon="8.823510026559234">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-73</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-73</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-73</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.480160005390644" lon="8.837930001318455">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-74</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-74</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-74</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.488469991832972" lon="8.860730035230517">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-75</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-75</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-75</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.490119969472289" lon="8.865990014746785">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-76</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-76</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-76</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.491039967164397" lon="8.870179960504174">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-77</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-77</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-77</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.492769991979003" lon="8.880709977820516">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-78</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-78</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-78</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.494860019534826" lon="8.891409980133176">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-79</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-79</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-79</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.496579986065626" lon="8.902079975232482">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-80</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-80</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-80</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.498670013621449" lon="8.91952003352344">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-81</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-81</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-81</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.502129979431629" lon="8.953330032527447">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-82</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-82</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-82</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.506970025599003" lon="9.012510040774941">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-83</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-83</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-83</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.513070039451122" lon="9.069149997085333">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-84</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-84</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-84</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.513730030506849" lon="9.079129993915558">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-85</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-85</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-85</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.515659963712096" lon="9.120699958875775">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-86</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-86</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-86</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.516499998047948" lon="9.123170021921396">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-87</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-87</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-87</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.518530011177063" lon="9.126439969986677">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-88</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-88</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-88</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.519780004397035" lon="9.128880025818944">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-89</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-89</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-89</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.53917002864182" lon="9.169320026412606">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-90</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-90</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-90</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.540659995749593" lon="9.173279972746968">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-91</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-91</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-91</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.542560005560517" lon="9.179769996553659">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-92</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-92</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-92</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.547719988971949" lon="9.199780030176044">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-93</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-93</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-93</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.548260034993291" lon="9.204010041430593">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-94</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-94</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-94</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.548939974978566" lon="9.220990017056465">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-95</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-95</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-95</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.555390017107129" lon="9.264169977977872">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-96</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-96</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-96</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.555880023166537" lon="9.268789999186993">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-97</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-97</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-97</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.556449992582202" lon="9.27131999284029">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-98</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-98</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-98</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.561140002682805" lon="9.302539983764291">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-99</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-99</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-99</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.573970014229417" lon="9.389710016548634">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-100</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-100</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-100</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.595059972256422" lon="9.49929996393621">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-101</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-101</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-101</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.615349961444736" lon="9.560110000893474">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-102</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-102</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-102</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.623549977317452" lon="9.58364998921752">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-103</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-103</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-103</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.628520026803017" lon="9.592890031635761">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-104</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-104</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-104</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.668979976326227" lon="9.66567998751998">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-105</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-105</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-105</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.669509964063764" lon="9.666989995166659">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-106</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-106</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-106</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.669820010662079" lon="9.668520027771592">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-107</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-107</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-107</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.669729989022017" lon="9.671090003103018">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-108</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-108</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-108</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.655809994786978" lon="9.745820034295321">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-109</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-109</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-109</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.651519969105721" lon="9.770559975877404">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-110</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-110</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-110</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.632209992036223" lon="9.859010009095073">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-111</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-111</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-111</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.618529971688986" lon="9.9205800332129">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-112</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-112</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-112</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.616960041224957" lon="9.924929989501834">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-113</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-113</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-113</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.615339986979961" lon="9.928219970315695">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-114</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-114</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-114</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.582670010626316" lon="9.984899992123246">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-115</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-115</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-115</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.580719960853457" lon="9.98929001390934">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-116</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-116</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-116</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.579410037025809" lon="9.994259979575872">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-117</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-117</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-117</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.563319968059659" lon="10.080889966338873">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-118</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-118</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-118</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.561539987102151" lon="10.08865999057889">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-119</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-119</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-119</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.560250012204051" lon="10.092339981347322">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-120</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-120</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-120</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.558800026774406" lon="10.095570031553507">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-121</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-121</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-121</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.55418998003006" lon="10.105090029537678">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-122</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-122</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-122</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.547199975699186" lon="10.118829980492592">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-123</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-123</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-123</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.543710002675653" lon="10.126330023631454">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-124</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-124</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-124</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.534759974107146" lon="10.144510036334395">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-125</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-125</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-125</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.524830017238855" lon="10.16635000705719">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-126</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-126</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-126</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.522059965878725" lon="10.173059972003102">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-127</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-127</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-127</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.520839979872108" lon="10.178499994799495">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-128</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-128</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-128</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.518720028921962" lon="10.197119973599911">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-129</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-129</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-129</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.518349967896938" lon="10.199030041694641">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-130</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-130</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-130</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.517549999058247" lon="10.20134998485446">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-131</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-131</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-131</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.509129958227277" lon="10.219629993662238">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-132</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-132</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-132</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.507679972797632" lon="10.223319958895445">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-133</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-133</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-133</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.506689986214042" lon="10.22726004011929">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-134</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-134</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-134</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.505600003525615" lon="10.234620021656156">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-135</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-135</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-135</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.502080023288727" lon="10.250029982998967">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-136</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-136</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-136</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.495220022276044" lon="10.274400031194091">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-137</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-137</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-137</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.48954002559185" lon="10.292290030047297">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-138</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-138</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-138</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.483689960092306" lon="10.315730022266507">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-139</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-139</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-139</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.468129962682724" lon="10.384879969060421">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-140</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-140</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-140</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.465580020099878" lon="10.40055999532342">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-141</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-141</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-141</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.462969979271293" lon="10.431380001828074">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-142</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-142</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-142</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.458360016345978" lon="10.453700004145503">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-143</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-143</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-143</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.454740040004253" lon="10.468349978327751">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-144</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-144</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-144</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.454109972342849" lon="10.47199996188283">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-145</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-145</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-145</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.453340010717511" lon="10.483720041811466">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-146</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-146</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-146</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.451720040291548" lon="10.497669959440827">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-147</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-147</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-147</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.448989970609546" lon="10.52525999955833">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-148</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-148</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-148</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.447990009561181" lon="10.530029973015189">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-149</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-149</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-149</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.445499997586012" lon="10.539040016010404">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-150</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-150</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-150</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.434929998591542" lon="10.595979960635304">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-151</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-151</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-151</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.434270007535815" lon="10.60078002512455">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-152</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-152</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-152</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.432309983298182" lon="10.639829970896244">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-153</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-153</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-153</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.429229969158769" lon="10.687610004097223">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-154</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-154</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-154</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.429389979690313" lon="10.726080005988479">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-155</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-155</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-155</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.429069958627224" lon="10.732259983196855">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-156</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-156</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-156</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.425200033932924" lon="10.769649976864457">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-157</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-157</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-157</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.424650013446808" lon="10.772399995476007">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-158</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-158</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-158</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.423760022968054" lon="10.775380013510585">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-159</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-159</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-159</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.421379981562495" lon="10.78046003356576">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-160</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-160</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-160</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.418719984591007" lon="10.790380015969276">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-161</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-161</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-161</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.417579961940646" lon="10.797040024772286">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-162</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-162</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-162</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.416329968720675" lon="10.808760020881891">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-163</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-163</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-163</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.416199965402484" lon="10.813460005447268">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-164</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-164</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-164</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.417809961363673" lon="10.835699960589409">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-165</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-165</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-165</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.417809961363673" lon="10.840890035033226">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-166</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-166</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-166</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.417260024696589" lon="10.846489984542131">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-167</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-167</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-167</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.415009986609221" lon="10.860100015997887">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-168</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-168</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-168</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.413190023973584" lon="10.890419958159328">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-169</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-169</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-169</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.412849970161915" lon="10.893499972298741">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-170</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-170</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-170</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.411629984155297" lon="10.899609960615635">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-171</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-171</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-171</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.40430998429656" lon="10.9264300391078">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-172</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-172</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-172</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.398520017042756" lon="10.954949967563152">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-173</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-173</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-173</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.397630026564002" lon="10.96209998242557">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-174</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-174</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-174</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.396940028294921" lon="10.978509988635778">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-175</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-175</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-175</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.397149994969368" lon="10.984340021386743">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-176</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-176</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-176</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.398179963231087" lon="10.991820031777024">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-177</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-177</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-177</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.399010023102164" lon="11.00161001086235">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-178</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-178</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-178</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.402330011129379" lon="11.033729966729879">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-179</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-179</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-179</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.40559995919466" lon="11.070600030943751">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-180</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-180</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-180</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.40634997189045" lon="11.074180025607347">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-181</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-181</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-181</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.415149964392185" lon="11.107170023024082">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-182</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-182</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-182</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.420829961076379" lon="11.123740039765835">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-183</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-183</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-183</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.421569999307394" lon="11.12749001942575">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-184</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-184</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-184</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.421920027583838" lon="11.131409984081984">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-185</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-185</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-185</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.421839980408549" lon="11.135110007598996">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-186</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-186</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-186</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419969977810979" lon="11.158039961010218">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-187</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-187</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-187</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419190041720867" lon="11.172939967364073">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-188</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-188</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-188</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.418640021234751" lon="11.176430024206638">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-189</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-189</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-189</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.415430003777146" lon="11.190459989011288">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-190</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-190</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-190</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.414819968864322" lon="11.194079965353012">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-191</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-191</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-191</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.409080041572452" lon="11.253380002453923">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-192</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-192</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-192</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.408639991655946" lon="11.259199976921082">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-193</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-193</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-193</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.408890023827553" lon="11.269450038671494">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-194</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-194</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-194</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.409429986029863" lon="11.273690024390817">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-195</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-195</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-195</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419760011136532" lon="11.317190006375313">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-196</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-196</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-196</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.42156002484262" lon="11.321810027584434">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-197</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-197</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-197</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.439150035381317" lon="11.362799964845181">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-198</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-198</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-198</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.44018997810781" lon="11.36584997177124">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-199</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-199</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-199</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.441910028457642" lon="11.372430017217994">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-200</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-200</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-200</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.443539973348379" lon="11.37646003626287">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-201</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-201</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-201</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.44545004144311" lon="11.379739958792925">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-202</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-202</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-202</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.451119979843497" lon="11.387219969183207">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-203</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-203</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-203</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.452369973063469" lon="11.389130037277937">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-204</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-204</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-204</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.453719962388277" lon="11.391739994287491">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-205</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-205</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-205</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.455839997157454" lon="11.396790007129312">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-206</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-206</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-206</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.457349997013807" lon="11.399499960243702">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-207</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-207</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-207</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.458799982443452" lon="11.401519998908043">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-208</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-208</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-208</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.463849995285273" lon="11.407710034400225">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-209</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-209</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-209</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.470349993556738" lon="11.41721997410059">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-210</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-210</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-210</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.474740015342832" lon="11.424290025606751">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-211</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-211</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-211</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.478849997743964" lon="11.429210035130382">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-212</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-212</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-212</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.500229969620705" lon="11.453259978443384">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-213</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-213</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-213</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.501859998330474" lon="11.455540023744106">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-214</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-214</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-214</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.503660012036562" lon="11.459109960123897">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-215</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-215</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-215</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.50498996861279" lon="11.46296001970768">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-216</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-216</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-216</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.506819989532232" lon="11.470110034570098">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-217</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-217</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-217</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.514899976551533" lon="11.492790039628744">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-218</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-218</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-218</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.517380014061928" lon="11.50025999173522">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-219</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-219</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-219</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.517800031229854" lon="11.503040017560124">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-220</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-220</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-220</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.518009997904301" lon="11.521850014105439">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-221</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-221</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-221</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.517819980159402" lon="11.526059992611408">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-222</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-222</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-222</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.516959996894002" lon="11.532099992036819">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-223</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-223</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-223</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.51558000035584" lon="11.550819966942072">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-224</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-224</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-224</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.515819974243641" lon="11.564209973439574">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-225</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-225</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-225</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.517039960250258" lon="11.579910032451153">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-226</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-226</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-226</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.516550038009882" lon="11.584150018170476">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-227</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-227</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-227</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.501479962840676" lon="11.635969961062074">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-228</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-228</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-228</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.492860013619065" lon="11.660820040851831">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-229</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-229</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-229</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.487689971923828" lon="11.679389979690313">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-230</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-230</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-230</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.483259968459606" lon="11.691369982436299">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-231</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-231</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-231</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.46910997480154" lon="11.735199959948659">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-232</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-232</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-232</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.464170016348362" lon="11.764279967173934">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-233</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-233</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-233</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.456639965996146" lon="11.789410002529621">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-234</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-234</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-234</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.455779982730746" lon="11.793129974976182">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-235</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-235</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-235</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.448090005666018" lon="11.849250001832843">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-236</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-236</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-236</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.440649976953864" lon="11.888349987566471">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-237</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-237</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-237</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.435780007392168" lon="11.902780020609498">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-238</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-238</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-238</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.430200006812811" lon="11.916830018162727">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-239</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-239</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-239</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.429170038551092" lon="11.919079972431064">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-240</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-240</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-240</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419999985024333" lon="11.936360020190477">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-241</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-241</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-241</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419270005077124" lon="11.939020017161965">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-242</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-242</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-242</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419079987332225" lon="11.942130038514733">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-243</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-243</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-243</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.419980036094785" lon="11.947390018031001">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-244</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-244</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-244</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.447270004078746" lon="12.079740017652512">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-245</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-245</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-245</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.448090005666018" lon="12.082920027896762">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-246</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-246</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-246</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.449160039424896" lon="12.08568999543786">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-247</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-247</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-247</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.450229989364743" lon="12.087769964709878">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-248</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-248</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-248</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.45136003755033" lon="12.089539971202612">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-249</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-249</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-249</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.452929968014359" lon="12.091450039297342">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-250</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-250</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-250</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.455040028318763" lon="12.093349965289235">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-251</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-251</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-251</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.467650014907122" lon="12.102729985490441">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-252</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-252</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-252</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.46945002861321" lon="12.104529999196529">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-253</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-253</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-253</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.470470022410154" lon="12.105900021269917">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-254</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-254</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-254</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.471699982881546" lon="12.108089961111546">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-255</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-255</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-255</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.472730034962296" lon="12.110760016366839">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-256</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-256</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-256</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.476020015776157" lon="12.124069975689054">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-257</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-257</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-257</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.47697002068162" lon="12.12651003152132">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-258</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-258</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-258</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.478329984471202" lon="12.128970036283135">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-259</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-259</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-259</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.480529982596636" lon="12.131559960544109">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-260</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-260</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-260</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.482390010729432" lon="12.132969964295626">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-261</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-261</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-261</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.489859962835908" lon="12.13751002214849">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-262</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-262</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-262</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.493510030210018" lon="12.138839978724718">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-263</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-263</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-263</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.496340012177825" lon="12.139159999787807">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-264</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-264</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-264</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.50150997005403" lon="12.138899993151426">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-265</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-265</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-265</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.506139965727925" lon="12.139710020273924">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-266</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-266</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-266</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.512350033968687" lon="12.13965998031199">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-267</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-267</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-267</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.518089961260557" lon="12.140490040183067">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-268</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-268</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-268</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.52438996732235" lon="12.13978998363018">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-269</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-269</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-269</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.526200039312243" lon="12.140070023015141">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-270</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-270</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-270</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.531300008296967" lon="12.141629979014397">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-271</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-271</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-271</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.537539999932051" lon="12.141339965164661">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-272</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-272</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-272</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.541349994018674" lon="12.142059970647097">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-273</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-273</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-273</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.543679995462298" lon="12.143120029941201">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-274</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-274</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-274</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.553659992292523" lon="12.149000018835068">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-275</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-275</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-275</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.555429998785257" lon="12.149550039321184">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-276</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-276</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-276</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.561600001528859" lon="12.15035998262465">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-277</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-277</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-277</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.563790025189519" lon="12.151060039177537">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-278</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-278</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-278</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.565839987248182" lon="12.152199978008866">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-279</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-279</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-279</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.569080011919141" lon="12.155049992725253">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-280</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-280</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-280</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.570699982345104" lon="12.157100038602948">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-281</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-281</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-281</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.572799984365702" lon="12.160399993881583">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-282</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-282</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-282</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.57473000138998" lon="12.164290035143495">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-283</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-283</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-283</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.587379969656467" lon="12.198070026934147">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-284</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-284</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-284</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.58837004005909" lon="12.201179964467883">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-285</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-285</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-285</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.589009998366237" lon="12.204059986397624">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-286</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-286</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-286</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.589509978890419" lon="12.208240041509271">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-287</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-287</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-287</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.589509978890419" lon="12.212299983948469">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-288</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-288</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-288</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.58706003241241" lon="12.23168003372848">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-289</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-289</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-289</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.587000017985702" lon="12.237639985978603">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-290</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-290</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-290</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.587499998509884" lon="12.241540001705289">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-291</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-291</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-291</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.588210029527545" lon="12.244590008631349">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-292</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-292</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-292</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.59110002592206" lon="12.253069980069995">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-293</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-293</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-293</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.592139968648553" lon="12.257039984688163">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-294</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-294</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-294</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.592680014669895" lon="12.260960033163428">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-295</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-295</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-295</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.592810017988086" lon="12.264289995655417">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-296</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-296</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-296</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.592210041359067" lon="12.270550020039082">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-297</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-297</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-297</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.58832997456193" lon="12.288640011101961">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-298</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-298</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-298</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.58671997860074" lon="12.292930036783218">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-299</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-299</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-299</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.581429991871119" lon="12.302999971434474">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-300</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-300</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-300</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.579850003123283" lon="12.306999983265996">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-301</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-301</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-301</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.573989963158965" lon="12.331189988180995">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-302</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-302</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-302</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.573350004851818" lon="12.334599997848272">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-303</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-303</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-303</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.573180019855499" lon="12.33814001083374">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-304</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-304</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-304</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.57344002649188" lon="12.341160010546446">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-305</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-305</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-305</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.5742799770087" lon="12.34477998688817">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-306</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-306</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-306</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.575940012931824" lon="12.348600039258599">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-307</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-307</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-307</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.579919992014766" lon="12.355359960347414">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-308</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-308</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-308</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.597579991444945" lon="12.381079997867346">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-309</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-309</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-309</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.601140037178993" lon="12.386999968439341">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-310</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-310</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-310</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.616900026798248" lon="12.415849976241589">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-311</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-311</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-311</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.631770025938749" lon="12.448190040886402">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-312</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-312</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-312</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.64833995886147" lon="12.478270009160042">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-313</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-313</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-313</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.670270035043359" lon="12.529210019856691">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-314</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-314</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-314</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.696949968114495" lon="12.585150003433228">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-315</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-315</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-315</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.699349958449602" lon="12.591059999540448">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-316</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-316</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-316</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.705379983410239" lon="12.607809975743294">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-317</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-317</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-317</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.707820039242506" lon="12.61368996463716">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-318</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-318</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-318</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.71096995845437" lon="12.619870025664568">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-319</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-319</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-319</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.721580022946" lon="12.6381800416857">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-320</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-320</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-320</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.724700018763542" lon="12.644290030002594">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-321</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-321</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-321</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.726540014147758" lon="12.6486000046134">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-322</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-322</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-322</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.728310020640492" lon="12.653480032458901">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-323</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-323</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-323</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.749359996989369" lon="12.719549965113401">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-324</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-324</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-324</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.751720005646348" lon="12.726009981706738">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-325</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-325</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-325</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.753469979390502" lon="12.729870015755296">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-326</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-326</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-326</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.755660003051162" lon="12.733970023691654">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-327</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-327</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-327</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.765100037679076" lon="12.748780008405447">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-328</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-328</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-328</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.778019987046719" lon="12.772299963980913">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-329</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-329</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-329</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.780730023980141" lon="12.777809975668788">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-330</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-330</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-330</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.783060025423765" lon="12.783559961244464">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-331</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-331</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-331</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.78504997305572" lon="12.789629967883229">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-332</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-332</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-332</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.786979990079999" lon="12.797390017658472">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-333</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-333</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-333</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.787969976663589" lon="12.802910003811121">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-334</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-334</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-334</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.789460027590394" lon="12.814000016078353">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-335</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-335</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-335</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ShapingPoint />
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="45.790914874523878" lon="12.821075515821576">
+      <time>2025-10-27T17:38:48Z</time>
+      <name>Torino to 30026 Metropolitan City of Venice-336</name>
+      <cmt>Torino to 30026 Metropolitan City of Venice-336</cmt>
+      <desc>Torino to 30026 Metropolitan City of Venice-336</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <trp:ViaPoint>
+          <trp:CalculationMode>Direct</trp:CalculationMode>
+        </trp:ViaPoint>
+        <gpxx:RoutePointExtension>
+          <gpxx:Subclass>000000000000FFFFFFFFFFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+  </rte>
+
+</gpx>
