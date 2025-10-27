@@ -24,15 +24,17 @@ const filesGpx = [
     "07_Percorso_Completo.gpx"
 ];
 
-// COLORI CORRETTI: Andata blu, Ritorno arancione, Percorso Completo giallo
+// COLORI CORRETTI: 
+// - Tappe 1-6: Andata e Ritorno normale (blu/arancione)
+// - Solo Tappa 7: Dubrovnik → Torino via Spalato e Ancona (GIALLO)
 const coloriTappe = [
     '#667eea', // Tappa 1 - ANDATA
     '#667eea', // Tappa 2 - ANDATA  
     '#667eea', // Tappa 3 - ANDATA
     '#667eea', // Tappa 4 - ANDATA
     '#667eea', // Tappa 5 - ANDATA
-    '#fc4a1a', // Tappa 6 - RITORNO
-    '#ffd93d'  // Tappa 7 - PERCORSO COMPLETO
+    '#fc4a1a', // Tappa 6 - RITORNO (Dubrovnik → Spalato)
+    '#ffd93d'  // Tappa 7 - PERCORSO COMPLETO GIALLO (Dubrovnik → Torino via Spalato e Ancona)
 ];
 
 // Gestione Navigazione
@@ -135,10 +137,11 @@ function initMappaCompleta() {
                 const gpxLayer = new L.GPX(gpxUrl, {
                     async: true,
                     polyline_options: {
-                        color: coloriTappe[i-1] || '#000000',
-                        weight: i === 7 ? 5 : 4, // Più spessa per il percorso completo
-                        opacity: i === 7 ? 0.8 : 0.85,
-                        lineCap: 'round'
+                        color: coloriTappe[i-1],
+                        weight: i === 7 ? 6 : 4, // Più spessa per il percorso giallo
+                        opacity: i === 7 ? 0.9 : 0.85,
+                        lineCap: 'round',
+                        dashArray: i === 7 ? '5, 10' : null // Tratteggiato solo per il giallo
                     },
                     marker_options: { 
                         startIconUrl: null, 
@@ -147,7 +150,11 @@ function initMappaCompleta() {
                     }
                 }).on('loaded', function(e) {
                     tracceCaricate++;
-                    console.log(`✅ Traccia ${i} caricata: ${(e.target.getDistance() / 1000).toFixed(1)} km - Colore: ${coloriTappe[i-1]}`);
+                    const descrizione = i === 7 ? 
+                        "PERCORSO GIALLO: Dubrovnik → Torino via Spalato e Ancona" :
+                        `Tappa ${i}: ${(e.target.getDistance() / 1000).toFixed(1)} km`;
+                    
+                    console.log(`✅ ${descrizione} - Colore: ${coloriTappe[i-1]}`);
                     
                     // Aggiorna bounds per fit
                     if (!bounds) {
@@ -157,7 +164,7 @@ function initMappaCompleta() {
                     }
                     
                     // Fit bounds quando tutte le tracce sono caricate
-                    if (tracceCaricate >= 6 && bounds.isValid()) {
+                    if (tracceCaricate >= 7 && bounds.isValid()) {
                         mappaCompleta.fitBounds(bounds, { padding: [30, 30] });
                         console.log('🎯 Mappa adattata a tutte le tracce');
                     }
@@ -191,7 +198,7 @@ function initMappaCompleta() {
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
     
-    for (let i = 1; i <= 6; i++) { // Solo tappe 1-6, non il percorso completo
+    for (let i = 1; i <= 6; i++) { // Solo tappe 1-6, non il percorso completo giallo
         const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
         if (mappaDiv && mappaDiv.offsetParent !== null) {
             initMiniMappa(i);
@@ -239,7 +246,8 @@ function initMiniMappa(numeroTappa) {
                 }
             }).on('loaded', function(e) {
                 miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
-                console.log(`✅ Mini-mappa ${numeroTappa} caricata - Colore: ${numeroTappa <= 5 ? 'blu' : 'arancione'}`);
+                const tipo = numeroTappa <= 5 ? 'ANDATA (blu)' : 'RITORNO (arancione)';
+                console.log(`✅ Mini-mappa ${numeroTappa} - ${tipo}`);
             }).on('error', function(e) {
                 console.error(`❌ Errore mini-mappa ${numeroTappa}:`, e);
             }).addTo(miniMap);
