@@ -1225,7 +1225,32 @@ body {
         display: flex !important;
     }
 }
-/* ===== NUOVI STILI PER LE SEZIONI AGGIUNTE ===== */
+/* ===== NUOVA STRUTTURA TAPPA-CONTENT ===== */
+
+.tappa-content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.tappa-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Alloggio nella sidebar */
+.tappa-sidebar .alloggio {
+    margin: 0;
+    order: 2; /* Mette l'alloggio dopo i dati viaggio */
+}
+
+.tappa-sidebar .tappa-highlight {
+    order: 1; /* Mantiene i dati viaggio sopra */
+    margin-bottom: 0;
+}
 
 /* Stili per le curiosità storiche */
 .curiosita-storica {
@@ -1310,7 +1335,6 @@ body {
     background: rgba(52, 152, 219, 0.1);
     padding: 25px;
     border-radius: 12px;
-    margin: 30px 0 20px 0;
     border: 2px dashed #3498db;
     position: relative;
 }
@@ -1363,44 +1387,6 @@ body {
     font-weight: 600;
 }
 
-/* Frase viaggio nella overview */
-.viaggio-frase {
-    background: linear-gradient(135deg, #e74c3c, #f39c12);
-    padding: 25px;
-    border-radius: 12px;
-    margin: 25px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.viaggio-frase::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
-    animation: shimmer 3s infinite;
-}
-
-.viaggio-frase p {
-    margin: 0;
-    font-size: 1.2em;
-    color: white;
-    font-weight: 500;
-    position: relative;
-    z-index: 1;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-
-.viaggio-frase strong {
-    font-weight: 600;
-    color: #2c3e50;
-}
-
 /* Animazioni specifiche */
 @keyframes pulse-glow {
     0%, 100% {
@@ -1428,8 +1414,25 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Responsive per le nuove sezioni */
+/* Miglioramenti responsive */
 @media (max-width: 768px) {
+    .tappa-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .tappa-sidebar {
+        gap: 20px;
+    }
+    
+    .tappa-sidebar .alloggio {
+        order: 2;
+    }
+    
+    .tappa-sidebar .tappa-highlight {
+        order: 1;
+    }
+    
     .curiosita-storica {
         padding: 20px;
         margin: 20px 0;
@@ -1447,7 +1450,6 @@ body {
     
     .alloggio {
         padding: 20px;
-        margin: 25px 0 15px 0;
     }
     
     .dettagli-alloggio {
@@ -1457,14 +1459,6 @@ body {
     .dettagli-alloggio p {
         padding: 8px 12px;
         margin: 10px 0;
-    }
-    
-    .viaggio-frase {
-        padding: 20px;
-    }
-    
-    .viaggio-frase p {
-        font-size: 1.1em;
     }
 }
 
@@ -1489,14 +1483,6 @@ body {
     .dettagli-alloggio {
         padding: 12px;
     }
-    
-    .viaggio-frase {
-        padding: 15px;
-    }
-    
-    .viaggio-frase p {
-        font-size: 1em;
-    }
 }
 
 /* Miglioramenti per la leggibilità */
@@ -1506,12 +1492,4 @@ body {
 
 .dettagli-alloggio p:last-child {
     margin-bottom: 0;
-}
-
-/* Highlight per i dati mancanti negli alloggi */
-.dettagli-alloggio p:empty::before {
-    content: "In attesa di informazioni...";
-    color: #95a5a6;
-    font-style: italic;
-    font-weight: normal;
 }
