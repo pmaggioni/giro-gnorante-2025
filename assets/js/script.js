@@ -25,22 +25,22 @@ const filesGpx = [
     "08_PERCORSO_COMPLETO.gpx"
 ];
 
-// COLORI DIVERSI PER OGNI TRACCIA + GIALLO PER COMPLETO
+// COLORI AD ALTO CONTRASTO - VERSIONE BILANCIATA
 const coloriTappe = [
-    '#667eea', // Tappa 1 - BLU
-    '#4ecdc4', // Tappa 2 - TURCHESE
-    '#45b7d1', // Tappa 3 - AZZURRO
-    '#96ceb4', // Tappa 4 - VERDE CHIARO
-    '#feca57', // Tappa 5 - ARANCIONE CHIARO
-    '#ff9ff3', // Tappa 6 - ROSA
-    '#ff6b6b', // Tappa 7 - ROSSO
-    '#ffd93d'  // Tappa 8 - GIALLO (PERCORSO COMPLETO)
+    '#e11d48', // Tappa 1 - ROSSO RUBINO
+    '#2563eb', // Tappa 2 - BLU REALE
+    '#16a34a', // Tappa 3 - VERDE FORTE
+    '#7c3aed', // Tappa 4 - VIOLA INTENSO
+    '#ea580c', // Tappa 5 - ARANCIONE FUOCO
+    '#db2777', // Tappa 6 - ROSA ELETTRICO
+    '#ca8a04', // Tappa 7 - ORO LUCIDO
+    '#000000'  // Tappa 8 - NERO (PERCORSO COMPLETO - MASSIMO CONTRASTO)
 ];
 
-// Nomi colori per debug
+// Nomi colori bilanciati
 const nomiColori = [
-    "BLU", "TURCHESE", "AZZURRO", "VERDE CHIARO", 
-    "ARANCIONE CHIARO", "ROSA", "ROSSO", "GIALLO"
+    "ROSSO RUBINO", "BLU REALE", "VERDE FORTE", "VIOLA INTENSO", 
+    "ARANCIONE FUOCO", "ROSA ELETTRICO", "ORO LUCIDO", "NERO"
 ];
 
 // ===== INIZIALIZZAZIONE COMPLETA =====
