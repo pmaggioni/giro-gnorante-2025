@@ -1552,25 +1552,40 @@ body {
     }
 }
 
-/* Testo nero per i link di navigazione */
-.maps-link,
-.waze-link {
+/* ===== CORREZIONE COLORE TESTO LINK NAVIGAZIONE ===== */
+
+.nav-options .maps-link,
+.nav-options .waze-link {
     color: #333 !important;
-    background: rgba(255, 255, 255, 0.9) !important;
-    border: 2px solid #ddd !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px solid #e0e0e0 !important;
+    font-weight: 500;
 }
 
-.maps-link:hover,
-.waze-link:hover {
+.nav-options .maps-link:hover,
+.nav-options .waze-link:hover {
     color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.maps-link:hover {
+.nav-options .maps-link:hover {
     background: #4285F4 !important;
     border-color: #4285F4 !important;
 }
 
-.waze-link:hover {
+.nav-options .waze-link:hover {
     background: #33CCFF !important;
     border-color: #33CCFF !important;
+}
+
+/* Sovrascrivi gli stili generali dei map-link */
+.tappa-links .nav-options .map-link {
+    background: transparent !important;
+    color: #333 !important;
+}
+
+.tappa-links .nav-options .map-link:hover {
+    background: transparent !important;
+    color: white !important;
 }
