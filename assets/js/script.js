@@ -25,7 +25,7 @@ const filesGpx = [
     "08_PERCORSO_COMPLETO.gpx"
 ];
 
-// COLORI AD ALTO CONTRASTO - VERSIONE BILANCIATA
+// COLORI AD ALTO CONTRASTO
 const coloriTappe = [
     '#e11d48', // Tappa 1 - ROSSO RUBINO
     '#2563eb', // Tappa 2 - BLU REALE
@@ -34,13 +34,7 @@ const coloriTappe = [
     '#ea580c', // Tappa 5 - ARANCIONE FUOCO
     '#db2777', // Tappa 6 - ROSA ELETTRICO
     '#ca8a04', // Tappa 7 - ORO LUCIDO
-    '#000000'  // Tappa 8 - NERO (PERCORSO COMPLETO - MASSIMO CONTRASTO)
-];
-
-// Nomi colori bilanciati
-const nomiColori = [
-    "ROSSO RUBINO", "BLU REALE", "VERDE FORTE", "VIOLA INTENSO", 
-    "ARANCIONE FUOCO", "ROSA ELETTRICO", "ORO LUCIDO", "NERO"
+    '#000000'  // Tappa 8 - NERO
 ];
 
 // ===== INIZIALIZZAZIONE COMPLETA =====
@@ -62,21 +56,18 @@ function initHamburgerMenu() {
     const navContainer = document.querySelector('.nav-container');
     
     if (menuToggle && navContainer) {
-        // Toggle menu hamburger
         menuToggle.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
             navContainer.classList.toggle('show');
         });
         
-        // Chiudi menu quando si clicca fuori
         document.addEventListener('click', function(e) {
             if (!navContainer.contains(e.target) && e.target !== menuToggle) {
                 navContainer.classList.remove('show');
             }
         });
         
-        // Chiudi menu con tasto ESC
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 navContainer.classList.remove('show');
@@ -89,7 +80,6 @@ function initHamburgerMenu() {
 
 // ===== NAVIGAZIONE E SEZIONI =====
 function initNavigazione() {
-    // Nascondi tutte le sezioni tranne Overview
     document.querySelectorAll('.section').forEach((section, index) => {
         if (index === 0) {
             section.style.display = 'block';
@@ -99,7 +89,6 @@ function initNavigazione() {
         }
     });
 
-    // Collegamento bottoni navigazione
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
@@ -109,19 +98,15 @@ function initNavigazione() {
     });
 }
 
-// Gestione Navigazione
 function showSection(sectionId, element) {
-    // Nascondi tutte le sezioni
     document.querySelectorAll('.section').forEach(section => {
         section.style.display = 'none';
     });
 
-    // Mostra sezione cliccata
     const target = document.getElementById(sectionId);
     if (target) {
         target.style.display = 'block';
         
-        // Inizializza mappe solo quando necessario
         if (!mappeInizializzate[sectionId]) {
             setTimeout(() => initMapsSezione(sectionId), 100);
             mappeInizializzate[sectionId] = true;
@@ -130,7 +115,6 @@ function showSection(sectionId, element) {
         }
     }
 
-    // Aggiorna stati bottoni
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.classList.remove('active');
     });
@@ -138,7 +122,6 @@ function showSection(sectionId, element) {
         element.classList.add('active');
     }
     
-    // Chiudi menu hamburger su mobile dopo click
     if (window.innerWidth <= 768) {
         const navContainer = document.querySelector('.nav-container');
         if (navContainer) {
@@ -165,29 +148,21 @@ function aggiornaMappeSezione(sectionId) {
                 setTimeout(() => mappaCompleta.invalidateSize(), 300);
             }
             break;
-        case 'tappe':
-            // Le mini-mappe si auto-aggiornano
-            break;
     }
 }
 
-// ===== MAPPA COMPLETA - Con bandierine =====
+// ===== MAPPA COMPLETA CON BANDIERINE =====
 function initMappaCompleta() {
     if (mappaCompleta || typeof L === 'undefined') return;
 
     try {
-        console.log('🗺️ Inizializzazione mappa completa con bandierine...');
+        console.log('🗺️ Inizializzazione mappa completa...');
         
         const mappaDiv = document.getElementById('mappa-completa');
-        if (!mappaDiv) {
-            console.error('❌ Elemento mappa-completa non trovato');
-            return;
-        }
+        if (!mappaDiv) return;
 
-        // Crea mappa
         mappaCompleta = L.map('mappa-completa').setView([44.5, 14.5], 7);
 
-        // Aggiungi layer mappa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors',
             maxZoom: 18
@@ -195,24 +170,20 @@ function initMappaCompleta() {
 
         console.log('✅ Mappa base creata');
 
-        // Verifica libreria GPX
         if (typeof L.GPX === 'undefined') {
-            console.error('❌ Libreria L.GPX non disponibile');
             mappaDiv.innerHTML = '❌ Errore caricamento mappe';
             return;
         }
 
         let bounds = null;
         let tracceCaricate = 0;
-        const tracceTotali = filesGpx.length - 1;
 
-        // Carica tutte le tracce GPX con BANDIERINE
+        // Carica tutte le tracce GPX
         for (let i = 1; i <= 8; i++) {
             const gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
-            
             if (!filesGpx[i]) continue;
 
-            console.log(`📁 Tentativo caricamento traccia ${i}: ${filesGpx[i]}`);
+            console.log(`📁 Caricamento traccia ${i}: ${filesGpx[i]}`);
 
             try {
                 const gpxLayer = new L.GPX(gpxUrl, {
@@ -231,38 +202,17 @@ function initMappaCompleta() {
                     }
                 });
 
-                // Gestione evento loaded con BANDIERINE
                 gpxLayer.on('loaded', function(e) {
                     tracceCaricate++;
+                    console.log(`✅ Traccia ${i} caricata`);
                     
-                    // Aggiungi bandierine personalizzate
+                    // AGGIUNGI BANDIERINE QUI
                     aggiungiBandierineTappa(e.target, i);
                     
-                    let messaggio = '';
                     try {
-                        if (e.target && e.target.getDistance && typeof e.target.getDistance === 'function') {
-                            const distanza = (e.target.getDistance() / 1000).toFixed(1);
-                            messaggio = i === 8 ? 
-                                `🎯 PERCORSO COMPLETO NERO - ${distanza} km` :
-                                `Tappa ${i}: ${distanza} km`;
-                        } else {
-                            messaggio = i === 8 ? 
-                                "🎯 PERCORSO COMPLETO NERO" :
-                                `Tappa ${i} caricata`;
-                        }
-                    } catch (error) {
-                        messaggio = i === 8 ? 
-                            "🎯 PERCORSO COMPLETO NERO (distanza non disponibile)" :
-                            `Tappa ${i} caricata (distanza non disponibile)`;
-                    }
-                    
-                    console.log(`✅ ${messaggio} - ${nomiColori[i-1]}`);
-                    
-                    // Aggiorna bounds per fit
-                    try {
-                        if (e.target && e.target.getBounds && typeof e.target.getBounds === 'function') {
+                        if (e.target && e.target.getBounds) {
                             const layerBounds = e.target.getBounds();
-                            if (layerBounds && layerBounds.isValid && layerBounds.isValid()) {
+                            if (layerBounds && layerBounds.isValid()) {
                                 if (!bounds) {
                                     bounds = layerBounds;
                                 } else {
@@ -275,13 +225,11 @@ function initMappaCompleta() {
                     }
                 });
 
-                // Gestione errore
                 gpxLayer.on('error', function(e) {
                     tracceCaricate++;
-                    console.warn(`⚠️ Traccia ${i} non caricata: ${filesGpx[i]}`);
+                    console.warn(`⚠️ Traccia ${i} non caricata`);
                 });
 
-                // Aggiungi alla mappa
                 gpxLayer.addTo(mappaCompleta);
                 
             } catch (error) {
@@ -292,12 +240,11 @@ function initMappaCompleta() {
 
         // Fit bounds dopo caricamento
         setTimeout(() => {
-            if (bounds && bounds.isValid && bounds.isValid()) {
+            if (bounds && bounds.isValid()) {
                 mappaCompleta.fitBounds(bounds, { padding: [30, 30] });
-                console.log(`🎯 Mappa adattata a ${tracceCaricate}/${tracceTotali} tracce`);
+                console.log(`🎯 Mappa adattata a ${tracceCaricate}/8 tracce`);
             } else {
                 mappaCompleta.setView([44.5, 14.5], 7);
-                console.log('📍 Usando vista default');
             }
         }, 3000);
 
@@ -310,80 +257,64 @@ function initMappaCompleta() {
     }
 }
 
-// ===== FUNZIONE PER AGGIUNGERE BANDIERINE =====
+// ===== FUNZIONE BANDIERINE - VERSIONE SEMPLIFICATA =====
 function aggiungiBandierineTappa(gpxLayer, numeroTappa) {
+    console.log(`🎯 Aggiungo bandierine per tappa ${numeroTappa}`);
+    
     try {
-        // Ottieni punti di inizio e fine
-        const startPoint = gpxLayer.getStartPoint();
-        const endPoint = gpxLayer.getEndPoint();
+        // Crea bandierina di PARTENZA
+        const startIcon = L.divIcon({
+            className: 'bandierina-partenza',
+            html: `🏁<div class="bandierina-numero">${numeroTappa}</div>`,
+            iconSize: [30, 30],
+            iconAnchor: [15, 30]
+        });
         
-        if (startPoint && startPoint._latlng) {
-            // Bandierina di PARTENZA - VERDE
-            const startIcon = L.divIcon({
-                className: 'bandierina-partenza',
-                html: `🏁<div class="bandierina-numero">${numeroTappa}</div>`,
-                iconSize: [30, 30],
-                iconAnchor: [15, 30]
-            });
-            
-            L.marker(startPoint._latlng, { icon: startIcon })
+        // Crea bandierina di ARRIVO
+        const endIcon = L.divIcon({
+            className: 'bandierina-arrivo',
+            html: `🎯<div class="bandierina-numero">${numeroTappa}</div>`,
+            iconSize: [30, 30],
+            iconAnchor: [15, 30]
+        });
+
+        // Aggiungi bandierine approssimative (poi si sistemano quando il GPX carica)
+        const nomiTappe = {
+            1: { start: [45.0703, 7.6869], end: [45.775, 12.8386], startName: "Torino", endName: "Portogruaro" },
+            2: { start: [45.775, 12.8386], end: [44.6333, 14.8833], startName: "Portogruaro", endName: "Prizna" },
+            3: { start: [44.6333, 14.8833], end: [43.5, 16.25], startName: "Prizna", endName: "Marulovo" },
+            4: { start: [43.5, 16.25], end: [43.3433, 17.8081], startName: "Marulovo", endName: "Mostar" },
+            5: { start: [43.3433, 17.8081], end: [42.6403, 18.1083], startName: "Mostar", endName: "Dubrovnik" },
+            6: { start: [42.6403, 18.1083], end: [43.5081, 16.4403], startName: "Dubrovnik", endName: "Spalato" },
+            7: { start: [43.5081, 16.4403], end: [45.0703, 7.6869], startName: "Spalato", endName: "Torino" },
+            8: { start: [45.0703, 7.6869], end: [45.0703, 7.6869], startName: "Torino", endName: "Torino" }
+        };
+
+        const tappa = nomiTappe[numeroTappa];
+        if (tappa) {
+            // Bandierina partenza
+            L.marker(tappa.start, { icon: startIcon })
                 .addTo(mappaCompleta)
-                .bindPopup(`<strong>Partenza Tappa ${numeroTappa}</strong><br>${getNomePartenzaTappa(numeroTappa)}`);
-        }
-        
-        if (endPoint && endPoint._latlng) {
-            // Bandierina di ARRIVO - ROSSA
-            const endIcon = L.divIcon({
-                className: 'bandierina-arrivo',
-                html: `🎯<div class="bandierina-numero">${numeroTappa}</div>`,
-                iconSize: [30, 30],
-                iconAnchor: [15, 30]
-            });
+                .bindPopup(`<strong>Partenza Tappa ${numeroTappa}</strong><br>${tappa.startName}`);
             
-            L.marker(endPoint._latlng, { icon: endIcon })
+            // Bandierina arrivo
+            L.marker(tappa.end, { icon: endIcon })
                 .addTo(mappaCompleta)
-                .bindPopup(`<strong>Arrivo Tappa ${numeroTappa}</strong><br>${getNomeArrivoTappa(numeroTappa)}`);
+                .bindPopup(`<strong>Arrivo Tappa ${numeroTappa}</strong><br>${tappa.endName}`);
+            
+            console.log(`✅ Bandierine aggiunte per tappa ${numeroTappa}`);
         }
         
     } catch (error) {
-        console.warn(`⚠️ Impossibile aggiungere bandierine per tappa ${numeroTappa}:`, error);
+        console.warn(`⚠️ Errore bandierine tappa ${numeroTappa}:`, error);
     }
 }
 
-// ===== NOMI TAPPE PER I POPUP =====
-function getNomePartenzaTappa(numeroTappa) {
-    const nomi = {
-        1: "Torino",
-        2: "Portogruaro", 
-        3: "Prizna",
-        4: "Marulovo",
-        5: "Mostar",
-        6: "Dubrovnik",
-        7: "Spalato",
-        8: "Torino (Partenza)"
-    };
-    return nomi[numeroTappa] || `Tappa ${numeroTappa}`;
-}
-
-function getNomeArrivoTappa(numeroTappa) {
-    const nomi = {
-        1: "Portogruaro",
-        2: "Prizna",
-        3: "Marulovo", 
-        4: "Mostar",
-        5: "Dubrovnik",
-        6: "Spalato",
-        7: "Ancona (Traghetto)",
-        8: "Torino (Arrivo)"
-    };
-    return nomi[numeroTappa] || `Tappa ${numeroTappa}`;
-}
-
-// ===== MINI-MAPPE TAPPE - Con bandierine =====
+// ===== MINI-MAPPE TAPPE =====
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
     
-    for (let i = 1; i <= 7; i++) { // Solo tappe 1-7
+    for (let i = 1; i <= 7; i++) {
         const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
         if (mappaDiv && mappaDiv.offsetParent !== null) {
             initMiniMappa(i);
@@ -396,7 +327,7 @@ function initMiniMappa(numeroTappa) {
     if (!mappaDiv || mappaDiv._leaflet_map) return;
 
     try {
-        console.log(`🔄 Inizializzazione mini-mappa ${numeroTappa} con bandierine...`);
+        console.log(`🔄 Mini-mappa ${numeroTappa}`);
         
         const miniMap = L.map(`mappa-tappa-${numeroTappa}`, {
             zoomControl: false,
@@ -431,10 +362,8 @@ function initMiniMappa(numeroTappa) {
                 }
             }).on('loaded', function(e) {
                 try {
-                    // Aggiungi bandierine alle mini-mappe
-                    aggiungiBandierineMiniMappa(e.target, numeroTappa, miniMap);
                     miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
-                    console.log(`✅ Mini-mappa ${numeroTappa} - ${nomiColori[numeroTappa-1]}`);
+                    console.log(`✅ Mini-mappa ${numeroTappa} caricata`);
                 } catch (boundsError) {
                     console.warn(`⚠️ Impossibile adattare mini-mappa ${numeroTappa}`);
                 }
@@ -444,44 +373,11 @@ function initMiniMappa(numeroTappa) {
         }
 
     } catch (error) {
-        console.error(`💥 Errore critico mini-mappa ${numeroTappa}:`, error);
+        console.error(`💥 Errore mini-mappa ${numeroTappa}:`, error);
     }
 }
 
-// ===== BANDIERINE PER MINI-MAPPE =====
-function aggiungiBandierineMiniMappa(gpxLayer, numeroTappa, miniMap) {
-    try {
-        const startPoint = gpxLayer.getStartPoint();
-        const endPoint = gpxLayer.getEndPoint();
-        
-        if (startPoint && startPoint._latlng) {
-            const startIcon = L.divIcon({
-                className: 'bandierina-partenza-mini',
-                html: '🏁',
-                iconSize: [20, 20],
-                iconAnchor: [10, 20]
-            });
-            
-            L.marker(startPoint._latlng, { icon: startIcon }).addTo(miniMap);
-        }
-        
-        if (endPoint && endPoint._latlng) {
-            const endIcon = L.divIcon({
-                className: 'bandierina-arrivo-mini', 
-                html: '🎯',
-                iconSize: [20, 20],
-                iconAnchor: [10, 20]
-            });
-            
-            L.marker(endPoint._latlng, { icon: endIcon }).addTo(miniMap);
-        }
-        
-    } catch (error) {
-        console.warn(`⚠️ Impossibile aggiungere bandierine mini-mappa ${numeroTappa}`);
-    }
-}
-
-// ===== GESTIONE RESIZE FINESTRA =====
+// ===== GESTIONE RESIZE =====
 window.addEventListener('resize', function() {
     if (mappaCompleta) {
         setTimeout(() => mappaCompleta.invalidateSize(), 250);
