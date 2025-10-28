@@ -1371,6 +1371,188 @@ body {
     right: 15px;
 }
 
+/* ===== DESCRIZIONE TRACCIATO PER MOTOCICLISTI ===== */
+.descrizione-tracciato {
+    background: #f8f9fa;
+    border-left: 4px solid #e74c3c;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.descrizione-tracciato::before {
+    content: '🏍️';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5em;
+    opacity: 0.2;
+}
+
+.descrizione-tracciato h4 {
+    color: #e74c3c;
+    margin-bottom: 1.2rem;
+    font-size: 1.4em;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Highlight principale */
+.tracciato-highlight {
+    background: #fff3cd;
+    padding: 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ffeaa7;
+    position: relative;
+}
+
+.tracciato-highlight strong {
+    color: #856404;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.tracciato-highlight ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.2rem;
+}
+
+.tracciato-highlight li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    color: #856404;
+}
+
+.tracciato-highlight li strong {
+    display: inline;
+    color: #e74c3c;
+    font-size: 1em;
+}
+
+/* Caratteristiche tecniche */
+.caratteristiche-tecniche {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    border-left: 3px solid #3498db;
+}
+
+.caratteristiche-tecniche h5 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.caratteristiche-tecniche p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.caratteristiche-tecniche strong {
+    color: #3498db;
+    font-weight: 600;
+}
+
+/* Consigli di percorrenza */
+.consigli-percorrenza {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    border-left: 3px solid #27ae60;
+}
+
+.consigli-percorrenza h5 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.consigli-percorrenza ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.consigli-percorrenza li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.consigli-percorrenza strong {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* Citazione finale */
+.tracciato-quote {
+    font-style: italic;
+    color: #666;
+    border-left: 3px solid #f39c12;
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    background: rgba(243, 156, 18, 0.05);
+    padding: 1rem 1rem 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+/* ===== INFO TECNICA NEL SIDEBAR ===== */
+.motociclista-tips {
+    background: #e8f4fd;
+    padding: 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #b3e0ff;
+    border-left: 4px solid #3498db;
+    order: 1;
+}
+
+.motociclista-tips h4 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #b3e0ff;
+    padding-bottom: 0.5rem;
+}
+
+.tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tip {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px dashed #d1ecf1;
+}
+
+.tip:last-child {
+    border-bottom: none;
+}
+
+.tip strong {
+    color: #3498db;
+    font-weight: 600;
+}
+
 /* Sezione alloggi */
 .alloggio {
     background: rgba(52, 152, 219, 0.1);
@@ -1455,6 +1637,29 @@ body {
     transition: all 0.3s ease;
 }
 
+.descrizione-tracciato:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.tracciato-highlight:hover {
+    background: #ffeaa7;
+    transition: background 0.3s ease;
+}
+
+.caratteristiche-tecniche:hover,
+.consigli-percorrenza:hover {
+    border-color: #bdc3c7;
+    transition: border-color 0.3s ease;
+}
+
+.motociclista-tips:hover {
+    background: #d1ecf1;
+    border-color: #3498db;
+    transition: all 0.3s ease;
+}
+
 /* Miglioramenti responsive */
 @media (max-width: 768px) {
     .tappa-content {
@@ -1489,6 +1694,40 @@ body {
         margin: 20px 0;
     }
     
+    .descrizione-tracciato {
+        padding: 1.2rem;
+        margin: 1.2rem 0;
+    }
+    
+    .descrizione-tracciato h4 {
+        font-size: 1.2em;
+    }
+    
+    .tracciato-highlight,
+    .caratteristiche-tecniche,
+    .consigli-percorrenza {
+        padding: 1rem;
+    }
+    
+    .tracciato-highlight ul,
+    .consigli-percorrenza ul {
+        padding-left: 1rem;
+    }
+    
+    .tracciato-quote {
+        font-size: 1rem;
+        padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+    }
+    
+    .motociclista-tips {
+        padding: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .tip {
+        font-size: 0.85rem;
+    }
+    
     .alloggio {
         padding: 20px;
     }
@@ -1517,6 +1756,27 @@ body {
         padding: 12px;
     }
     
+    .descrizione-tracciato {
+        padding: 1rem;
+    }
+    
+    .descrizione-tracciato h4 {
+        font-size: 1.1em;
+    }
+    
+    .tracciato-highlight strong {
+        font-size: 1em;
+    }
+    
+    .tracciato-highlight li {
+        font-size: 0.9em;
+    }
+    
+    .tracciato-quote {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+    }
+    
     .alloggio {
         padding: 15px;
     }
@@ -1533,6 +1793,21 @@ body {
 
 .dettagli-alloggio p:last-child {
     margin-bottom: 0;
+}
+
+.descrizione-tracciato p:last-child,
+.caratteristiche-tecniche p:last-child,
+.consigli-percorrenza li:last-child {
+    margin-bottom: 0;
+}
+
+/* Icone per le liste */
+.consigli-percorrenza li::marker {
+    color: #27ae60;
+}
+
+.tracciato-highlight li::marker {
+    color: #e74c3c;
 }
 
 /* ===== STILI PER LE OPZIONI DI NAVIGAZIONE ===== */
