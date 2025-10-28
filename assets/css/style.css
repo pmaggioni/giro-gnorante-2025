@@ -486,7 +486,45 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+/* Bandierine per mini-mappe */
+.bandierina-partenza-mini,
+.bandierina-arrivo-mini {
+    text-align: center;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
 
+.bandierina-numero-mini {
+    font-size: 8px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive per mini-bandierine */
+@media (max-width: 768px) {
+    .bandierina-partenza-mini,
+    .bandierina-arrivo-mini {
+        font-size: 14px;
+    }
+    
+    .bandierina-numero-mini {
+        font-size: 7px;
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+    }
+}
 /* Mappa Completa */
 .mappa-full {
     height: 500px;
