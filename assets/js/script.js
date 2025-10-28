@@ -1,9 +1,182 @@
-// ===== MAPPA COMPLETA - Con bandierine partenza/arrivo =====
+// GIRO GNORANTE 2025 - Script Mappe Ottimizzato
+console.log('🏍️ Giro Gnorante 2025 - Script caricato!');
+
+// Variabili globali
+let mappaCompleta = null;
+let mappeInizializzate = {
+    overview: false,
+    tappe: false,
+    mappa: false,
+    downloads: false,
+    partecipanti: false,
+    info: false
+};
+
+// Configurazione GPX - NOMI CORRETTI
+const filesGpx = [
+    "", // Indice 0 vuoto
+    "01_TORINO_PORTOGRUARO.gpx",
+    "02_PORTOGRUARO_PRIZNA.gpx",
+    "03_PRIZNA_MARULOVO.gpx", 
+    "04_MARULOVO_MOSTAR.gpx",
+    "05_MOSTAR_DUBROVNIK.gpx",
+    "06_DUBROVNIK_SPALATO.gpx",
+    "07_SPALATO_ANCONA_TORINO.gpx",
+    "08_PERCORSO_COMPLETO.gpx"
+];
+
+// COLORI AD ALTO CONTRASTO - VERSIONE BILANCIATA
+const coloriTappe = [
+    '#e11d48', // Tappa 1 - ROSSO RUBINO
+    '#2563eb', // Tappa 2 - BLU REALE
+    '#16a34a', // Tappa 3 - VERDE FORTE
+    '#7c3aed', // Tappa 4 - VIOLA INTENSO
+    '#ea580c', // Tappa 5 - ARANCIONE FUOCO
+    '#db2777', // Tappa 6 - ROSA ELETTRICO
+    '#ca8a04', // Tappa 7 - ORO LUCIDO
+    '#000000'  // Tappa 8 - NERO (PERCORSO COMPLETO - MASSIMO CONTRASTO)
+];
+
+// Nomi colori bilanciati
+const nomiColori = [
+    "ROSSO RUBINO", "BLU REALE", "VERDE FORTE", "VIOLA INTENSO", 
+    "ARANCIONE FUOCO", "ROSA ELETTRICO", "ORO LUCIDO", "NERO"
+];
+
+// ===== INIZIALIZZAZIONE COMPLETA =====
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Setup iniziale...');
+    
+    // Inizializza hamburger menu
+    initHamburgerMenu();
+    
+    // Setup navigazione e sezioni
+    initNavigazione();
+    
+    console.log('✅ Setup completato');
+});
+
+// ===== HAMBURGER MENU MOBILE =====
+function initHamburgerMenu() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navContainer = document.querySelector('.nav-container');
+    
+    if (menuToggle && navContainer) {
+        // Toggle menu hamburger
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            navContainer.classList.toggle('show');
+        });
+        
+        // Chiudi menu quando si clicca fuori
+        document.addEventListener('click', function(e) {
+            if (!navContainer.contains(e.target) && e.target !== menuToggle) {
+                navContainer.classList.remove('show');
+            }
+        });
+        
+        // Chiudi menu con tasto ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                navContainer.classList.remove('show');
+            }
+        });
+        
+        console.log('🍔 Hamburger menu inizializzato');
+    }
+}
+
+// ===== NAVIGAZIONE E SEZIONI =====
+function initNavigazione() {
+    // Nascondi tutte le sezioni tranne Overview
+    document.querySelectorAll('.section').forEach((section, index) => {
+        if (index === 0) {
+            section.style.display = 'block';
+            mappeInizializzate.overview = true;
+        } else {
+            section.style.display = 'none';
+        }
+    });
+
+    // Collegamento bottoni navigazione
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = this.getAttribute('data-target');
+            showSection(target, this);
+        });
+    });
+}
+
+// Gestione Navigazione
+function showSection(sectionId, element) {
+    // Nascondi tutte le sezioni
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Mostra sezione cliccata
+    const target = document.getElementById(sectionId);
+    if (target) {
+        target.style.display = 'block';
+        
+        // Inizializza mappe solo quando necessario
+        if (!mappeInizializzate[sectionId]) {
+            setTimeout(() => initMapsSezione(sectionId), 100);
+            mappeInizializzate[sectionId] = true;
+        } else {
+            setTimeout(() => aggiornaMappeSezione(sectionId), 100);
+        }
+    }
+
+    // Aggiorna stati bottoni
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    if (element) {
+        element.classList.add('active');
+    }
+    
+    // Chiudi menu hamburger su mobile dopo click
+    if (window.innerWidth <= 768) {
+        const navContainer = document.querySelector('.nav-container');
+        if (navContainer) {
+            navContainer.classList.remove('show');
+        }
+    }
+}
+
+function initMapsSezione(sectionId) {
+    switch(sectionId) {
+        case 'mappa':
+            initMappaCompleta();
+            break;
+        case 'tappe':
+            initMappeTappe();
+            break;
+    }
+}
+
+function aggiornaMappeSezione(sectionId) {
+    switch(sectionId) {
+        case 'mappa':
+            if (mappaCompleta) {
+                setTimeout(() => mappaCompleta.invalidateSize(), 300);
+            }
+            break;
+        case 'tappe':
+            // Le mini-mappe si auto-aggiornano
+            break;
+    }
+}
+
+// ===== MAPPA COMPLETA - Versione SICURA =====
 function initMappaCompleta() {
     if (mappaCompleta || typeof L === 'undefined') return;
 
     try {
-        console.log('🗺️ Inizializzazione mappa completa con bandierine...');
+        console.log('🗺️ Inizializzazione mappa completa...');
         
         const mappaDiv = document.getElementById('mappa-completa');
         if (!mappaDiv) {
@@ -31,9 +204,9 @@ function initMappaCompleta() {
 
         let bounds = null;
         let tracceCaricate = 0;
-        const tracceTotali = filesGpx.length - 1;
+        const tracceTotali = filesGpx.length - 1; // -1 per l'indice 0 vuoto
 
-        // Carica tutte le tracce GPX con BANDIERINE
+        // Carica tutte le tracce GPX con GESTIONE ERRORI COMPLETA
         for (let i = 1; i <= 8; i++) {
             const gpxUrl = "assets/downloads/gpx/" + filesGpx[i];
             
@@ -46,25 +219,23 @@ function initMappaCompleta() {
                     async: true,
                     polyline_options: {
                         color: coloriTappe[i-1],
-                        weight: i === 8 ? 10 : 6,
-                        opacity: i === 8 ? 1.0 : 0.9,
+                        weight: i === 8 ? 10 : 6, // 👈 SPESSORE AUMENTATO
+                        opacity: i === 8 ? 1.0 : 0.9, // 👈 OPACITÀ MASSIMA
                         lineCap: 'round'
                     },
-                    marker_options: {
-                        startIconUrl: null,
-                        endIconUrl: null,
+                    marker_options: { 
+                        startIconUrl: null, 
+                        endIconUrl: null, 
                         shadowUrl: null,
                         wptIconUrls: null
                     }
                 });
 
-                // Gestione evento loaded con BANDIERINE
+                // Gestione evento loaded con CONTROLLO SICURO
                 gpxLayer.on('loaded', function(e) {
                     tracceCaricate++;
                     
-                    // Aggiungi bandierine personalizzate
-                    aggiungiBandierineTappa(e.target, i);
-                    
+                    // CONTROLLO SICURO per evitare l'errore getDistance
                     let messaggio = '';
                     try {
                         if (e.target && e.target.getDistance && typeof e.target.getDistance === 'function') {
@@ -85,7 +256,7 @@ function initMappaCompleta() {
                     
                     console.log(`✅ ${messaggio} - ${nomiColori[i-1]}`);
                     
-                    // Aggiorna bounds per fit
+                    // Aggiorna bounds per fit (con controllo sicurezza)
                     try {
                         if (e.target && e.target.getBounds && typeof e.target.getBounds === 'function') {
                             const layerBounds = e.target.getBounds();
@@ -117,7 +288,7 @@ function initMappaCompleta() {
             }
         }
 
-        // Fit bounds dopo caricamento
+        // Fit bounds dopo caricamento (con timeout per sicurezza)
         setTimeout(() => {
             if (bounds && bounds.isValid && bounds.isValid()) {
                 mappaCompleta.fitBounds(bounds, { padding: [30, 30] });
@@ -137,82 +308,24 @@ function initMappaCompleta() {
     }
 }
 
-// ===== FUNZIONE PER AGGIUNGERE BANDIERINE =====
-function aggiungiBandierineTappa(gpxLayer, numeroTappa) {
-    try {
-        // Ottieni punti di inizio e fine
-        const startPoint = gpxLayer.getStartPoint();
-        const endPoint = gpxLayer.getEndPoint();
-        
-        if (startPoint && startPoint._latlng) {
-            // Bandierina di PARTENZA - VERDE
-            const startIcon = L.divIcon({
-                className: 'bandierina-partenza',
-                html: `🏁<div class="bandierina-numero">${numeroTappa}</div>`,
-                iconSize: [30, 30],
-                iconAnchor: [15, 30]
-            });
-            
-            L.marker(startPoint._latlng, { icon: startIcon })
-                .addTo(mappaCompleta)
-                .bindPopup(`<strong>Partenza Tappa ${numeroTappa}</strong><br>${getNomePartenzaTappa(numeroTappa)}`);
+// ===== MINI-MAPPE TAPPE - COLORI DIVERSI per ogni tappa =====
+function initMappeTappe() {
+    if (typeof L === 'undefined') return;
+    
+    for (let i = 1; i <= 7; i++) { // Solo tappe 1-7
+        const mappaDiv = document.getElementById(`mappa-tappa-${i}`);
+        if (mappaDiv && mappaDiv.offsetParent !== null) {
+            initMiniMappa(i);
         }
-        
-        if (endPoint && endPoint._latlng) {
-            // Bandierina di ARRIVO - ROSSA
-            const endIcon = L.divIcon({
-                className: 'bandierina-arrivo',
-                html: `🎯<div class="bandierina-numero">${numeroTappa}</div>`,
-                iconSize: [30, 30],
-                iconAnchor: [15, 30]
-            });
-            
-            L.marker(endPoint._latlng, { icon: endIcon })
-                .addTo(mappaCompleta)
-                .bindPopup(`<strong>Arrivo Tappa ${numeroTappa}</strong><br>${getNomeArrivoTappa(numeroTappa)}`);
-        }
-        
-    } catch (error) {
-        console.warn(`⚠️ Impossibile aggiungere bandierine per tappa ${numeroTappa}:`, error);
     }
 }
 
-// ===== NOMI TAPPE PER I POPUP =====
-function getNomePartenzaTappa(numeroTappa) {
-    const nomi = {
-        1: "Torino",
-        2: "Portogruaro", 
-        3: "Prizna",
-        4: "Marulovo",
-        5: "Mostar",
-        6: "Dubrovnik",
-        7: "Spalato",
-        8: "Torino (Partenza)"
-    };
-    return nomi[numeroTappa] || `Tappa ${numeroTappa}`;
-}
-
-function getNomeArrivoTappa(numeroTappa) {
-    const nomi = {
-        1: "Portogruaro",
-        2: "Prizna",
-        3: "Marulovo", 
-        4: "Mostar",
-        5: "Dubrovnik",
-        6: "Spalato",
-        7: "Ancona (Traghetto)",
-        8: "Torino (Arrivo)"
-    };
-    return nomi[numeroTappa] || `Tappa ${numeroTappa}`;
-}
-
-// ===== MINI-MAPPE TAPPE - Con bandierine =====
 function initMiniMappa(numeroTappa) {
     const mappaDiv = document.getElementById(`mappa-tappa-${numeroTappa}`);
     if (!mappaDiv || mappaDiv._leaflet_map) return;
 
     try {
-        console.log(`🔄 Inizializzazione mini-mappa ${numeroTappa} con bandierine...`);
+        console.log(`🔄 Inizializzazione mini-mappa ${numeroTappa}`);
         
         const miniMap = L.map(`mappa-tappa-${numeroTappa}`, {
             zoomControl: false,
@@ -241,14 +354,12 @@ function initMiniMappa(numeroTappa) {
                 },
                 polyline_options: {
                     color: coloriTappe[numeroTappa-1],
-                    weight: 6,
-                    opacity: 1.0,
+                    weight: 6, // 👈 SPESSORE AUMENTATO
+                    opacity: 1.0, // 👈 OPACITÀ MASSIMA
                     lineCap: 'round'
                 }
             }).on('loaded', function(e) {
                 try {
-                    // Aggiungi bandierine alle mini-mappe
-                    aggiungiBandierineMiniMappa(e.target, numeroTappa, miniMap);
                     miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
                     console.log(`✅ Mini-mappa ${numeroTappa} - ${nomiColori[numeroTappa-1]}`);
                 } catch (boundsError) {
@@ -264,35 +375,9 @@ function initMiniMappa(numeroTappa) {
     }
 }
 
-// ===== BANDIERINE PER MINI-MAPPE =====
-function aggiungiBandierineMiniMappa(gpxLayer, numeroTappa, miniMap) {
-    try {
-        const startPoint = gpxLayer.getStartPoint();
-        const endPoint = gpxLayer.getEndPoint();
-        
-        if (startPoint && startPoint._latlng) {
-            const startIcon = L.divIcon({
-                className: 'bandierina-partenza-mini',
-                html: '🏁',
-                iconSize: [20, 20],
-                iconAnchor: [10, 20]
-            });
-            
-            L.marker(startPoint._latlng, { icon: startIcon }).addTo(miniMap);
-        }
-        
-        if (endPoint && endPoint._latlng) {
-            const endIcon = L.divIcon({
-                className: 'bandierina-arrivo-mini', 
-                html: '🎯',
-                iconSize: [20, 20],
-                iconAnchor: [10, 20]
-            });
-            
-            L.marker(endPoint._latlng, { icon: endIcon }).addTo(miniMap);
-        }
-        
-    } catch (error) {
-        console.warn(`⚠️ Impossibile aggiungere bandierine mini-mappa ${numeroTappa}`);
+// ===== GESTIONE RESIZE FINESTRA =====
+window.addEventListener('resize', function() {
+    if (mappaCompleta) {
+        setTimeout(() => mappaCompleta.invalidateSize(), 250);
     }
-}
+});
