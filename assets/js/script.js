@@ -310,7 +310,7 @@ function aggiungiBandierineTappa(gpxLayer, numeroTappa) {
     }
 }
 
-// ===== MINI-MAPPE TAPPE =====
+// ===== MINI-MAPPE TAPPE CON BANDIERINE =====
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
     
@@ -327,7 +327,7 @@ function initMiniMappa(numeroTappa) {
     if (!mappaDiv || mappaDiv._leaflet_map) return;
 
     try {
-        console.log(`🔄 Mini-mappa ${numeroTappa}`);
+        console.log(`🔄 Mini-mappa ${numeroTappa} con bandierine`);
         
         const miniMap = L.map(`mappa-tappa-${numeroTappa}`, {
             zoomControl: false,
@@ -362,8 +362,10 @@ function initMiniMappa(numeroTappa) {
                 }
             }).on('loaded', function(e) {
                 try {
+                    // AGGIUNGI BANDIERINE ALLE MINI-MAPPE
+                    aggiungiBandierineMiniMappa(e.target, numeroTappa, miniMap);
                     miniMap.fitBounds(e.target.getBounds(), { padding: [10, 10] });
-                    console.log(`✅ Mini-mappa ${numeroTappa} caricata`);
+                    console.log(`✅ Mini-mappa ${numeroTappa} con bandierine`);
                 } catch (boundsError) {
                     console.warn(`⚠️ Impossibile adattare mini-mappa ${numeroTappa}`);
                 }
@@ -374,6 +376,58 @@ function initMiniMappa(numeroTappa) {
 
     } catch (error) {
         console.error(`💥 Errore mini-mappa ${numeroTappa}:`, error);
+    }
+}
+
+// ===== BANDIERINE PER MINI-MAPPE =====
+function aggiungiBandierineMiniMappa(gpxLayer, numeroTappa, miniMap) {
+    console.log(`🎯 Aggiungo bandierine mini-mappa ${numeroTappa}`);
+    
+    try {
+        // Bandierina di PARTENZA per mini-mappa
+        const startIconMini = L.divIcon({
+            className: 'bandierina-partenza-mini',
+            html: `🏁<div class="bandierina-numero-mini">${numeroTappa}</div>`,
+            iconSize: [25, 25],
+            iconAnchor: [12, 25]
+        });
+        
+        // Bandierina di ARRIVO per mini-mappa
+        const endIconMini = L.divIcon({
+            className: 'bandierina-arrivo-mini',
+            html: `🎯<div class="bandierina-numero-mini">${numeroTappa}</div>`,
+            iconSize: [25, 25],
+            iconAnchor: [12, 25]
+        });
+
+        // Coordinate approssimative per ogni tappa
+        const coordinateTappe = {
+            1: { start: [45.0703, 7.6869], end: [45.775, 12.8386], startName: "Torino", endName: "Portogruaro" },
+            2: { start: [45.775, 12.8386], end: [44.6333, 14.8833], startName: "Portogruaro", endName: "Prizna" },
+            3: { start: [44.6333, 14.8833], end: [43.5, 16.25], startName: "Prizna", endName: "Marulovo" },
+            4: { start: [43.5, 16.25], end: [43.3433, 17.8081], startName: "Marulovo", endName: "Mostar" },
+            5: { start: [43.3433, 17.8081], end: [42.6403, 18.1083], startName: "Mostar", endName: "Dubrovnik" },
+            6: { start: [42.6403, 18.1083], end: [43.5081, 16.4403], startName: "Dubrovnik", endName: "Spalato" },
+            7: { start: [43.5081, 16.4403], end: [43.5167, 13.5167], startName: "Spalato", endName: "Ancona" }
+        };
+
+        const tappa = coordinateTappe[numeroTappa];
+        if (tappa) {
+            // Bandierina partenza
+            L.marker(tappa.start, { icon: startIconMini })
+                .addTo(miniMap)
+                .bindPopup(`<strong>Partenza Tappa ${numeroTappa}</strong><br>${tappa.startName}`);
+            
+            // Bandierina arrivo
+            L.marker(tappa.end, { icon: endIconMini })
+                .addTo(miniMap)
+                .bindPopup(`<strong>Arrivo Tappa ${numeroTappa}</strong><br>${tappa.endName}`);
+            
+            console.log(`✅ Bandierine aggiunte a mini-mappa ${numeroTappa}`);
+        }
+        
+    } catch (error) {
+        console.warn(`⚠️ Errore bandierine mini-mappa ${numeroTappa}:`, error);
     }
 }
 
