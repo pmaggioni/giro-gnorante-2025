@@ -1225,3 +1225,293 @@ body {
         display: flex !important;
     }
 }
+/* ===== NUOVI STILI PER LE SEZIONI AGGIUNTE ===== */
+
+/* Stili per le curiosità storiche */
+.curiosita-storica {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 25px 0;
+    border-left: 4px solid #e74c3c;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.curiosita-storica::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(241, 196, 15, 0.05) 100%);
+    z-index: -1;
+}
+
+.curiosita-storica h4 {
+    margin: 0 0 15px 0;
+    color: #f39c12;
+    font-size: 1.3em;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.curiosita-storica p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.curiosita-storica strong {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* Frasi ad effetto */
+.frase-effetto {
+    font-style: italic;
+    color: #f1c40f;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 25px 0 10px 0;
+    padding: 20px;
+    background: rgba(241, 196, 15, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid #f1c40f;
+    border-right: 3px solid #f1c40f;
+    font-weight: 500;
+    position: relative;
+}
+
+.frase-effetto::before,
+.frase-effetto::after {
+    content: '"';
+    font-size: 2em;
+    color: #f1c40f;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.frase-effetto::before {
+    top: 5px;
+    left: 15px;
+}
+
+.frase-effetto::after {
+    bottom: -10px;
+    right: 15px;
+}
+
+/* Sezione alloggi */
+.alloggio {
+    background: rgba(52, 152, 219, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0 20px 0;
+    border: 2px dashed #3498db;
+    position: relative;
+}
+
+.alloggio::before {
+    content: '🏨';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    border: 2px solid #3498db;
+}
+
+.alloggio h4 {
+    color: #3498db;
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+.dettagli-alloggio {
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.dettagli-alloggio p {
+    margin: 12px 0;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 6px;
+    border-left: 3px solid #3498db;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dettagli-alloggio p:hover {
+    background: white;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+}
+
+.dettagli-alloggio strong {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+/* Frase viaggio nella overview */
+.viaggio-frase {
+    background: linear-gradient(135deg, #e74c3c, #f39c12);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 25px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.viaggio-frase::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    animation: shimmer 3s infinite;
+}
+
+.viaggio-frase p {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.viaggio-frase strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Animazioni specifiche */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(241, 196, 15, 0.8);
+    }
+}
+
+.frase-effetto {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Effetti hover per le nuove sezioni */
+.curiosita-storica:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.alloggio:hover {
+    border-style: solid;
+    background: rgba(52, 152, 219, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Responsive per le nuove sezioni */
+@media (max-width: 768px) {
+    .curiosita-storica {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .curiosita-storica h4 {
+        font-size: 1.2em;
+    }
+    
+    .frase-effetto {
+        font-size: 1.1em;
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .alloggio {
+        padding: 20px;
+        margin: 25px 0 15px 0;
+    }
+    
+    .dettagli-alloggio {
+        padding: 15px;
+    }
+    
+    .dettagli-alloggio p {
+        padding: 8px 12px;
+        margin: 10px 0;
+    }
+    
+    .viaggio-frase {
+        padding: 20px;
+    }
+    
+    .viaggio-frase p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .curiosita-storica {
+        padding: 15px;
+    }
+    
+    .curiosita-storica h4 {
+        font-size: 1.1em;
+    }
+    
+    .frase-effetto {
+        font-size: 1em;
+        padding: 12px;
+    }
+    
+    .alloggio {
+        padding: 15px;
+    }
+    
+    .dettagli-alloggio {
+        padding: 12px;
+    }
+    
+    .viaggio-frase {
+        padding: 15px;
+    }
+    
+    .viaggio-frase p {
+        font-size: 1em;
+    }
+}
+
+/* Miglioramenti per la leggibilità */
+.curiosita-storica p:last-of-type {
+    margin-bottom: 0;
+}
+
+.dettagli-alloggio p:last-child {
+    margin-bottom: 0;
+}
+
+/* Highlight per i dati mancanti negli alloggi */
+.dettagli-alloggio p:empty::before {
+    content: "In attesa di informazioni...";
+    color: #95a5a6;
+    font-style: italic;
+    font-weight: normal;
+}
