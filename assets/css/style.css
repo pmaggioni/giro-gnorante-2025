@@ -1551,3 +1551,26 @@ body {
         font-size: 0.75em;
     }
 }
+
+/* Testo nero per i link di navigazione */
+.maps-link,
+.waze-link {
+    color: #333 !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 2px solid #ddd !important;
+}
+
+.maps-link:hover,
+.waze-link:hover {
+    color: white !important;
+}
+
+.maps-link:hover {
+    background: #4285F4 !important;
+    border-color: #4285F4 !important;
+}
+
+.waze-link:hover {
+    background: #33CCFF !important;
+    border-color: #33CCFF !important;
+}
