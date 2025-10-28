@@ -217,8 +217,8 @@ function initMappaCompleta() {
                     async: true,
                     polyline_options: {
                         color: coloriTappe[i-1],
-                        weight: i === 8 ? 8 : 5,
-                        opacity: i === 8 ? 0.9 : 0.8,
+                        weight: i === 8 ? 10 : 6, // 👈 SPESSORE AUMENTATO
+                        opacity: i === 8 ? 1.0 : 0.9, // 👈 OPACITÀ MASSIMA
                         lineCap: 'round'
                     },
                     marker_options: { 
@@ -239,16 +239,16 @@ function initMappaCompleta() {
                         if (e.target && e.target.getDistance && typeof e.target.getDistance === 'function') {
                             const distanza = (e.target.getDistance() / 1000).toFixed(1);
                             messaggio = i === 8 ? 
-                                `🎯 PERCORSO COMPLETO GIALLO - ${distanza} km` :
+                                `🎯 PERCORSO COMPLETO NERO - ${distanza} km` :
                                 `Tappa ${i}: ${distanza} km`;
                         } else {
                             messaggio = i === 8 ? 
-                                "🎯 PERCORSO COMPLETO GIALLO" :
+                                "🎯 PERCORSO COMPLETO NERO" :
                                 `Tappa ${i} caricata`;
                         }
                     } catch (error) {
                         messaggio = i === 8 ? 
-                            "🎯 PERCORSO COMPLETO GIALLO (distanza non disponibile)" :
+                            "🎯 PERCORSO COMPLETO NERO (distanza non disponibile)" :
                             `Tappa ${i} caricata (distanza non disponibile)`;
                     }
                     
@@ -352,8 +352,8 @@ function initMiniMappa(numeroTappa) {
                 },
                 polyline_options: {
                     color: coloriTappe[numeroTappa-1],
-                    weight: 5,
-                    opacity: 0.9,
+                    weight: 6, // 👈 SPESSORE AUMENTATO
+                    opacity: 1.0, // 👈 OPACITÀ MASSIMA
                     lineCap: 'round'
                 }
             }).on('loaded', function(e) {
