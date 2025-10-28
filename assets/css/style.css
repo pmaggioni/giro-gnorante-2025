@@ -951,6 +951,40 @@ body {
     transform: scale(1.05);
 }
 
+/* Aggiungi questa parte per mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex !important; /* Forza la visualizzazione su mobile */
+        position: fixed !important; /* Mantiene fisso durante lo scroll */
+        top: 15px !important;
+        left: 15px !important;
+        z-index: 2000 !important; /* Assicurati che sia sopra tutto */
+    }
+
+    /* Assicurati che il nav-container sia fisso quando aperto */
+    .nav-container {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1900 !important;
+        height: 100vh !important;
+        overflow-y: auto !important;
+    }
+}
+
+/* Invece, aggiungi questo per desktop: */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none; /* Nascondi hamburger su desktop */
+    }
+    
+    .nav-container {
+        display: flex !important;
+        position: relative !important; /* Reset per desktop */
+    }
+}
+
 /* Animazioni */
 @keyframes fadeInUp {
     from {
@@ -1109,14 +1143,14 @@ body {
         height: 45px;
     }
 
-    /* Hamburger mobile */
-    .nav {
-        position: relative;
-        min-height: 70px;
-    }
-
+    /* Hamburger mobile - SEMPRE VISIBILE */
     .hamburger {
-        display: flex;
+        display: flex !important;
+        position: fixed !important;
+        top: 15px !important;
+        left: 15px !important;
+        z-index: 2000 !important;
+        background: rgba(0, 0, 0, 0.8) !important;
     }
 
     .nav-container {
@@ -1128,13 +1162,13 @@ body {
         background: var(--primary);
         border-radius: 0 0 20px 20px;
         width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
+        position: fixed !important; /* Aggiunto !important */
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
         min-height: 100vh;
         box-shadow: 0 2px 10px rgba(0,0,0,0.09);
-        z-index: 1400;
+        z-index: 1900 !important; /* Z-index più basso dell'hamburger */
         overflow-y: auto;
     }
 
