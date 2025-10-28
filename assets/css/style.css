@@ -1493,3 +1493,61 @@ body {
 .dettagli-alloggio p:last-child {
     margin-bottom: 0;
 }
+
+/* ===== STILI PER LE OPZIONI DI NAVIGAZIONE ===== */
+
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.maps-link {
+    background: rgba(66, 133, 244, 0.1);
+    border: 2px solid #4285F4;
+}
+
+.maps-link:hover {
+    background: #4285F4;
+    color: white;
+}
+
+.waze-link {
+    background: rgba(51, 204, 255, 0.1);
+    border: 2px solid #33CCFF;
+}
+
+.waze-link:hover {
+    background: #33CCFF;
+    color: white;
+}
+
+/* Stile per la spiegazione Waze */
+.waze-explanation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.waze-tip {
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    background: rgba(51, 204, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-left: 2px solid #33CCFF;
+}
+
+/* Responsive per mobile */
+@media (max-width: 768px) {
+    .nav-options {
+        gap: 8px;
+    }
+    
+    .waze-tip {
+        font-size: 0.75em;
+    }
+}
