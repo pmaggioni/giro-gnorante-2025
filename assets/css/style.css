@@ -720,6 +720,63 @@ body {
     overflow: hidden;
 }
 
+/* ===== STILI BANDIERINE ===== */
+.bandierina-partenza,
+.bandierina-arrivo {
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.bandierina-numero {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandierina-partenza-mini,
+.bandierina-arrivo-mini {
+    text-align: center;
+    font-size: 14px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Migliora i popup delle bandierine */
+.leaflet-popup-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaflet-popup-content strong {
+    color: var(--primary);
+}
+
+/* Responsive per bandierine su mobile */
+@media (max-width: 768px) {
+    .bandierina-partenza,
+    .bandierina-arrivo {
+        font-size: 16px;
+    }
+    
+    .bandierina-numero {
+        font-size: 9px;
+        width: 14px;
+        height: 14px;
+        line-height: 14px;
+    }
+}
+
+
 .footer::before {
     content: '';
     position: absolute;
