@@ -37,8 +37,27 @@ const coloriTappe = [
     '#ffd93d'  // Tappa 8 - GIALLO (PERCORSO COMPLETO)
 ];
 
-// ===== HAMBURGER MENU MOBILE =====
+// Nomi colori per debug
+const nomiColori = [
+    "BLU", "TURCHESE", "AZZURRO", "VERDE CHIARO", 
+    "ARANCIONE CHIARO", "ROSA", "ROSSO", "GIALLO"
+];
+
+// ===== INIZIALIZZAZIONE COMPLETA =====
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 Setup iniziale...');
+    
+    // Inizializza hamburger menu
+    initHamburgerMenu();
+    
+    // Setup navigazione e sezioni
+    initNavigazione();
+    
+    console.log('✅ Setup completato');
+});
+
+// ===== HAMBURGER MENU MOBILE =====
+function initHamburgerMenu() {
     const menuToggle = document.getElementById('menuToggle');
     const navContainer = document.querySelector('.nav-container');
     
@@ -56,16 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Chiudi menu quando si clicca su un bottone di navigazione (mobile)
-        const navButtons = document.querySelectorAll('.nav-btn');
-        navButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    navContainer.classList.remove('show');
-                }
-            });
-        });
-        
         // Chiudi menu con tasto ESC
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
@@ -75,16 +84,28 @@ document.addEventListener('DOMContentLoaded', function() {
         
         console.log('🍔 Hamburger menu inizializzato');
     }
-});
+}
 
+// ===== NAVIGAZIONE E SEZIONI =====
+function initNavigazione() {
+    // Nascondi tutte le sezioni tranne Overview
+    document.querySelectorAll('.section').forEach((section, index) => {
+        if (index === 0) {
+            section.style.display = 'block';
+            mappeInizializzate.overview = true;
+        } else {
+            section.style.display = 'none';
+        }
+    });
 
-
-
-// Nomi colori per debug
-const nomiColori = [
-    "BLU", "TURCHESE", "AZZURRO", "VERDE CHIARO", 
-    "ARANCIONE CHIARO", "ROSA", "ROSSO", "GIALLO"
-];
+    // Collegamento bottoni navigazione
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            showSection(target, this);
+        });
+    });
+}
 
 // Gestione Navigazione
 function showSection(sectionId, element) {
@@ -114,6 +135,14 @@ function showSection(sectionId, element) {
     if (element) {
         element.classList.add('active');
     }
+    
+    // Chiudi menu hamburger su mobile dopo click
+    if (window.innerWidth <= 768) {
+        const navContainer = document.querySelector('.nav-container');
+        if (navContainer) {
+            navContainer.classList.remove('show');
+        }
+    }
 }
 
 function initMapsSezione(sectionId) {
@@ -140,7 +169,7 @@ function aggiornaMappeSezione(sectionId) {
     }
 }
 
-// MAPPA COMPLETA - Versione SICURA
+// ===== MAPPA COMPLETA - Versione SICURA =====
 function initMappaCompleta() {
     if (mappaCompleta || typeof L === 'undefined') return;
 
@@ -277,7 +306,7 @@ function initMappaCompleta() {
     }
 }
 
-// MINI-MAPPE TAPPE - COLORI DIVERSI per ogni tappa
+// ===== MINI-MAPPE TAPPE - COLORI DIVERSI per ogni tappa =====
 function initMappeTappe() {
     if (typeof L === 'undefined') return;
     
@@ -344,50 +373,7 @@ function initMiniMappa(numeroTappa) {
     }
 }
 
-// INIZIALIZZAZIONE
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('🚀 Setup iniziale...');
-    
-    // Nascondi tutte le sezioni tranne Overview
-    document.querySelectorAll('.section').forEach((section, index) => {
-        if (index === 0) {
-            section.style.display = 'block';
-            mappeInizializzate.overview = true;
-        } else {
-            section.style.display = 'none';
-        }
-    });
-
-    // Collegamento bottoni navigazione
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const target = this.getAttribute('data-target');
-            showSection(target, this);
-        });
-    });
-
-    // Gestione menu mobile (se presente)
-    const hamburger = document.getElementById('menuToggle');
-    if (hamburger) {
-        const nav = document.querySelector('.nav-container');
-        hamburger.addEventListener('click', function() {
-            nav.classList.toggle('show');
-        });
-
-        // Chiudi menu su click voce (mobile)
-        document.querySelectorAll('.nav-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                if (window.innerWidth <= 768 && nav) {
-                    nav.classList.remove('show');
-                }
-            });
-        });
-    }
-
-    console.log('✅ Setup completato');
-});
-
-// Gestione resize finestra
+// ===== GESTIONE RESIZE FINESTRA =====
 window.addEventListener('resize', function() {
     if (mappaCompleta) {
         setTimeout(() => mappaCompleta.invalidateSize(), 250);
