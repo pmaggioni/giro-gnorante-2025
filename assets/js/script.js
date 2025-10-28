@@ -37,6 +37,49 @@ const coloriTappe = [
     '#ffd93d'  // Tappa 8 - GIALLO (PERCORSO COMPLETO)
 ];
 
+// ===== HAMBURGER MENU MOBILE =====
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navContainer = document.querySelector('.nav-container');
+    
+    if (menuToggle && navContainer) {
+        // Toggle menu hamburger
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            navContainer.classList.toggle('show');
+        });
+        
+        // Chiudi menu quando si clicca fuori
+        document.addEventListener('click', function(e) {
+            if (!navContainer.contains(e.target) && e.target !== menuToggle) {
+                navContainer.classList.remove('show');
+            }
+        });
+        
+        // Chiudi menu quando si clicca su un bottone di navigazione (mobile)
+        const navButtons = document.querySelectorAll('.nav-btn');
+        navButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    navContainer.classList.remove('show');
+                }
+            });
+        });
+        
+        // Chiudi menu con tasto ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                navContainer.classList.remove('show');
+            }
+        });
+        
+        console.log('🍔 Hamburger menu inizializzato');
+    }
+});
+
+
+
+
 // Nomi colori per debug
 const nomiColori = [
     "BLU", "TURCHESE", "AZZURRO", "VERDE CHIARO", 
