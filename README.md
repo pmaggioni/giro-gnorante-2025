@@ -2,7 +2,7 @@
 
 Il sito ufficiale del nostro viaggio in moto attraverso 4 nazioni.
 
-[Viaggio Gnorante 2025](http://bit.ly/47qMhdo)
+[Viaggio Gnorante 2026](http://bit.ly/47qMhdo)
 
 ## Il Viaggio
 - 8 giorni di avventura
